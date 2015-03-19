@@ -1,5 +1,5 @@
-name = gxnulib
-description = Please provide a description for your theme.
+name = 广西师范大学图书馆
+description = 广西师范大学图书馆网站主题
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate
