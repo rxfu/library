@@ -4,15 +4,19 @@ preview = preview.png
 template = stair-layout
 
 ; Regions
+regions[bar] = Bar
 regions[branding]       = Branding
 regions[navigation]     = Navigation bar
 regions[header]         = Header
-regions[hero]           = Hero
+regions[search]           = Search Tab
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
-regions[sidebar_first]  = First sidebar
+regions[showcase]  = Showcase
+regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
+regions[express] = Express
+regions[link] = Link
 regions[footer]         = Footer
 
 ; Stylesheets
