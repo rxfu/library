@@ -1,0 +1,12 @@
+/**
+ * $FONT-FACE
+ */
+@include establish-baseline($base-font-size);
+
+/**
+ * $BASE-TYPOGRAPHY
+ */
+html {
+    font-family: $ms-yh;
+    color: $grey;
+}
