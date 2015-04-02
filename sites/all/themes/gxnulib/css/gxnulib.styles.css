@@ -7,7 +7,15 @@ and open the template in the editor.
     Created on : Apr 1, 2015, 10:51:36 AM
     Author     : Stephen
 */
-/* No files to import found in abstractions/**\/* */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 2, 2015, 3:49:40 PM
+    Author     : Stephen
+*/
 /* line 1, ../sass/base/_media.scss */
 img, media {
   max-width: 100%; }
@@ -27,5 +35,161 @@ html {
 html {
   font-family: "Microsoft Yahei", Sumsun, Arial;
   color: #929292; }
+
+/**
+ * $LINKS
+ */
+/* line 17, ../sass/base/_typography.scss */
+a {
+  color: #3bafef; }
+  /* line 18, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+  a:visited {
+    color: #3bafef; }
+  /* line 21, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+  a:focus {
+    color: #3bafef; }
+  /* line 24, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+  a:hover {
+    color: #3bafef; }
+  /* line 27, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+  a:active {
+    color: #3bafef; }
+
+/**
+ * $HEADINGS
+ */
+/* line 24, ../sass/base/_typography.scss */
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.28571em;
+  color: #871e1e;
+  text-transform: uppercase; }
+  /* line 34, ../sass/base/_typography.scss */
+  h1 a,
+  h1 a:visited, .alpha a,
+  .alpha a:visited,
+  h2 a,
+  h2 a:visited, .beta a,
+  .beta a:visited,
+  h3 a,
+  h3 a:visited, .gamma a,
+  .gamma a:visited,
+  h4 a,
+  h4 a:visited, .delta a,
+  .delta a:visited,
+  h5 a,
+  h5 a:visited, .epsilon a,
+  .epsilon a:visited,
+  h6 a,
+  h6 a:visited, .zeta a,
+  .zeta a:visited {
+    color: inherit;
+    text-decoration: none; }
+  /* line 39, ../sass/base/_typography.scss */
+  h1 a:hover, .alpha a:hover,
+  h2 a:hover, .beta a:hover,
+  h3 a:hover, .gamma a:hover,
+  h4 a:hover, .delta a:hover,
+  h5 a:hover, .epsilon a:hover,
+  h6 a:hover, .zeta a:hover {
+    color: #942124; }
+
+/* line 44, ../sass/base/_typography.scss */
+h1, .alpha {
+  font-size: 55px;
+  font-size: 3.92857rem;
+  font-weight: 700; }
+
+/* line 48, ../sass/base/_typography.scss */
+h2, .beta {
+  font-size: 34px;
+  font-size: 2.42857rem;
+  font-weight: 700; }
+
+/* line 52, ../sass/base/_typography.scss */
+h3, .gamma {
+  font-size: 21px;
+  font-size: 1.5rem; }
+
+/* line 55, ../sass/base/_typography.scss */
+h4, .delta {
+  font-size: 18px;
+  font-size: 1.28571rem; }
+
+/* line 58, ../sass/base/_typography.scss */
+h5, .epsilon {
+  font-size: 16px;
+  font-size: 1.14286rem; }
+
+/* line 61, ../sass/base/_typography.scss */
+h6, .zeta {
+  font-size: 16px;
+  font-size: 1.14286rem; }
+
+/**
+ * $PARAGRAPHS
+ */
+/* line 68, ../sass/base/_typography.scss */
+p,
+blockquote {
+  margin: 0;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.42857em; }
+
+/* line 73, ../sass/base/_typography.scss */
+p + img {
+  float: left;
+  margin-right: 1px; }
+
+/**
+ * $QUOTES
+ */
+/* line 81, ../sass/base/_typography.scss */
+blockquote {
+  margin-top: 0em;
+  padding-top: 1.42857em;
+  padding-bottom: 1.42857em;
+  margin-bottom: 1.42857em;
+  padding: 0, 1.5em;
+  border-width: 0.07143em;
+  border-style: solid;
+  padding: 1.35714em;
+  border-left-width: 0.71429em;
+  border-left-style: solid;
+  padding-left: 0.71429em;
+  font-style: italic;
+  color: #942124; }
+  /* line 91, ../sass/base/_typography.scss */
+  blockquote p {
+    margin: 0; }
+
+/* line 96, ../sass/base/_typography.scss */
+q {
+  font-style: italic; }
+
+/**
+ * $MARKS
+ */
+/* line 103, ../sass/base/_typography.scss */
+mark,
+.marker {
+  padding: 0.1em 0.5em;
+  background: #fbd0d6;
+  color: #ffffff;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  text-transform: capitalize;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=gxnulib.styles.css.map */
