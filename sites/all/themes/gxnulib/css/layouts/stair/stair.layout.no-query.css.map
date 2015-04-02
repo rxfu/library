@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;;;;;;;;;;;;;AAkBA,aAAc;EACV,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;ECSd,KAAK,EAAE,CAAC;;ECQV,mBAAQ;IACN,OAAO,EAAE,EAAE;IACX,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,IAAI",
+"sources": ["../../../sass/layouts/stair/stair.layout.scss","file:///D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_hacks.scss","file:///D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss"],
+"names": [],
+"file": "stair.layout.no-query.css"
+}

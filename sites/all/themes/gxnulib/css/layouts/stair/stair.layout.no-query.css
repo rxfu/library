@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 2, 2015, 5:36:55 PM
+    Author     : Stephen
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 2, 2015, 5:32:24 PM
+    Author     : Stephen
+*/
+/* No files to import found in ../variables/**\/* */
+/* line 19, ../../../sass/layouts/stair/stair.layout.scss */
+.l-contrained {
+  width: 95%;
+  margin: 0 auto;
+  *zoom: 1; }
+  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .l-contrained:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/*# sourceMappingURL=stair.layout.no-query.css.map */
