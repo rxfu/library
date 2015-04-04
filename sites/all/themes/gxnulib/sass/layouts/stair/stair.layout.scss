@@ -14,10 +14,16 @@ and open the template in the editor.
 @import "singularitygs";
 
 // Globbing from within sub-folders only works with relative paths.
-@import "../variables/**/*";
+@import "../../variables/**/*";
 
 .l-contrained {
     width: 95%;
     margin: 0 auto;
     @include pie-clearfix;
+}
+
+// Footer
+.l-footer {
+    padding: $vert-spacing-unit 0;
+    background: darken($grey, 30%);
 }
