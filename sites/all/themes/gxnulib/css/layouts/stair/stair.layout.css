@@ -30,6 +30,7 @@ and open the template in the editor.
 /* line 26, ../../../sass/layouts/stair/stair.layout.scss */
 .l-footer {
   padding: 20px 0;
-  background: #464646; }
+  background: #464646;
+  text-align: center; }
 
 /*# sourceMappingURL=stair.layout.css.map */

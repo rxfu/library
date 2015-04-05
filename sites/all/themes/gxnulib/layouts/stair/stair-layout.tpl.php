@@ -58,6 +58,7 @@
     </div>
 
     <footer class="l-footer" role="contentinfo">
+        <?php print render($page['link']); ?>
         <?php print render($page['footer']); ?>
     </footer>
 </div>

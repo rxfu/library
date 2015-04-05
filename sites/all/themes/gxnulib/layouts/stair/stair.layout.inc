@@ -19,7 +19,7 @@ regions[postscript_first] = Postscript First
 regions[postscript_second] = Postscript Second
 regions[postscript_third] = Postscript Third
 regions[postscript_fourth] = Postscript Fourth
-regions[Express] = express
+regions[express] = Express
 regions[link] = Link
 regions[footer] = Footer
 
