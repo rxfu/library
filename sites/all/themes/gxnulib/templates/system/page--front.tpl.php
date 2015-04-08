@@ -70,21 +70,23 @@
  * @see omega_preprocess_page()
  */
 ?>
-<div class="l-page">
+<div class="l-page"<?php print $attributes; ?>>
   <?php print render($page['bar']); ?>
   <header class="l-header" role="banner">
-    <div class="l-branding">
+    <div class="l-branding site-branding">
       <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-branding__logo">
+            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
       <?php elseif ($site_name || $site_slogan): ?>
         <?php if ($site_name): ?>
-          <h1 class="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-          </h1>
+          <a href="<?php print $site_name; ?>" title="<?php print t('Home') ?>" rel="home" class="site-branding__name">
+            <span><?php print $site_name; ?></span>
+          </a>
         <?php endif; ?>
 
         <?php if ($site_slogan): ?>
-          <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
+          <h2 class="site-branding__slogan"><?php print $site_slogan; ?></h2>
         <?php endif; ?>
       <?php endif; ?>
 

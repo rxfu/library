@@ -20,3 +20,28 @@
 @import "abstractions/**/*";
 @import "base/**/*";
 @import "components/**/*";
+
+.l-contrained {
+    width: 95%;
+    margin: 0 auto;
+    @include pie-clearfix;
+}
+
+// Copyright
+.l-region--footer a {
+    color: $light-grey;
+}
+
+// Friendly links
+.l-region--link {
+    a,
+    a:visited {
+    color: $lighter-grey;
+    }
+    a:hover {
+        color: $silver;
+    }
+    span {
+        margin: 8px;
+    }
+}

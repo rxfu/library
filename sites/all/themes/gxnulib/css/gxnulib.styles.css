@@ -34,31 +34,36 @@ html {
 /* line 9, ../sass/base/_typography.scss */
 html {
   font-family: "Microsoft Yahei", Sumsun, Arial;
-  color: #929292; }
+  color: #333333; }
 
 /**
  * $LINKS
  */
 /* line 17, ../sass/base/_typography.scss */
 a {
-  color: #3bafef; }
+  color: #9a2525;
+  text-decoration: none; }
   /* line 18, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
-    color: #3bafef; }
+    color: #852020; }
   /* line 21, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
-    color: #3bafef; }
+    color: #9a2525; }
   /* line 24, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
-    color: #3bafef; }
+    color: #af2a2a; }
   /* line 27, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
-    color: #3bafef; }
+    color: #9a2525; }
+
+/* line 21, ../sass/base/_typography.scss */
+a:hover {
+  text-decoration: underline; }
 
 /**
  * $HEADINGS
  */
-/* line 24, ../sass/base/_typography.scss */
+/* line 28, ../sass/base/_typography.scss */
 h1, .alpha,
 h2, .beta,
 h3, .gamma,
@@ -69,9 +74,9 @@ h6, .zeta {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.28571em;
-  color: #871e1e;
+  color: #9a2525;
   text-transform: uppercase; }
-  /* line 34, ../sass/base/_typography.scss */
+  /* line 38, ../sass/base/_typography.scss */
   h1 a,
   h1 a:visited, .alpha a,
   .alpha a:visited,
@@ -92,43 +97,35 @@ h6, .zeta {
   .zeta a:visited {
     color: inherit;
     text-decoration: none; }
-  /* line 39, ../sass/base/_typography.scss */
-  h1 a:hover, .alpha a:hover,
-  h2 a:hover, .beta a:hover,
-  h3 a:hover, .gamma a:hover,
-  h4 a:hover, .delta a:hover,
-  h5 a:hover, .epsilon a:hover,
-  h6 a:hover, .zeta a:hover {
-    color: #942124; }
 
-/* line 44, ../sass/base/_typography.scss */
+/* line 45, ../sass/base/_typography.scss */
 h1, .alpha {
   font-size: 55px;
   font-size: 3.92857rem;
   font-weight: 700; }
 
-/* line 48, ../sass/base/_typography.scss */
+/* line 49, ../sass/base/_typography.scss */
 h2, .beta {
   font-size: 34px;
   font-size: 2.42857rem;
   font-weight: 700; }
 
-/* line 52, ../sass/base/_typography.scss */
+/* line 53, ../sass/base/_typography.scss */
 h3, .gamma {
   font-size: 21px;
   font-size: 1.5rem; }
 
-/* line 55, ../sass/base/_typography.scss */
+/* line 56, ../sass/base/_typography.scss */
 h4, .delta {
   font-size: 18px;
   font-size: 1.28571rem; }
 
-/* line 58, ../sass/base/_typography.scss */
+/* line 59, ../sass/base/_typography.scss */
 h5, .epsilon {
   font-size: 16px;
   font-size: 1.14286rem; }
 
-/* line 61, ../sass/base/_typography.scss */
+/* line 62, ../sass/base/_typography.scss */
 h6, .zeta {
   font-size: 16px;
   font-size: 1.14286rem; }
@@ -136,7 +133,7 @@ h6, .zeta {
 /**
  * $PARAGRAPHS
  */
-/* line 68, ../sass/base/_typography.scss */
+/* line 69, ../sass/base/_typography.scss */
 p,
 blockquote {
   margin: 0;
@@ -145,7 +142,7 @@ blockquote {
   padding-bottom: 0em;
   margin-bottom: 1.42857em; }
 
-/* line 73, ../sass/base/_typography.scss */
+/* line 74, ../sass/base/_typography.scss */
 p + img {
   float: left;
   margin-right: 1px; }
@@ -153,7 +150,7 @@ p + img {
 /**
  * $QUOTES
  */
-/* line 81, ../sass/base/_typography.scss */
+/* line 82, ../sass/base/_typography.scss */
 blockquote {
   margin-top: 0em;
   padding-top: 1.42857em;
@@ -167,19 +164,19 @@ blockquote {
   border-left-style: solid;
   padding-left: 0.71429em;
   font-style: italic;
-  color: #942124; }
-  /* line 91, ../sass/base/_typography.scss */
+  color: #852020; }
+  /* line 92, ../sass/base/_typography.scss */
   blockquote p {
     margin: 0; }
 
-/* line 96, ../sass/base/_typography.scss */
+/* line 97, ../sass/base/_typography.scss */
 q {
   font-style: italic; }
 
 /**
  * $MARKS
  */
-/* line 103, ../sass/base/_typography.scss */
+/* line 104, ../sass/base/_typography.scss */
 mark,
 .marker {
   padding: 0.1em 0.5em;
@@ -191,5 +188,44 @@ mark,
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px; }
+
+/**
+ * $FOOTERS
+ */
+/* line 120, ../sass/base/_typography.scss */
+footer,
+.footer {
+  padding: 20px 0;
+  background: #262626;
+  text-align: center;
+  color: #666666;
+  font-size: 12px;
+  font-size: 0.85714rem; }
+
+/* line 24, ../sass/gxnulib.styles.scss */
+.l-contrained {
+  width: 95%;
+  margin: 0 auto;
+  *zoom: 1; }
+  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .l-contrained:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 31, ../sass/gxnulib.styles.scss */
+.l-region--footer a {
+  color: #666666; }
+
+/* line 37, ../sass/gxnulib.styles.scss */
+.l-region--link a,
+.l-region--link a:visited {
+  color: #a6a6a6; }
+/* line 41, ../sass/gxnulib.styles.scss */
+.l-region--link a:hover {
+  color: #cccccc; }
+/* line 44, ../sass/gxnulib.styles.scss */
+.l-region--link span {
+  margin: 8px; }
 
 /*# sourceMappingURL=gxnulib.styles.css.map */
