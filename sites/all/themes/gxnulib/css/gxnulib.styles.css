@@ -145,7 +145,7 @@ blockquote {
 /* line 74, ../sass/base/_typography.scss */
 p + img {
   float: left;
-  margin-right: 1px; }
+  margin-right: 1em; }
 
 /**
  * $QUOTES
@@ -194,7 +194,7 @@ mark,
  */
 /* line 120, ../sass/base/_typography.scss */
 footer,
-.footer {
+.l-footer {
   padding: 20px 0;
   background: #262626;
   text-align: center;
@@ -202,7 +202,30 @@ footer,
   font-size: 12px;
   font-size: 0.85714rem; }
 
-/* line 24, ../sass/gxnulib.styles.scss */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 9, 2015, 4:44:56 PM
+    Author     : Stephen
+*/
+/* line 11, ../sass/components/misc/_branding.scss */
+.l-branding {
+  padding: 20px 0;
+  margin: 0 auto; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 9, 2015, 4:48:19 PM
+    Author     : Stephen
+*/
+/* line 11, ../sass/components/misc/_container.scss */
 .l-contrained {
   width: 95%;
   margin: 0 auto;
@@ -213,18 +236,43 @@ footer,
     display: table;
     clear: both; }
 
-/* line 31, ../sass/gxnulib.styles.scss */
+/* line 18, ../sass/components/misc/_container.scss */
+.l-region--bar {
+  padding: 3px 8px;
+  background: #262626;
+  color: #666666;
+  font-size: 12px;
+  font-size: 0.85714rem; }
+  /* line 26, ../sass/components/misc/_container.scss */
+  .l-region--bar p {
+    margin: 0; }
+  /* line 29, ../sass/components/misc/_container.scss */
+  .l-region--bar .block__content {
+    text-align: right; }
+    /* line 31, ../sass/components/misc/_container.scss */
+    .l-region--bar .block__content a {
+      color: #a6a6a6; }
+      /* line 33, ../sass/components/misc/_container.scss */
+      .l-region--bar .block__content a:hover {
+        color: silver; }
+    /* line 37, ../sass/components/misc/_container.scss */
+    .l-region--bar .block__content span {
+      margin: 8px; }
+
+/* line 44, ../sass/components/misc/_container.scss */
 .l-region--footer a {
   color: #666666; }
 
-/* line 37, ../sass/gxnulib.styles.scss */
-.l-region--link a,
-.l-region--link a:visited {
+/* line 50, ../sass/components/misc/_container.scss */
+.l-region--link a {
   color: #a6a6a6; }
-/* line 41, ../sass/gxnulib.styles.scss */
-.l-region--link a:hover {
-  color: #cccccc; }
-/* line 44, ../sass/gxnulib.styles.scss */
+  /* line 52, ../sass/components/misc/_container.scss */
+  .l-region--link a:visited {
+    color: #a6a6a6; }
+  /* line 55, ../sass/components/misc/_container.scss */
+  .l-region--link a:hover {
+    color: #cccccc; }
+/* line 59, ../sass/components/misc/_container.scss */
 .l-region--link span {
   margin: 8px; }
 
