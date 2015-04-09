@@ -1,7 +1,7 @@
 /*******************************************************************************
- * library.layout.scss
+ * sword-front.layout.scss
  *
- * Styles for the Library layout.
+ * Styles for the Sword Front layout.
  ******************************************************************************/
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -12,7 +12,7 @@ and open the template in the editor.
     Created on : Apr 1, 2015, 10:51:36 AM
     Author     : Stephen
 */
-/* line 13, ../../../sass/layouts/library/library.layout.scss */
+/* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-constrained, .l-region--highlighted, .l-region--footer {
   width: 95%;
   margin: 0 auto;
@@ -24,45 +24,45 @@ and open the template in the editor.
     clear: both; }
 
 /* Header */
-/* line 20, ../../../sass/layouts/library/library.layout.scss */
+/* line 20, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--header {
   padding: 20px 0; }
-  /* line 23, ../../../sass/layouts/library/library.layout.scss */
+  /* line 23, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--header .block {
     float: right; }
 
 /* Content Area */
-/* line 29, ../../../sass/layouts/library/library.layout.scss */
+/* line 29, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-highlighted-wrapper {
   padding: 20px 0; }
 
-/* line 35, ../../../sass/layouts/library/library.layout.scss */
+/* line 35, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--help {
   margin-bottom: 20px; }
 
-/* line 38, ../../../sass/layouts/library/library.layout.scss */
+/* line 38, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-main {
   margin-top: 40px;
   margin-bottom: 40px; }
 
 /* Sidebars */
-/* line 44, ../../../sass/layouts/library/library.layout.scss */
+/* line 44, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--sidebar-first,
 .l-region--sidebar-second {
   padding: 20px 1em; }
 
 /* Footer */
-/* line 50, ../../../sass/layouts/library/library.layout.scss */
+/* line 50, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-footer-wrapper {
   padding: 20px 0; }
 
 @media (min-width: 8) {
-  /* line 58, ../../../sass/layouts/library/library.layout.scss */
+  /* line 58, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-constrained, .l-region--highlighted, .l-region--footer {
     width: 90%; }
 
   /* Header */
-  /* line 63, ../../../sass/layouts/library/library.layout.scss */
+  /* line 63, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-branding {
     width: 23.72881%;
     float: left;
@@ -70,7 +70,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 66, ../../../sass/layouts/library/library.layout.scss */
+  /* line 66, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--navigation {
     width: 49.15254%;
     float: left;
@@ -78,7 +78,7 @@ and open the template in the editor.
     margin-left: 25.42373%;
     clear: none; }
 
-  /* line 69, ../../../sass/layouts/library/library.layout.scss */
+  /* line 69, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--header {
     width: 23.72881%;
     float: right;
@@ -87,7 +87,7 @@ and open the template in the editor.
     clear: none; }
 
   /* Sidebars */
-  /* line 76, ../../../sass/layouts/library/library.layout.scss */
+  /* line 76, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .has-two-sidebars .l-content,
   .has-one-sidebar .l-content {
     width: 66.10169%;
@@ -95,7 +95,7 @@ and open the template in the editor.
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
-  /* line 79, ../../../sass/layouts/library/library.layout.scss */
+  /* line 79, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .has-two-sidebars .l-region--sidebar-first,
   .has-two-sidebars .l-region--sidebar-second,
   .has-one-sidebar .l-region--sidebar-first,
@@ -107,19 +107,19 @@ and open the template in the editor.
     clear: none;
     clear: right; } }
 @media (min-width: 16) {
-  /* line 88, ../../../sass/layouts/library/library.layout.scss */
+  /* line 88, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-constrained, .l-region--highlighted, .l-region--footer {
     width: 80%; }
 
   /* Sidebars */
-  /* line 94, ../../../sass/layouts/library/library.layout.scss */
+  /* line 94, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .has-one-sidebar .l-content {
     width: 66.10169%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
-  /* line 97, ../../../sass/layouts/library/library.layout.scss */
+  /* line 97, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .has-one-sidebar .l-region--sidebar-first {
     width: 32.20339%;
     float: right;
@@ -128,14 +128,14 @@ and open the template in the editor.
     clear: none;
     clear: none; }
 
-  /* line 103, ../../../sass/layouts/library/library.layout.scss */
+  /* line 103, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .has-two-sidebars .l-content {
     width: 49.15254%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
-  /* line 106, ../../../sass/layouts/library/library.layout.scss */
+  /* line 106, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .has-two-sidebars .l-region--sidebar-first,
   .has-two-sidebars .l-region--sidebar-second {
     width: 23.72881%;
@@ -144,7 +144,7 @@ and open the template in the editor.
     margin-left: 50.84746%;
     clear: none;
     clear: none; }
-  /* line 111, ../../../sass/layouts/library/library.layout.scss */
+  /* line 111, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .has-two-sidebars .l-region--sidebar-second {
     width: 23.72881%;
     float: right;
@@ -152,4 +152,4 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; } }
 
-/*# sourceMappingURL=library.layout.css.map */
+/*# sourceMappingURL=sword-front.layout.css.map */

@@ -7,6 +7,6 @@
  */
 function gxnulib_omega_layout_alter(&$layout) {
   if (drupal_is_front_page()) {
-    $layout = 'library';
+    $layout .= '-front';
   }
 }
