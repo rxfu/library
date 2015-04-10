@@ -1,154 +1,77 @@
-/*******************************************************************************
- * sword-front.layout.scss
- *
- * Styles for the Sword Front layout.
- ******************************************************************************/
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Error: Undefined mixin 'span-columns'.
+        on line 20 of E:/www/php/library/sites/all/themes/gxnulib/sass/layouts/sword-front/sword-front.layout.scss, in `span-columns'
+        from line 20 of E:/www/php/library/sites/all/themes/gxnulib/sass/layouts/sword-front/sword-front.layout.scss
+        from line 5 of E:/www/php/library/sites/all/themes/gxnulib/sass/layouts/sword-front/sword-front.layout.no-query.scss
+
+Backtrace:
+E:/www/php/library/sites/all/themes/gxnulib/sass/layouts/sword-front/sword-front.layout.scss:20:in `span-columns'
+E:/www/php/library/sites/all/themes/gxnulib/sass/layouts/sword-front/sword-front.layout.scss:20
+E:/www/php/library/sites/all/themes/gxnulib/sass/layouts/sword-front/sword-front.layout.no-query.scss:5
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `map'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:88:in `block in with_import'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/listener.rb:291:in `call'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/listener.rb:291:in `_process_changes'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/listener.rb:255:in `block in _wait_for_changes'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/listener.rb:238:in `loop'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/listener.rb:238:in `_wait_for_changes'
+D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/listen-2.10.0/lib/listen/listener.rb:327:in `block in _start_wait_thread'
 */
-/* 
-    Created on : Apr 1, 2015, 10:51:36 AM
-    Author     : Stephen
-*/
-/* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-constrained, .l-region--highlighted, .l-region--footer {
-  width: 95%;
-  margin: 0 auto;
-  *zoom: 1; }
-  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-  .l-constrained:after, .l-region--highlighted:after, .l-region--footer:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-/* Header */
-/* line 20, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--header {
-  padding: 20px 0; }
-  /* line 23, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-region--header .block {
-    float: right; }
-
-/* Content Area */
-/* line 29, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-highlighted-wrapper {
-  padding: 20px 0; }
-
-/* line 35, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--help {
-  margin-bottom: 20px; }
-
-/* line 38, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-main {
-  margin-top: 40px;
-  margin-bottom: 40px; }
-
-/* Sidebars */
-/* line 44, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--sidebar-first,
-.l-region--sidebar-second {
-  padding: 20px 1em; }
-
-/* Footer */
-/* line 50, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-footer-wrapper {
-  padding: 20px 0; }
-
-/* line 58, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-constrained, .l-region--highlighted, .l-region--footer {
-  width: 90%; }
-
-/* Header */
-/* line 63, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-branding {
-  width: 23.72881%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none; }
-
-/* line 66, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--navigation {
-  width: 49.15254%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 25.42373%;
-  clear: none; }
-
-/* line 69, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--header {
-  width: 23.72881%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-
-/* Sidebars */
-/* line 76, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.has-two-sidebars .l-content,
-.has-one-sidebar .l-content {
-  width: 66.10169%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none; }
-/* line 79, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.has-two-sidebars .l-region--sidebar-first,
-.has-two-sidebars .l-region--sidebar-second,
-.has-one-sidebar .l-region--sidebar-first,
-.has-one-sidebar .l-region--sidebar-second {
-  width: 32.20339%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-  clear: right; }
-
-/* line 88, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-constrained, .l-region--highlighted, .l-region--footer {
-  width: 80%; }
-
-/* Sidebars */
-/* line 94, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.has-one-sidebar .l-content {
-  width: 66.10169%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none; }
-/* line 97, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.has-one-sidebar .l-region--sidebar-first {
-  width: 32.20339%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-  clear: none; }
-
-/* line 103, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.has-two-sidebars .l-content {
-  width: 49.15254%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none; }
-/* line 106, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.has-two-sidebars .l-region--sidebar-first,
-.has-two-sidebars .l-region--sidebar-second {
-  width: 23.72881%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 50.84746%;
-  clear: none;
-  clear: none; }
-/* line 111, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.has-two-sidebars .l-region--sidebar-second {
-  width: 23.72881%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-
-/*# sourceMappingURL=sword-front.layout.no-query.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'span-columns'.\A         on line 20 of E:/www/php/library/sites/all/themes/gxnulib/sass/layouts/sword-front/sword-front.layout.scss, in `span-columns'\A         from line 20 of E:/www/php/library/sites/all/themes/gxnulib/sass/layouts/sword-front/sword-front.layout.scss\A         from line 5 of E:/www/php/library/sites/all/themes/gxnulib/sass/layouts/sword-front/sword-front.layout.no-query.scss"; }

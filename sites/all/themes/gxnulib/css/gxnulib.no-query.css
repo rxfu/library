@@ -194,13 +194,35 @@ mark,
  */
 /* line 120, ../sass/base/_typography.scss */
 footer,
-.l-footer {
+.footer {
   padding: 20px 0;
   background: #262626;
   text-align: center;
   color: #666666;
   font-size: 12px;
   font-size: 0.85714rem; }
+  /* line 130, ../sass/base/_typography.scss */
+  footer a,
+  .footer a {
+    color: #666666; }
+
+/**
+ * $BARS
+ */
+/* line 138, ../sass/base/_typography.scss */
+.bar {
+  padding: 0.1em 0.5em;
+  background: #262626;
+  text-align: right;
+  color: #a6a6a6;
+  font-size: 12px;
+  font-size: 0.85714rem; }
+  /* line 147, ../sass/base/_typography.scss */
+  .bar a {
+    color: #a6a6a6; }
+    /* line 149, ../sass/base/_typography.scss */
+    .bar a:hover {
+      color: #cccccc; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -208,72 +230,20 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Apr 9, 2015, 4:44:56 PM
+    Created on : Apr 10, 2015, 9:29:25 AM
     Author     : Stephen
 */
-/* line 11, ../sass/components/misc/_branding.scss */
-.l-branding {
+/**
+ * $SITE-BRANDINGS
+ */
+/* line 14, ../sass/components/misc/_site-branding.scss */
+.site-branding {
   padding: 20px 0;
   margin: 0 auto; }
-
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Apr 9, 2015, 4:48:19 PM
-    Author     : Stephen
-*/
-/* line 11, ../sass/components/misc/_container.scss */
-.l-contrained {
-  width: 95%;
-  margin: 0 auto;
-  *zoom: 1; }
-  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-  .l-contrained:after {
+  /* line 13, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/toolkit-2.9.0/stylesheets/toolkit/_clearfix.scss */
+  .site-branding:after {
     content: "";
     display: table;
     clear: both; }
-
-/* line 18, ../sass/components/misc/_container.scss */
-.l-region--bar {
-  padding: 3px 8px;
-  background: #262626;
-  color: #666666;
-  font-size: 12px;
-  font-size: 0.85714rem; }
-  /* line 26, ../sass/components/misc/_container.scss */
-  .l-region--bar p {
-    margin: 0; }
-  /* line 29, ../sass/components/misc/_container.scss */
-  .l-region--bar .block__content {
-    text-align: right; }
-    /* line 31, ../sass/components/misc/_container.scss */
-    .l-region--bar .block__content a {
-      color: #a6a6a6; }
-      /* line 33, ../sass/components/misc/_container.scss */
-      .l-region--bar .block__content a:hover {
-        color: silver; }
-    /* line 37, ../sass/components/misc/_container.scss */
-    .l-region--bar .block__content span {
-      margin: 8px; }
-
-/* line 44, ../sass/components/misc/_container.scss */
-.l-region--footer a {
-  color: #666666; }
-
-/* line 50, ../sass/components/misc/_container.scss */
-.l-region--link a {
-  color: #a6a6a6; }
-  /* line 52, ../sass/components/misc/_container.scss */
-  .l-region--link a:visited {
-    color: #a6a6a6; }
-  /* line 55, ../sass/components/misc/_container.scss */
-  .l-region--link a:hover {
-    color: #cccccc; }
-/* line 59, ../sass/components/misc/_container.scss */
-.l-region--link span {
-  margin: 8px; }
 
 /*# sourceMappingURL=gxnulib.no-query.css.map */

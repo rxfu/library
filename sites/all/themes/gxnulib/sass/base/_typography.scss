@@ -118,7 +118,7 @@ mark,
  * $FOOTERS
  */
 footer,
-.l-footer {
+.footer {
     padding: $vert-spacing-unit 0;
     
     background: $dark-grey;
@@ -126,4 +126,28 @@ footer,
     text-align: center;
     color: $light-grey;
     @include font-size(12px);
+    
+    a {
+        color: $light-grey;
+    }
+}
+
+/**
+ * $BARS
+ */
+.bar {
+    padding: 0.1em 0.5em;
+    
+    background: $dark-grey;
+    
+    text-align: right;
+    color: $lighter-grey;
+    @include font-size(12px);
+    
+    a {
+        color: $lighter-grey;
+        &:hover {
+            color: $silver;
+        }
+    }
 }

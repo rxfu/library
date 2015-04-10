@@ -54,7 +54,7 @@
   @extend .l-constrained;
 }
 
-@include breakpoint($tab, true) {
+@include breakpoint($tablet, true) {
   .l-constrained {
     width: 90%;
   }
@@ -84,7 +84,7 @@
   }
 }
 
-@include breakpoint($desk, true) {
+@include breakpoint($desktop, true) {
   .l-constrained {
     width: 80%;
   }

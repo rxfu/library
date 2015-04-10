@@ -4,11 +4,15 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Apr 9, 2015, 4:44:56 PM
+    Created on : Apr 10, 2015, 9:29:25 AM
     Author     : Stephen
 */
 
-.l-branding {
+/**
+ * $SITE-BRANDINGS
+ */
+.site-branding {
     padding: $vert-spacing-unit 0;
     margin: 0 auto;
+    @include clearfix;
 }

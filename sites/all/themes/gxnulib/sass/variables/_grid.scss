@@ -22,8 +22,19 @@ $container-style: fluid;
 $container-width: 1200px;
 
 // Susy Media Layouts
-$tab: 8; // At min width 44em use 12 columns.
-$table-breakpoint: 44em, $tab;
+$tablet: 8; // At min width 44em use 12 columns.
+$tablet-breakpoint: 44em, $tablet;
 
-$desk: 16; // At 70em use 16 columns.
-$desk-breakpoint: 60em, $desk;
+$desktop: 16; // At 70em use 16 columns.
+$desktop-breakpoint: 60em, $desktop;
+
+// Susy
+$susy: (
+    columns: $total-columns,
+    gutters: $horz-spacing-unit / $column-width,
+    column-width: $column-width,
+    
+    container: $container-width,
+    math: $container-style,
+    global-box-sizing: border-box,
+)

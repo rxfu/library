@@ -1,5 +1,5 @@
 <div class="l-page"<?php print $attributes; ?>>
-  <?php print render($page['bar']); ?>
+  <div class="bar"><?php print render($page['bar']); ?></div>
   <header class="l-header" role="banner">
     <div class="l-branding site-branding">
       <?php if ($logo): ?>
@@ -45,7 +45,7 @@
     <?php print render($page['express']); ?>
   </div>
 
-  <footer class="l-footer" role="contentinfo">
+  <footer class="l-footer footer" role="contentinfo">
     <?php print render($page['link']); ?>
     <?php print render($page['footer']); ?>
   </footer>
