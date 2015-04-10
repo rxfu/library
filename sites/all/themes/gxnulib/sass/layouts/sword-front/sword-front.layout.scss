@@ -10,26 +10,26 @@
 // Globbing from within sub-folders only works with relative paths.
 @import "../../variables/**/*";
 
-.l-contrained {
+.l-page {
     @include container;
     @include show-grid(overlay);
+    
+    @include susy-breakpoint($tablet-breakpoint) {
+        @include container($tablet);
+    }
+    
+    @include susy-breakpoint($desktop-breakpoint) {
+        @include container($desktop);
+    }
 }
 
 /* Bar */
-.l-region--bar {
-    @include span-columns(4 omega);
-    
+.l-region--bar {    
     p {
         margin: 0;
     }
     .block__content {
         text-align: right;
-        a {
-            color: $lighter-grey;
-            &:hover {
-                color: silver;
-            }
-        }
         span {
             margin: 8px;
         }

@@ -25,16 +25,19 @@ $container-width: 1200px;
 $tablet: 8; // At min width 44em use 12 columns.
 $tablet-breakpoint: 44em, $tablet;
 
-$desktop: 16; // At 70em use 16 columns.
+$desktop: 16; // At min width 60em use 16 columns.
 $desktop-breakpoint: 60em, $desktop;
 
 // Susy
 $susy: (
     columns: $total-columns,
-    gutters: $horz-spacing-unit / $column-width,
-    column-width: $column-width,
+    gutters: $gutter-width / $column-width,
     
-    container: $container-width,
     math: $container-style,
-    global-box-sizing: border-box,
-)
+    debug: (
+        image: show,
+    ),
+    use-custom: (
+        box-sizing: false,
+    ),
+);

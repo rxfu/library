@@ -4,16 +4,11 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Apr 10, 2015, 9:29:25 AM
+    Created on : Apr 10, 2015, 9:44:24 PM
     Author     : Stephen
 */
 
-/**
- * $SITE-BRANDINGS
- */
-.site-branding {
-    padding: $vert-spacing-unit 0;
-    text-align: center;
-    margin: 0 auto;
-    @include clearfix;
+@mixin box-sizing($value) {
+    -moz-box-sizing: $value;
+    box-sizing: $value;
 }
