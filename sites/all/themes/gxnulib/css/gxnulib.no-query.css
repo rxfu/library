@@ -233,6 +233,111 @@ footer,
     .bar a:hover {
       color: #cccccc; }
 
+/* line 1, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .nav li.dropdown > .dropdown-toggle .caret, .tb-megamenu .nav li.dropdown > .dropdown-toggle:hover .caret {
+  border-top-color: #000000;
+  border-bottom-color: #000000; }
+
+/* line 6, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .dropdown-menu {
+  background-color: #cccccc;
+  border-color: #ffffff;
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+/* line 12, ../sass/components/menus/_navigation.scss */
+.tb-megamenu {
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc; }
+  /* line 17, ../sass/components/menus/_navigation.scss */
+  .tb-megamenu .nav > li > a {
+    color: #000000;
+    border-color: #ffffff;
+    font-size: 16px;
+    font-size: 1.14286rem; }
+
+/* line 36, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
+.tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: #fff;
+  border-right-color: #fff;
+  color: #9a2525; }
+
+/* line 43, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .nav > li.dropdown.open.active > a:hover,
+.tb-megamenu .nav > li.dropdown.open.active > a:focus {
+  background-color: #ddd;
+  border-right-color: #fff;
+  color: #9a2525; }
+
+/* line 50, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .nav > li > a:focus,
+.tb-megamenu .nav > li > a:hover {
+  background-color: #ddd;
+  border-color: #fff;
+  color: #9a2525;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+/* line 60, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
+  background-color: #ddd;
+  border-color: #fff;
+  color: #9a2525;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+/* line 69, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .nav li.dropdown.open > .dropdown-toggle .caret,
+.tb-megamenu .nav li.dropdown.open > .dropdown-toggle:hover .caret {
+  border-bottom-color: #000;
+  border-top-color: #000; }
+
+/* line 75, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .dropdown-menu li > a:hover,
+.tb-megamenu .dropdown-menu li > a:focus,
+.tb-megamenu .dropdown-submenu:hover > a {
+  color: #9a2525; }
+
+/* line 81, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .nav > .active > a,
+.tb-megamenu .nav > .active > a:hover,
+.tb-megamenu .nav > .active > a:focus {
+  color: #9a2525;
+  text-shadow: none;
+  background-color: #fff;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none; }
+
+/* line 94, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .block-view-demo .views-field-field-image img {
+  border: 1px solid #eee; }
+
+/* line 98, ../sass/components/menus/_navigation.scss */
+.tb-megamenu .block-view-demo .item-list ul li {
+  border-bottom: 1px solid #eee; }
+
+@media (max-width: 979px) {
+  /* line 103, ../sass/components/menus/_navigation.scss */
+  .tb-megamenu {
+    background-color: inherit; }
+
+  /* line 106, ../sass/components/menus/_navigation.scss */
+  .tb-megamenu .nav-collapse .nav > li > a:hover,
+  .tb-megamenu .nav-collapse .nav > li > a:focus {
+    color: #9a2525; }
+
+  /* line 110, ../sass/components/menus/_navigation.scss */
+  .tb-megamenu .nav-collapse .nav > li.active > a:hover,
+  .tb-megamenu .nav-collapse .nav > li.active > a:focus {
+    background-color: #fff;
+    color: #9a2525; } }
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates

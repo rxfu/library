@@ -24,7 +24,7 @@
 
 @include susy-breakpoint($desktop-breakpoint) {
     .l-page {
-        @include container($tablet);
+        @include container($desktop);
         @include show-grid(overlay);
     }
     
