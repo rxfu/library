@@ -13,13 +13,32 @@
 .l-page {
     @include container;
     @include show-grid(overlay);
-    
-    @include susy-breakpoint($tablet-breakpoint) {
+}
+
+@include susy-breakpoint($tablet-breakpoint) {
+    .l-page {
         @include container($tablet);
+        @include show-grid(overlay);
+    }
+}
+
+@include susy-breakpoint($desktop-breakpoint) {
+    .l-page {
+        @include container($tablet);
+        @include show-grid(overlay);
     }
     
-    @include susy-breakpoint($desktop-breakpoint) {
-        @include container($desktop);
+    .l-constrained {
+        @include container;
+    }
+    
+    .l-branding {
+        @include span(8 of 16 at 1);
+    }
+    
+    .l-navigation {
+        @include span(8 of 16 at 9);
+        margin-top: 23px + $vert-spacing-unit * 2;
     }
 }
 

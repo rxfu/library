@@ -248,8 +248,7 @@ and open the template in the editor.
 /* line 14, ../sass/components/misc/_site-branding.scss */
 .site-branding {
   padding: 20px 0;
-  text-align: center;
-  margin: 0 auto; }
+  text-align: center; }
   /* line 13, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/toolkit-2.9.0/stylesheets/toolkit/_clearfix.scss */
   .site-branding:after {
     content: "";

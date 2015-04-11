@@ -1,28 +1,31 @@
 <div class="l-page"<?php print $attributes; ?>>
   <div class="bar"><?php print render($page['bar']); ?></div>
   <header class="l-header" role="banner">
-    <div class="l-branding site-branding">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-branding__logo">
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php elseif ($site_name || $site_slogan): ?>
-        <?php if ($site_name): ?>
-          <a href="<?php print $site_name; ?>" title="<?php print t('Home') ?>" rel="home" class="site-branding__name">
-            <span><?php print $site_name; ?></span>
+    <div class="l-constrained">
+      <div class="l-branding site-branding">
+        <?php if ($logo): ?>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-branding__logo">
+              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
           </a>
+        <?php elseif ($site_name || $site_slogan): ?>
+          <?php if ($site_name): ?>
+            <a href="<?php print $site_name; ?>" title="<?php print t('Home') ?>" rel="home" class="site-branding__name">
+              <span><?php print $site_name; ?></span>
+            </a>
+          <?php endif; ?>
+
+          <?php if ($site_slogan): ?>
+            <h2 class="site-branding__slogan"><?php print $site_slogan; ?></h2>
+          <?php endif; ?>
         <?php endif; ?>
 
-        <?php if ($site_slogan): ?>
-          <h2 class="site-branding__slogan"><?php print $site_slogan; ?></h2>
-        <?php endif; ?>
-      <?php endif; ?>
-
-      <?php print render($page['branding']); ?>
+        <?php print render($page['branding']); ?>
+      </div>
+      <div class="l-navigation">
+        <?php print render($page['navigation']); ?>
+      </div>
     </div>
-
     <?php print render($page['header']); ?>
-    <?php print render($page['navigation']); ?>
   </header>
 
   <div class="l-main">
