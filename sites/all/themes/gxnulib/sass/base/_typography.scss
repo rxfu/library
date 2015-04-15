@@ -120,6 +120,7 @@ mark,
 footer,
 .footer {
     padding: $vert-spacing-unit 0;
+    margin: 0 auto;
     
     background: $dark-grey;
     
@@ -148,6 +149,20 @@ footer,
         color: $lighter-grey;
         &:hover {
             color: $silver;
+        }
+    }
+}
+
+/**
+ * $EXPRESSES
+ */
+.l-express {
+    padding: $vert-spacing-unit 0;
+    
+    a {
+        color: $grey;
+        &:hover {
+            color: $red;
         }
     }
 }

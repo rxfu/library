@@ -9,6 +9,8 @@
 
 // Globbing from within sub-folders only works with relative paths.
 @import "../../variables/**/*";
+@import "../../abstractions/**/*";
+@import "../../base/**/*";
 
 .l-page {
     @include container;
@@ -33,12 +35,17 @@
     }
     
     .l-branding {
-        @include span(8 of 16 at 1);
+        @include span(8 of $desktop at 1);
     }
     
     .l-navigation {
-        @include span(8 of 16 at 9);
+        @include span(8 of $desktop at 9);
         margin-top: 23px + $vert-spacing-unit * 2;
+    }
+    
+    .l-express {
+        width: span(12 of $desktop);
+        margin: 0 auto;
     }
 }
 
@@ -55,8 +62,31 @@
     }
 }
 
-/* Friendly links */
-.l-region--link {
+/* Quick links*/
+.l-region--express {
+    .block__title {
+        @extend .delta;
+        border-bottom: 1px dotted $silver;
+        padding-bottom: 0.5em;
+    }
+    .block__content {
+        .field__item {
+            display: inline-block;
+            padding: 0.8em 0.5em;
+            width: 12em;
+            
+            &:before {
+                font-family: "FontAwesome";
+                content: "\f0da";
+                padding-right: 0.5em;
+                color: $red;
+            }
+        }
+    }
+}
+
+/* Useful links */
+.l-region--link {    
     a {
         color: $lighter-grey;
         &:visited {
@@ -66,7 +96,10 @@
             color: $silver;
         }        
     }
-    span {
-        margin: 8px;
+    .block__content {
+        .field__item {
+            display: inline-block;
+            margin: 8px;
+        }
     }
 }

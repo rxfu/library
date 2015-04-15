@@ -44,12 +44,14 @@
     <?php print render($page['postscript_second']); ?>
     <?php print render($page['postscript_third']); ?>
     <?php print render($page['postscript_fourth']); ?>
-      
-    <?php print render($page['express']); ?>
+    
+    <div class="l-constrained">
+      <div class="l-express"><?php print render($page['express']); ?></div>
+    </div>
   </div>
 
   <footer class="l-footer footer" role="contentinfo">
-    <?php print render($page['link']); ?>
-    <?php print render($page['footer']); ?>
+    <div class="l-useful-link"><?php print render($page['link']); ?></div>
+    <div class="l-copyright"><?php print render($page['footer']); ?></div>
   </footer>
 </div>

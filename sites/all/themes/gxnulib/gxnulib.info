@@ -12,6 +12,7 @@ stylesheets[all][] = css/gxnulib.normalize.css
 stylesheets[all][] = css/gxnulib.hacks.css
 stylesheets[all][] = css/gxnulib.styles.css
 stylesheets[all][] = css/gxnulib.no-query.css
+stylesheets[all][] = css/font-awesome/css/font-awesome.min.css
 
 ; ========================================
 ; Scripts

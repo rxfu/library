@@ -4,112 +4,121 @@
 }
 
 %menu {
-  background-color: $silver;
+  background-color: $smoke;
+  border-right-color: $white;
+  color: $red;
+  @include box-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+}
+
+%submenu {
+  background-color: $smoke;
   border-color: $white;
   @include box-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
 }
 
 .tb-megamenu {
   background-color: $white;
-  border-bottom: 1px solid $silver;
+  border-bottom: 1px solid $smoke;
+  
+  .nav-collapse .nav > li > a {
+    &:hover,
+    &:focus {
+      color: $red;
+    }
+  }
+  
+  .nav-collapse .nav > li.active > a {
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $red;
+    }
+  }
   
   .nav {
     & > li > a {
       color: $black;
       border-color: $white;
       @include font-size(16px);
+      
+      &:focus,
+      &:hover {
+        @extend %menu;
+      }
     }
     
-    li.dropdown > .dropdown-toggle {
-      & .caret,
-      &:hover .caret {
-          @extend %caret;
+    li.dropdown {
+      & > .dropdown-toggle {
+        &,
+        &:hover {
+          .caret {
+            @extend %caret;
+          }
+        }
       }
+      
+      &.active > .dropdown-toggle {
+          @extend %menu;
+      }
+      
+      &.open {
+        & > .dropdown-toggle {
+          @extend %menu;
+          
+          &,
+          &:hover {
+            .caret {
+              @extend %caret;
+            }
+          }
+        }
+        &.active {
+          & > .dropdown-toggle,
+          & > a:hover,
+          & > a:focus {
+            @extend %menu;
+          }
+        }
+      }
+    }
+    
+    .active > a {
+        &,
+        &:hover,
+        &:focus {
+            color: $red;
+            text-shadow: none;
+            background-color: #fff;
+            background-image: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            outline: none;
+        }
     }
   }
   
   .dropdown-menu {
-    @extend %menu;
+    @extend %submenu;
+    
+    li > a {
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
   }
-}
-
-.tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
-.tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #fff;  
-  border-right-color: #fff;
-  color: #9a2525;
-}
-
-.tb-megamenu .nav > li.dropdown.open.active > a:hover,
-.tb-megamenu .nav > li.dropdown.open.active > a:focus {
-  background-color: #ddd;
-  border-right-color: #fff;
-  color: #9a2525;
-}
-
-.tb-megamenu .nav > li > a:focus, 
-.tb-megamenu .nav > li > a:hover {
-  background-color: #ddd;
-  border-color: #fff;
-  color: #9a2525;
-  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-}
-
-.tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
-  background-color: #ddd;
-  border-color: #fff;
-  color: #9a2525;
-  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-}
-
-.tb-megamenu .nav li.dropdown.open > .dropdown-toggle .caret,
-.tb-megamenu .nav li.dropdown.open > .dropdown-toggle:hover .caret {
-  border-bottom-color: #000;
-  border-top-color: #000;
-}
-
-.tb-megamenu .dropdown-menu li > a:hover, 
-.tb-megamenu .dropdown-menu li > a:focus, 
-.tb-megamenu .dropdown-submenu:hover > a {
-  color: #9a2525;
-}
-
-.tb-megamenu .nav > .active > a,
-.tb-megamenu .nav > .active > a:hover,
-.tb-megamenu .nav > .active > a:focus {
-  color: #9a2525;
-  text-shadow: none;
-  background-color: #fff;
-  background-image: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  outline: none;
-}
-
-.tb-megamenu .block-view-demo .views-field-field-image img {
-  border: 1px solid #eee;
-}
-
-.tb-megamenu .block-view-demo .item-list ul li {
-  border-bottom: 1px solid #eee;
-}
-
-@media (max-width: 979px) {
-  .tb-megamenu {
-  background-color: inherit;
-}
-.tb-megamenu .nav-collapse .nav > li > a:hover,
-.tb-megamenu .nav-collapse .nav > li > a:focus {    
-	color: #9a2525;
+  
+  .dropdown-submenu:hover > a {
+    color: $red;
   }
-.tb-megamenu .nav-collapse .nav > li.active > a:hover, 
-.tb-megamenu .nav-collapse .nav > li.active > a:focus {
-  background-color: #fff;
-  color: #9a2525;
-}
+  
+  .block-view-demo {
+      .views-field-field-image img {
+          border: 1px solid #eee;
+      }
+      .item-list ul li {
+          border-bottom: 1px solid #eee;
+      }
+  }
 }
