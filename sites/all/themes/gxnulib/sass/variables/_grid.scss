@@ -8,33 +8,20 @@ and open the template in the editor.
     Author     : Stephen
 */
 
+@import "breakpoint";
+@import "singularitygs";
+
 // Set consistent vertical and horizontal spacing units.
 $vert-spacing-unit: 20px;
 $horz-spacing-unit: 1em;
 
-// Define Susy grid variables mobile first.
-$total-columns: 6;
-$column-width: 4em;
-$gutter-width: $horz-spacing-unit;
-$grid-padding: 5px;
+$tablet: 44em;
+$desktop: 70em;
 
-$container-style: fluid;
-$container-width: 1200px;
+@include add-grid(4);
+@include add-grid(12 at $tablet);
+@include add-grid(16 at $desktop);
 
-// Susy Media Layouts
-$tablet: 8; // At min width 44em use 12 columns.
-$tablet-breakpoint: 44em, $tablet;
+@include add-gutter(1/3);
 
-$desktop: 16; // At min width 60em use 16 columns.
-$desktop-breakpoint: 60em, $desktop;
-
-// Susy
-$susy: (
-    columns: $total-columns,
-    gutters: $gutter-width / $column-width,
-    
-    math: $container-style,
-    use-custom: (
-        box-sizing: false,
-    ),
-);
+@include sgs-change('debug', true);

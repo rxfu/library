@@ -7,8 +7,3 @@ and open the template in the editor.
     Created on : Apr 10, 2015, 9:44:24 PM
     Author     : Stephen
 */
-
-@mixin box-sizing($value) {
-    -moz-box-sizing: $value;
-    box-sizing: $value;
-}

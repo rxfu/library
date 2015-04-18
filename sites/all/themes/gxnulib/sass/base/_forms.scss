@@ -1,0 +1,45 @@
+select,
+input,
+textarea {
+    @include box-sizing(border-box);
+    padding: 0.5em $vert-spacing-unit;
+    margin: $vert-spacing-unit 0.5em;
+    border: 1px solid $smoke;
+    @include transition(all 0.30s ease-in-out);
+    @include border-radius(4px);
+    outline: none;
+    
+    &:focus {
+        @include box-shadow(0 0 8px rgba($red, 1));
+    }
+}
+
+fieldset {
+    margin-left: 0;
+    margin-right: 0;
+    padding: ($vert-spacing-unit / 2) $horz-spacing-unit $vert-spacing-unit $horz-spacing-unit;
+
+    border-color: $light-grey;
+}
+
+legend {
+    @extend .delta;
+    padding: 0 0.8em;
+    color: $light-grey;
+}
+
+input[type="submit"], input[type="button"]{
+    background: $red;
+    padding: 0.5em 1em;
+    border: none;
+    color: $white;
+    
+    &:hover {
+        background: $dark-red;
+        @include box-shadow(none);
+    }
+}
+
+input[type="checkbox"], input[type="radio"] {
+    padding: $vert-spacing-unit 0.5em;
+}

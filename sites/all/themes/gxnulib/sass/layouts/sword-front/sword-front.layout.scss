@@ -5,48 +5,14 @@
  ******************************************************************************/
 @import "compass";
 @import "breakpoint";
-@import "susy";
+@import "singularitygs";
 
 // Globbing from within sub-folders only works with relative paths.
 @import "../../variables/**/*";
-@import "../../abstractions/**/*";
-@import "../../base/**/*";
 
 .l-page {
-    @include container;
-    @include show-grid(overlay);
-}
-
-@include susy-breakpoint($tablet-breakpoint) {
-    .l-page {
-        @include container($tablet);
-        @include show-grid(overlay);
-    }
-}
-
-@include susy-breakpoint($desktop-breakpoint) {
-    .l-page {
-        @include container($desktop);
-        @include show-grid(overlay);
-    }
-    
-    .l-constrained {
-        @include container;
-    }
-    
-    .l-branding {
-        @include span(8 of $desktop at 1);
-    }
-    
-    .l-navigation {
-        @include span(8 of $desktop at 9);
-        margin-top: 23px + $vert-spacing-unit * 2;
-    }
-    
-    .l-express {
-        width: span(12 of $desktop);
-        margin: 0 auto;
-    }
+    @include background-grid();
+    @include pie-clearfix();
 }
 
 /* Bar */
@@ -65,7 +31,7 @@
 /* Quick links*/
 .l-region--express {
     .block__title {
-        @extend .delta;
+        font-size: 18px;
         border-bottom: 1px dotted $silver;
         padding-bottom: 0.5em;
     }

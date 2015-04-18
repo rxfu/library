@@ -63,7 +63,8 @@ and open the template in the editor.
 /* Header */
 /* line 63, ../../../sass/layouts/sword/sword.layout.scss */
 .l-branding {
-  width: 23.72881%;
+  -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 23.40426%;
   float: left;
   margin-right: -100%;
   margin-left: 0;
@@ -71,15 +72,17 @@ and open the template in the editor.
 
 /* line 66, ../../../sass/layouts/sword/sword.layout.scss */
 .l-region--navigation {
-  width: 49.15254%;
+  -sgs-span-settings: ("span": 6, "location": 4, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 48.93617%;
   float: left;
   margin-right: -100%;
-  margin-left: 25.42373%;
+  margin-left: 25.53191%;
   clear: none; }
 
 /* line 69, ../../../sass/layouts/sword/sword.layout.scss */
 .l-region--header {
-  width: 23.72881%;
+  -sgs-span-settings: ("span": 3, "location": 10, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 23.40426%;
   float: right;
   margin-left: 0;
   margin-right: 0;
@@ -89,7 +92,8 @@ and open the template in the editor.
 /* line 76, ../../../sass/layouts/sword/sword.layout.scss */
 .has-two-sidebars .l-content,
 .has-one-sidebar .l-content {
-  width: 66.10169%;
+  -sgs-span-settings: ("span": 8, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 65.95745%;
   float: left;
   margin-right: -100%;
   margin-left: 0;
@@ -99,7 +103,8 @@ and open the template in the editor.
 .has-two-sidebars .l-region--sidebar-second,
 .has-one-sidebar .l-region--sidebar-first,
 .has-one-sidebar .l-region--sidebar-second {
-  width: 32.20339%;
+  -sgs-span-settings: ("span": 4, "location": 9, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 31.91489%;
   float: right;
   margin-left: 0;
   margin-right: 0;
@@ -113,23 +118,26 @@ and open the template in the editor.
 /* Sidebars */
 /* line 94, ../../../sass/layouts/sword/sword.layout.scss */
 .has-one-sidebar .l-content {
-  width: 66.10169%;
+  -sgs-span-settings: ("span": 8, "location": 1, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 49.20635%;
   float: left;
   margin-right: -100%;
   margin-left: 0;
   clear: none; }
 /* line 97, ../../../sass/layouts/sword/sword.layout.scss */
 .has-one-sidebar .l-region--sidebar-first {
-  width: 32.20339%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
+  -sgs-span-settings: ("span": 4, "location": 9, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 23.80952%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 50.79365%;
   clear: none;
   clear: none; }
 
 /* line 103, ../../../sass/layouts/sword/sword.layout.scss */
 .has-two-sidebars .l-content {
-  width: 49.15254%;
+  -sgs-span-settings: ("span": 6, "location": 1, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 36.50794%;
   float: left;
   margin-right: -100%;
   margin-left: 0;
@@ -137,18 +145,20 @@ and open the template in the editor.
 /* line 106, ../../../sass/layouts/sword/sword.layout.scss */
 .has-two-sidebars .l-region--sidebar-first,
 .has-two-sidebars .l-region--sidebar-second {
-  width: 23.72881%;
+  -sgs-span-settings: ("span": 3, "location": 7, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 17.46032%;
   float: left;
   margin-right: -100%;
-  margin-left: 50.84746%;
+  margin-left: 38.09524%;
   clear: none;
   clear: none; }
 /* line 111, ../../../sass/layouts/sword/sword.layout.scss */
 .has-two-sidebars .l-region--sidebar-second {
-  width: 23.72881%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
+  -sgs-span-settings: ("span": 3, "location": 10, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 17.46032%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 57.14286%;
   clear: none; }
 
 /*# sourceMappingURL=sword.layout.no-query.css.map */

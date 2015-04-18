@@ -12,388 +12,47 @@ and open the template in the editor.
     Created on : Apr 1, 2015, 10:51:36 AM
     Author     : Stephen
 */
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Apr 10, 2015, 9:44:24 PM
-    Author     : Stephen
-*/
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Apr 2, 2015, 3:49:40 PM
-    Author     : Stephen
-*/
-/* line 1, ../../../sass/base/_media.scss */
-img, media {
-  max-width: 100%; }
-
-/**
- * $FONT-FACE
- */
-/* line 106, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
-html {
-  font-size: 87.5%;
-  line-height: 1.42857em; }
-
-/**
- * $BASE-TYPOGRAPHY
- */
-/* line 9, ../../../sass/base/_typography.scss */
-html {
-  font-family: "Microsoft Yahei", Sumsun, Arial;
-  color: #333333; }
-
-/**
- * $LINKS
- */
-/* line 17, ../../../sass/base/_typography.scss */
-a {
-  color: #9a2525;
-  text-decoration: none; }
-  /* line 18, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-  a:visited {
-    color: #852020; }
-  /* line 21, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-  a:focus {
-    color: #9a2525; }
-  /* line 24, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-  a:hover {
-    color: #af2a2a; }
-  /* line 27, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-  a:active {
-    color: #9a2525; }
-
-/* line 21, ../../../sass/base/_typography.scss */
-a:hover {
-  text-decoration: underline; }
-
-/**
- * $HEADINGS
- */
-/* line 28, ../../../sass/base/_typography.scss */
-h1, .alpha,
-h2, .beta,
-h3, .gamma,
-h4, .delta, .l-region--express .block__title,
-h5, .epsilon,
-h6, .zeta {
-  margin-top: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0.28571em;
-  color: #9a2525;
-  text-transform: uppercase; }
-  /* line 38, ../../../sass/base/_typography.scss */
-  h1 a,
-  h1 a:visited, .alpha a,
-  .alpha a:visited,
-  h2 a,
-  h2 a:visited, .beta a,
-  .beta a:visited,
-  h3 a,
-  h3 a:visited, .gamma a,
-  .gamma a:visited,
-  h4 a,
-  h4 a:visited, .delta a, .l-region--express .block__title a,
-  .delta a:visited,
-  .l-region--express .block__title a:visited,
-  h5 a,
-  h5 a:visited, .epsilon a,
-  .epsilon a:visited,
-  h6 a,
-  h6 a:visited, .zeta a,
-  .zeta a:visited {
-    color: inherit;
-    text-decoration: none; }
-
-/* line 45, ../../../sass/base/_typography.scss */
-h1, .alpha {
-  font-size: 55px;
-  font-size: 3.92857rem;
-  font-weight: 700; }
-
-/* line 49, ../../../sass/base/_typography.scss */
-h2, .beta {
-  font-size: 34px;
-  font-size: 2.42857rem;
-  font-weight: 700; }
-
-/* line 53, ../../../sass/base/_typography.scss */
-h3, .gamma {
-  font-size: 21px;
-  font-size: 1.5rem; }
-
-/* line 56, ../../../sass/base/_typography.scss */
-h4, .delta, .l-region--express .block__title {
-  font-size: 18px;
-  font-size: 1.28571rem; }
-
-/* line 59, ../../../sass/base/_typography.scss */
-h5, .epsilon {
-  font-size: 16px;
-  font-size: 1.14286rem; }
-
-/* line 62, ../../../sass/base/_typography.scss */
-h6, .zeta {
-  font-size: 16px;
-  font-size: 1.14286rem; }
-
-/**
- * $PARAGRAPHS
- */
-/* line 69, ../../../sass/base/_typography.scss */
-p,
-blockquote {
-  margin: 0;
-  margin-top: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.42857em; }
-
-/* line 74, ../../../sass/base/_typography.scss */
-p + img {
-  float: left;
-  margin-right: 1em; }
-
-/**
- * $QUOTES
- */
-/* line 82, ../../../sass/base/_typography.scss */
-blockquote {
-  margin-top: 0em;
-  padding-top: 1.42857em;
-  padding-bottom: 1.42857em;
-  margin-bottom: 1.42857em;
-  padding: 0, 1.5em;
-  border-width: 0.07143em;
-  border-style: solid;
-  padding: 1.35714em;
-  border-left-width: 0.71429em;
-  border-left-style: solid;
-  padding-left: 0.71429em;
-  font-style: italic;
-  color: #852020; }
-  /* line 92, ../../../sass/base/_typography.scss */
-  blockquote p {
-    margin: 0; }
-
-/* line 97, ../../../sass/base/_typography.scss */
-q {
-  font-style: italic; }
-
-/**
- * $MARKS
- */
-/* line 104, ../../../sass/base/_typography.scss */
-mark,
-.marker {
-  padding: 0.1em 0.5em;
-  background: #fbd0d6;
-  color: #ffffff;
-  font-size: 12px;
-  font-size: 0.85714rem;
-  text-transform: capitalize;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px; }
-
-/**
- * $FOOTERS
- */
-/* line 120, ../../../sass/base/_typography.scss */
-footer,
-.footer {
-  padding: 20px 0;
-  margin: 0 auto;
-  background: #262626;
-  text-align: center;
-  color: #666666;
-  font-size: 12px;
-  font-size: 0.85714rem; }
-  /* line 131, ../../../sass/base/_typography.scss */
-  footer a,
-  .footer a {
-    color: #666666; }
-
-/**
- * $BARS
- */
-/* line 139, ../../../sass/base/_typography.scss */
-.bar {
-  padding: 0.1em 0.5em;
-  background: #262626;
-  text-align: right;
-  color: #a6a6a6;
-  font-size: 12px;
-  font-size: 0.85714rem; }
-  /* line 148, ../../../sass/base/_typography.scss */
-  .bar a {
-    color: #a6a6a6; }
-    /* line 150, ../../../sass/base/_typography.scss */
-    .bar a:hover {
-      color: #cccccc; }
-
-/**
- * $EXPRESSES
- */
-/* line 159, ../../../sass/base/_typography.scss */
-.l-express {
-  padding: 20px 0; }
-  /* line 162, ../../../sass/base/_typography.scss */
-  .l-express a {
-    color: #333333; }
-    /* line 164, ../../../sass/base/_typography.scss */
-    .l-express a:hover {
-      color: #9a2525; }
-
-/* line 15, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-page {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  /* line 12, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2220%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2226%2E66667%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2246%2E66667%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2253%2E33333%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2273%2E33333%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2280%2E0%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E");
+  *zoom: 1; }
+  @media (min-width: 704px) {
+    /* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    .l-page {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%226%2E38298%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%228%2E51064%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2214%2E89362%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2217%2E02128%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2223%2E40426%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2225%2E53191%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2231%2E91489%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2234%2E04255%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2240%2E42553%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2242%2E55319%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2248%2E93617%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2251%2E06383%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2257%2E44681%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2259%2E57447%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2265%2E95745%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2268%2E08511%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2274%2E46809%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2276%2E59574%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2282%2E97872%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2285%2E10638%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2291%2E48936%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2293%2E61702%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); } }
+  @media (min-width: 1120px) {
+    /* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    .l-page {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%224%2E7619%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%226%2E34921%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2211%2E11111%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2212%2E69841%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2217%2E46032%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2219%2E04762%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2223%2E80952%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2225%2E39683%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2230%2E15873%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2231%2E74603%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2236%2E50794%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2238%2E09524%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2242%2E85714%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2244%2E44444%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2249%2E20635%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2250%2E79365%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2255%2E55556%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2257%2E14286%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2261%2E90476%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2263%2E49206%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2268%2E25397%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2269%2E84127%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2274%2E60317%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2276%2E19048%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2280%2E95238%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2282%2E53968%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2287%2E30159%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2288%2E88889%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2293%2E65079%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2295%2E2381%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); } }
+  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .l-page:after {
-    content: " ";
-    display: block;
+    content: "";
+    display: table;
     clear: both; }
-  /* line 65, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
-  head {
-    display: block;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: 999;
-    color: #333;
-    background: rgba(255, 255, 255, 0.25); }
-  /* line 66, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
-  head:before {
-    content: "|||";
-    display: block;
-    padding: 5px 10px;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: bold; }
-  /* line 67, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
-  head:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: red; }
-  /* line 71, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
-  head:hover ~ .l-page, head:hover ~ body .l-page {
-    position: relative; }
-    /* line 74, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
-    head:hover ~ .l-page:before, head:hover ~ body .l-page:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      content: " ";
-      z-index: 998; }
 
-@media (min-width: 44em), (min-width: 8) {
-  /* line 21, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-page {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto; }
-    /* line 12, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-    .l-page:after {
-      content: " ";
-      display: block;
-      clear: both; }
-    /* line 71, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
-    head:hover ~ .l-page, head:hover ~ body .l-page {
-      position: relative; }
-      /* line 74, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
-      head:hover ~ .l-page:before, head:hover ~ body .l-page:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        content: " ";
-        z-index: 998; } }
-@media (min-width: 60em), (min-width: 16) {
-  /* line 28, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-page {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto; }
-    /* line 12, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-    .l-page:after {
-      content: " ";
-      display: block;
-      clear: both; }
-    /* line 71, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
-    head:hover ~ .l-page, head:hover ~ body .l-page {
-      position: relative; }
-      /* line 74, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_background.scss */
-      head:hover ~ .l-page:before, head:hover ~ body .l-page:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        content: " ";
-        z-index: 998; }
-
-  /* line 33, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-constrained {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto; }
-    /* line 12, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-    .l-constrained:after {
-      content: " ";
-      display: block;
-      clear: both; }
-
-  /* line 37, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-branding {
-    width: 49.36709%;
-    float: left;
-    margin-right: 1.26582%; }
-
-  /* line 41, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-navigation {
-    width: 49.36709%;
-    float: right;
-    margin-right: 0;
-    margin-top: 63px; }
-
-  /* line 46, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-express {
-    width: 74.68354%;
-    margin: 0 auto; } }
 /* Bar */
-/* line 54, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 20, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--bar p {
   margin: 0; }
-/* line 57, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 23, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--bar .block__content {
   text-align: right; }
-  /* line 59, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 25, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--bar .block__content span {
     margin: 8px; }
 
 /* Quick links*/
-/* line 67, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 33, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--express .block__title {
+  font-size: 18px;
   border-bottom: 1px dotted #cccccc;
   padding-bottom: 0.5em; }
-/* line 73, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 39, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--express .block__content .field__item {
   display: inline-block;
   padding: 0.8em 0.5em;
   width: 12em; }
-  /* line 78, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 44, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--express .block__content .field__item:before {
     font-family: "FontAwesome";
     content: "\f0da";
@@ -401,16 +60,16 @@ footer,
     color: #9a2525; }
 
 /* Useful links */
-/* line 90, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 56, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--link a {
   color: #a6a6a6; }
-  /* line 92, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 58, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--link a:visited {
     color: #a6a6a6; }
-  /* line 95, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 61, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--link a:hover {
     color: #cccccc; }
-/* line 100, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 66, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--link .block__content .field__item {
   display: inline-block;
   margin: 8px; }
