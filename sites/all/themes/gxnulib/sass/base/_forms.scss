@@ -2,7 +2,7 @@ select,
 input,
 textarea {
     @include box-sizing(border-box);
-    padding: 0.5em $vert-spacing-unit;
+    padding: 0.5em;
     margin: $vert-spacing-unit 0.5em;
     border: 1px solid $smoke;
     @include transition(all 0.30s ease-in-out);

@@ -10,21 +10,51 @@
 // Globbing from within sub-folders only works with relative paths.
 @import "../../variables/**/*";
 
+* {
+    @include box-sizing("border-box");
+}
+
 .l-page {
     @include background-grid();
+}
+
+.l-constrained {
+    max-width: 1200px;
+    margin: 0 auto;
     @include pie-clearfix();
 }
 
-/* Bar */
-.l-region--bar {    
-    p {
-        margin: 0;
+.wrapper, .l-main, .l-useful-link, .l-copyright {
+    @extend .l-constrained;
+}
+
+.l-branding {
+    padding: $vert-spacing-unit 0;
+}
+
+@include breakpoint($desktop) {
+    .l-branding {
+        @include grid-span(8, 1);
     }
-    .block__content {
-        text-align: right;
-        span {
-            margin: 8px;
-        }
+
+    .l-region--navigation {
+        @include grid-span(8, 9);
+    }
+    
+    .l-region--search-tab {
+        @include grid-span(12, 1);
+    }
+    
+    .l-region--showcase {
+        @include grid-span(4, 13);
+    }
+    
+    .l-region--stacked-first {
+        @include grid-span(12, 1);
+    }
+    
+    .l-region--stacked-second {
+        @include grid-span(4, 13);
     }
 }
 
@@ -47,25 +77,6 @@
                 padding-right: 0.5em;
                 color: $red;
             }
-        }
-    }
-}
-
-/* Useful links */
-.l-region--link {    
-    a {
-        color: $lighter-grey;
-        &:visited {
-            color: $lighter-grey;
-        }
-        &:hover {
-            color: $silver;
-        }        
-    }
-    .block__content {
-        .field__item {
-            display: inline-block;
-            margin: 8px;
         }
     }
 }

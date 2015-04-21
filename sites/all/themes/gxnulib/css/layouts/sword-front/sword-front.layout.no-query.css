@@ -13,57 +13,46 @@ and open the template in the editor.
     Author     : Stephen
 */
 /* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 17, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-page {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2220%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2226%2E66667%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2246%2E66667%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2253%2E33333%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2273%2E33333%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2280%2E0%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2220%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2226%2E66667%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2246%2E66667%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2253%2E33333%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2273%2E33333%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2280%2E0%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); }
+
+/* line 21, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+.l-constrained, .wrapper, .l-main, .l-useful-link, .l-copyright {
+  max-width: 1200px;
+  margin: 0 auto;
   *zoom: 1; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-  .l-page:after {
+  .l-constrained:after, .wrapper:after, .l-main:after, .l-useful-link:after, .l-copyright:after {
     content: "";
     display: table;
     clear: both; }
 
-/* Bar */
-/* line 20, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--bar p {
-  margin: 0; }
-/* line 23, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--bar .block__content {
-  text-align: right; }
-  /* line 25, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-region--bar .block__content span {
-    margin: 8px; }
+/* line 31, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+.l-branding {
+  padding: 20px 0; }
 
 /* Quick links*/
-/* line 33, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 63, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--express .block__title {
   font-size: 18px;
   border-bottom: 1px dotted #cccccc;
   padding-bottom: 0.5em; }
-/* line 39, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 69, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-region--express .block__content .field__item {
   display: inline-block;
   padding: 0.8em 0.5em;
   width: 12em; }
-  /* line 44, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 74, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--express .block__content .field__item:before {
     font-family: "FontAwesome";
     content: "\f0da";
     padding-right: 0.5em;
     color: #9a2525; }
-
-/* Useful links */
-/* line 56, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--link a {
-  color: #a6a6a6; }
-  /* line 58, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-region--link a:visited {
-    color: #a6a6a6; }
-  /* line 61, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-region--link a:hover {
-    color: #cccccc; }
-/* line 66, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--link .block__content .field__item {
-  display: inline-block;
-  margin: 8px; }
 
 /*# sourceMappingURL=sword-front.layout.no-query.css.map */

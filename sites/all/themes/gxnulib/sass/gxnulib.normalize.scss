@@ -1,3 +1,7 @@
+// Import breakpoint and singularitygs
+@import "breakpoint";
+@import "singularitygs";
+
 // Import the legacy variables (relevant for controlling compass-normalize).
 @import "variables/**/*";
 

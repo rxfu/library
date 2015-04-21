@@ -1,4 +1,4 @@
-<div class="l-page"<?php print $attributes?>>
+<div class="l-page front-page"<?php print $attributes?>>
     <div class="l-bar"><?php print render($page['bar']); ?></div>
     <header class="l-header" role="banner">
         <div class="wrapper wrapper--branding">
@@ -20,18 +20,21 @@
                     <?php endif; ?>
                 </h2>
             </section>
-        </div>
-        <div class="wrapper wrapper--navigation">
             <?php print render($page['navigation']); ?>
         </div>
-        <div class="wrapper wrapper--hightlighted">
-            <?php print render($page['hightlighted']); ?>
+        <div class="wrapper wrapper--header">
+            <?php print render($page['header']); ?>
+            <?php print render($page['search_tab']); ?>
+            <?php print render($page['showcase']); ?>
         </div>
-        <?php print render($page['header']); ?>
+        <div class="wrapper wrapper--hightlighted">
+            <?php print render($page['highlighted']); ?>
+        </div>
     </header>
     <section class="l-main" id="main-content">
         <div class="l-content" role="main">
-            <?php print render($page['stacked']); ?>
+            <?php print render($page['stacked_first']); ?>
+            <?php print render($page['stacked_second']); ?>
         </div>
     </section>
     <footer class="l-footer" role="contentinfo">
