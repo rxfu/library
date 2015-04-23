@@ -25,13 +25,25 @@ and open the template in the editor.
     Created on : Apr 2, 2015, 3:49:40 PM
     Author     : Stephen
 */
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 23, 2015, 2:29:32 PM
+    Author     : Stephen
+*/
+/* line 11, ../sass/base/_elements.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /* line 1, ../sass/base/_forms.scss */
 select,
 input,
 textarea {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 0.5em;
   margin: 20px 0.5em;
   border: 1px solid #e6e6e6;
@@ -43,42 +55,48 @@ textarea {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   outline: none; }
-  /* line 12, ../sass/base/_forms.scss */
+  /* line 11, ../sass/base/_forms.scss */
   select:focus,
   input:focus,
   textarea:focus {
-    -moz-box-shadow: 0 0 8px #9a2525;
-    -webkit-box-shadow: 0 0 8px #9a2525;
-    box-shadow: 0 0 8px #9a2525; }
+    -moz-box-shadow: 0 0 6px #9a2525;
+    -webkit-box-shadow: 0 0 6px #9a2525;
+    box-shadow: 0 0 6px #9a2525; }
 
-/* line 17, ../sass/base/_forms.scss */
+/* line 16, ../sass/base/_forms.scss */
 fieldset {
   margin-left: 0;
   margin-right: 0;
   padding: 10px 1em 20px 1em;
   border-color: #666666; }
 
-/* line 25, ../sass/base/_forms.scss */
+/* line 24, ../sass/base/_forms.scss */
 legend {
   padding: 0 0.8em;
   color: #666666; }
 
-/* line 31, ../sass/base/_forms.scss */
+/* line 30, ../sass/base/_forms.scss */
 input[type="submit"], input[type="button"] {
   background: #9a2525;
   padding: 0.5em 1em;
   border: none;
   color: #ffffff; }
-  /* line 37, ../sass/base/_forms.scss */
+  /* line 36, ../sass/base/_forms.scss */
   input[type="submit"]:hover, input[type="button"]:hover {
     background: #852020;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-/* line 43, ../sass/base/_forms.scss */
+/* line 42, ../sass/base/_forms.scss */
 input[type="checkbox"], input[type="radio"] {
   padding: 20px 0.5em; }
+
+/* line 2, ../sass/base/_lists.scss */
+ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0; }
 
 /* line 1, ../sass/base/_media.scss */
 img, media {
@@ -131,7 +149,7 @@ a:hover {
 h1, .alpha,
 h2, .beta,
 h3, .gamma,
-h4, .delta, legend, .block--quicktabs-search-tabs ul.quicktabs-tabs,
+h4, .delta, legend, .block__title, .block--quicktabs-news-tabs ul.quicktabs-tabs, .block--quicktabs-search-tabs ul.quicktabs-tabs,
 h5, .epsilon,
 h6, .zeta {
   margin-top: 0em;
@@ -151,9 +169,11 @@ h6, .zeta {
   h3 a:visited, .gamma a,
   .gamma a:visited,
   h4 a,
-  h4 a:visited, .delta a, legend a, .block--quicktabs-search-tabs ul.quicktabs-tabs a,
+  h4 a:visited, .delta a, legend a, .block__title a, .block--quicktabs-news-tabs ul.quicktabs-tabs a, .block--quicktabs-search-tabs ul.quicktabs-tabs a,
   .delta a:visited,
   legend a:visited,
+  .block__title a:visited,
+  .block--quicktabs-news-tabs ul.quicktabs-tabs a:visited,
   .block--quicktabs-search-tabs ul.quicktabs-tabs a:visited,
   h5 a,
   h5 a:visited, .epsilon a,
@@ -182,7 +202,7 @@ h3, .gamma {
   font-size: 1.5rem; }
 
 /* line 56, ../sass/base/_typography.scss */
-h4, .delta, legend, .block--quicktabs-search-tabs ul.quicktabs-tabs {
+h4, .delta, legend, .block__title, .block--quicktabs-news-tabs ul.quicktabs-tabs, .block--quicktabs-search-tabs ul.quicktabs-tabs {
   font-size: 18px;
   font-size: 1.28571rem; }
 
@@ -342,6 +362,15 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : Apr 23, 2015, 9:33:24 PM
+    Author     : Stephen
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : Apr 20, 2015, 9:03:33 PM
     Author     : Stephen
 */
@@ -405,7 +434,9 @@ and open the template in the editor.
   border-bottom-color: #000000; }
 
 /* line 6, ../sass/components/menus/_navigation.scss */
-.tb-megamenu .nav > li > a:focus, .tb-megamenu .nav > li > a:hover, .tb-megamenu .nav li.dropdown.active > .dropdown-toggle, .tb-megamenu .nav li.dropdown.open > .dropdown-toggle, .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle, .tb-megamenu .nav li.dropdown.open.active > a:hover, .tb-megamenu .nav li.dropdown.open.active > a:focus {
+.tb-megamenu .nav > li > a:focus, .tb-megamenu .nav > li > a:hover, .tb-megamenu .nav li.dropdown.active > .dropdown-toggle, .tb-megamenu .nav li.dropdown.open > .dropdown-toggle, .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle,
+.tb-megamenu .nav li.dropdown.open.active > a:hover,
+.tb-megamenu .nav li.dropdown.open.active > a:focus {
   background-color: #e6e6e6;
   border-right-color: #ffffff;
   color: #9a2525;
@@ -467,48 +498,206 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : Apr 22, 2015, 2:57:39 PM
+    Author     : Stephen
+*/
+/* line 12, ../sass/components/slideshows/_culture-slideshow.scss */
+.view-view-culture-slideshow .views_slideshow_main img {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+/* line 16, ../sass/components/slideshows/_culture-slideshow.scss */
+.view-view-culture-slideshow .views_slideshow_main .views-field-title a {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  padding: 0.5em 0.75em;
+  text-shadow: 2px 2px #000000;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  color: #ffffff;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ5NGY1NyIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNDk0ZjU3IiBzdG9wLW9wYWNpdHk9IjAuNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(73, 79, 87, 0.95)), color-stop(100%, rgba(73, 79, 87, 0.5)));
+  background-image: -moz-linear-gradient(rgba(73, 79, 87, 0.95), rgba(73, 79, 87, 0.5));
+  background-image: -webkit-linear-gradient(rgba(73, 79, 87, 0.95), rgba(73, 79, 87, 0.5));
+  background-image: linear-gradient(rgba(73, 79, 87, 0.95), rgba(73, 79, 87, 0.5)); }
+/* line 31, ../sass/components/slideshows/_culture-slideshow.scss */
+.view-view-culture-slideshow .views-slideshow-controls-bottom {
+  z-index: 10;
+  text-align: center;
+  width: 100%; }
+  /* line 36, ../sass/components/slideshows/_culture-slideshow.scss */
+  .view-view-culture-slideshow .views-slideshow-controls-bottom .views_slideshow_pager_field_item {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    font-family: "FontAwesome";
+    content: "\f111"; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 23, 2015, 9:27:25 AM
+    Author     : Stephen
+*/
+/* line 11, ../sass/components/tabs/_news-tab.scss */
+.block--quicktabs-news-tabs .quicktabs_main {
+  padding: 0.5em;
+  background: #ffffff;
+  color: #333333;
+  *zoom: 1; }
+  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .block--quicktabs-news-tabs .quicktabs_main:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 17, ../sass/components/tabs/_news-tab.scss */
+  .block--quicktabs-news-tabs .quicktabs_main input[type="text"] {
+    width: 55%; }
+  /* line 20, ../sass/components/tabs/_news-tab.scss */
+  .block--quicktabs-news-tabs .quicktabs_main a {
+    color: #333333; }
+    /* line 22, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs .quicktabs_main a:hover {
+      color: #9a2525; }
+  /* line 27, ../sass/components/tabs/_news-tab.scss */
+  .block--quicktabs-news-tabs .quicktabs_main ul {
+    padding: 0.5em; }
+    /* line 29, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs .quicktabs_main ul li {
+      border-bottom: 1px dashed #a6a6a6;
+      padding: 0.5em 0; }
+      /* line 32, ../sass/components/tabs/_news-tab.scss */
+      .block--quicktabs-news-tabs .quicktabs_main ul li:before {
+        font-family: "FontAwesome";
+        content: "\f111";
+        font-size: 12px;
+        font-size: 0.85714rem;
+        color: #9a2525; }
+/* line 42, ../sass/components/tabs/_news-tab.scss */
+.block--quicktabs-news-tabs ul.quicktabs-tabs {
+  padding: 0;
+  margin: 0;
+  *zoom: 1; }
+  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .block--quicktabs-news-tabs ul.quicktabs-tabs:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 48, ../sass/components/tabs/_news-tab.scss */
+  .block--quicktabs-news-tabs ul.quicktabs-tabs a {
+    color: #333333; }
+  /* line 52, ../sass/components/tabs/_news-tab.scss */
+  .block--quicktabs-news-tabs ul.quicktabs-tabs li {
+    background: #9a2525;
+    margin: 0 auto;
+    padding: 0.5em;
+    width: 50%;
+    text-align: center;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    *zoom: 1; }
+    /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+    .block--quicktabs-news-tabs ul.quicktabs-tabs li:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 62, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs ul.quicktabs-tabs li:hover {
+      background: #852020;
+      border-bottom: none; }
+    /* line 66, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs ul.quicktabs-tabs li:first-child {
+      -moz-border-radius-topleft: 4px;
+      -webkit-border-top-left-radius: 4px;
+      border-top-left-radius: 4px; }
+    /* line 69, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs ul.quicktabs-tabs li:last-child {
+      -moz-border-radius-topright: 4px;
+      -webkit-border-top-right-radius: 4px;
+      border-top-right-radius: 4px; }
+      /* line 71, ../sass/components/tabs/_news-tab.scss */
+      .block--quicktabs-news-tabs ul.quicktabs-tabs li:last-child a {
+        border-right: none; }
+    /* line 76, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs ul.quicktabs-tabs li.active {
+      background: #ffffff;
+      border-top: 3px solid #9a2525; }
+      /* line 80, ../sass/components/tabs/_news-tab.scss */
+      .block--quicktabs-news-tabs ul.quicktabs-tabs li.active a {
+        color: #9a2525; }
+    /* line 85, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs ul.quicktabs-tabs li a {
+      border-right: 1px solid #333333; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : Apr 20, 2015, 9:42:05 PM
     Author     : Stephen
 */
-/* line 10, ../sass/components/tabs/_search-tab.scss */
+/* line 11, ../sass/components/tabs/_search-tab.scss */
 .block--quicktabs-search-tabs .quicktabs_main {
   padding: 0.5em;
   background: #ffffff;
-  -moz-border-radius-bottomleft: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  -moz-border-radius-bottomright: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   *zoom: 1;
-  text-align: center; }
+  text-align: center;
+  height: 191px; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .block--quicktabs-search-tabs .quicktabs_main:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 17, ../sass/components/tabs/_search-tab.scss */
+  /* line 19, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs .quicktabs_main input[type="text"] {
     width: 55%; }
-
-/* line 22, ../sass/components/tabs/_search-tab.scss */
+/* line 24, ../sass/components/tabs/_search-tab.scss */
 .block--quicktabs-search-tabs ul.quicktabs-tabs {
-  background: #9a2525;
+  padding: 0;
   margin: 0;
-  -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-radius: 8px;
-  border-top-left-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  -webkit-border-top-right-radius: 8px;
-  border-top-right-radius: 8px; }
-  /* line 28, ../sass/components/tabs/_search-tab.scss */
+  *zoom: 1; }
+  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .block--quicktabs-search-tabs ul.quicktabs-tabs:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 30, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs ul.quicktabs-tabs a {
     color: #ffffff; }
-  /* line 32, ../sass/components/tabs/_search-tab.scss */
+  /* line 34, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs ul.quicktabs-tabs li {
+    background: #9a2525;
     margin: 0 auto;
     padding: 0.5em;
-    width: 25%;
+    width: 50%;
     text-align: center;
     float: left;
     display: inline-block;
@@ -522,15 +711,31 @@ and open the template in the editor.
       content: "";
       display: table;
       clear: both; }
-    /* line 41, ../sass/components/tabs/_search-tab.scss */
+    /* line 44, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:hover {
       background: #852020;
       border-bottom: none; }
-    /* line 46, ../sass/components/tabs/_search-tab.scss */
+    /* line 48, ../sass/components/tabs/_search-tab.scss */
+    .block--quicktabs-search-tabs ul.quicktabs-tabs li:first-child {
+      -moz-border-radius-topleft: 4px;
+      -webkit-border-top-left-radius: 4px;
+      border-top-left-radius: 4px; }
+    /* line 51, ../sass/components/tabs/_search-tab.scss */
+    .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child {
+      -moz-border-radius-topright: 4px;
+      -webkit-border-top-right-radius: 4px;
+      border-top-right-radius: 4px; }
+      /* line 53, ../sass/components/tabs/_search-tab.scss */
+      .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child a {
+        border-right: none; }
+    /* line 58, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li.active {
       background: #ffffff; }
-      /* line 49, ../sass/components/tabs/_search-tab.scss */
+      /* line 61, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li.active a {
         color: #000000; }
+    /* line 66, ../sass/components/tabs/_search-tab.scss */
+    .block--quicktabs-search-tabs ul.quicktabs-tabs li a {
+      border-right: 1px solid #af2a2a; }
 
 /*# sourceMappingURL=gxnulib.no-query.css.map */

@@ -10,10 +10,6 @@
 // Globbing from within sub-folders only works with relative paths.
 @import "../../variables/**/*";
 
-* {
-    @include box-sizing("border-box");
-}
-
 .l-page {
     @include background-grid();
 }
@@ -24,8 +20,12 @@
     @include pie-clearfix();
 }
 
-.wrapper, .l-main, .l-useful-link, .l-copyright {
+.wrapper, .l-content, .l-useful-link, .l-copyright {
     @extend .l-constrained;
+}
+
+.l-header, .l-main, .l-footer {
+    margin: $vert-spacing-unit 0;
 }
 
 .l-branding {

@@ -36,7 +36,7 @@
   }
   
   .nav {
-    & > li > a {
+    > li > a {
       color: $black;
       border-color: $white;
       @include font-size(16px);
@@ -48,7 +48,7 @@
     }
     
     li.dropdown {
-      & > .dropdown-toggle {
+      > .dropdown-toggle {
         &,
         &:hover {
           .caret {
@@ -62,7 +62,7 @@
       }
       
       &.open {
-        & > .dropdown-toggle {
+        > .dropdown-toggle {
           @extend %menu;
           
           &,
@@ -73,9 +73,9 @@
           }
         }
         &.active {
-          & > .dropdown-toggle,
-          & > a:hover,
-          & > a:focus {
+          > .dropdown-toggle,
+          > a:hover,
+          > a:focus {
             @extend %menu;
           }
         }

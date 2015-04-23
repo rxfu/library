@@ -7,48 +7,65 @@ and open the template in the editor.
     Created on : Apr 20, 2015, 9:42:05 PM
     Author     : Stephen
 */
-.block--quicktabs-search-tabs .quicktabs_main {
-    padding: 0.5em;
-    background: $white;
-    @include border-bottom-radius(8px);
-    @include pie-clearfix;
-    text-align: center;
-    
-    input[type="text"] {
-        width: 55%;
-    }
-}
-
-.block--quicktabs-search-tabs ul.quicktabs-tabs {
-    background: $red;
-    margin: 0;
-    @extend .delta;
-    @include border-top-radius(8px);
-    
-    a {
-        color: $white;
-    }
-    
-    li {
-        margin: 0 auto;
+.block--quicktabs-search-tabs {
+    .quicktabs_main {
         padding: 0.5em;
-        width: 25%;
+        background: $white;
+        @include border-bottom-radius($radius);
+        @include pie-clearfix;
         text-align: center;
-        float: left;
-        @include inline-block;
+        height: 191px;
+
+        input[type="text"] {
+            width: 55%;
+        }
+    }
+
+    ul.quicktabs-tabs {
+        padding: 0;
+        margin: 0;
+        @extend .delta;
         @include pie-clearfix;
 
-        &:hover {
-            background: $dark-red;
-            border-bottom: none;
+        a {
+            color: $white;
         }
 
-        &.active {
-            background: $white;
+        li {
+            background: $red;
+            margin: 0 auto;
+            padding: 0.5em;
+            width: (100% / 2);
+            text-align: center;
+            float: left;
+            @include inline-block;
+            @include pie-clearfix;
 
-            a {
-                color: $black;
+            &:hover {
+                background: $dark-red;
+                border-bottom: none;
             }
+            &:first-child {
+                @include border-top-left-radius($radius);
+            }
+            &:last-child {
+                @include border-top-right-radius($radius);
+                a {
+                    border-right: none;
+                }
+            }
+
+            &.active {
+                background: $white;
+
+                a {
+                    color: $black;
+                }
+            }
+            
+            a {
+                border-right: 1px solid $light-red;
+            }            
         }
     }
 }

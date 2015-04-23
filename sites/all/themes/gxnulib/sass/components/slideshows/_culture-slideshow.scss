@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 22, 2015, 2:57:39 PM
+    Author     : Stephen
+*/
+.view-view-culture-slideshow {
+    .views_slideshow_main {
+        img {
+            @include border-radius($radius);
+        }
+        .views-field-title {
+            a {
+                position: absolute;
+                display: block;
+                bottom: 0;
+                width: 100%;
+                height: 20%;
+                padding: 0.5em 0.75em;
+                @include text-shadow(2px 2px $black);
+                @include border-bottom-radius($radius);
+                @include font-size(12px);
+                color: $white;
+                @include background-image(linear-gradient(rgba(73, 79, 87, 0.95), rgba(73, 79, 87, 0.5)));
+            }
+        }
+    }
+    .views-slideshow-controls-bottom {
+        z-index: 10;
+        text-align: center;
+        width: 100%;
+        
+        .views_slideshow_pager_field_item {
+            cursor: pointer;
+            @include inline-block;
+            font-family: "FontAwesome";
+            content: "\f111";
+        }
+    }
+}
