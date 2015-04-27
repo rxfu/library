@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 .block--quicktabs-search-tabs {
     .quicktabs_main {
-        padding: $vert-spacing-unit;
+        padding: $vert-spacing-unit*2 $vert-spacing-unit;
         background: $white;
         @include border-bottom-radius($radius);
         @include pie-clearfix;
@@ -44,12 +44,13 @@ and open the template in the editor.
         li {
             background: $red;
             margin: 0 auto;
-            padding: 0.5em;
+            padding: $vert-spacing-unit 0.5em;
             width: (100% / 2);
             text-align: center;
             float: left;
             @include inline-block;
             @include pie-clearfix;
+            cursor: pointer;
 
             &:hover {
                 background: $dark-red;
