@@ -122,3 +122,20 @@
       }
   }
 }
+
+.tb-megamenu-submenu {
+    nav {
+        ul.menu {
+            li {
+                padding: .1em .5em;
+                &:before {
+                    font-family: "FontAwesome";
+                    content: "\f101";
+                    padding-right: .5em;
+                    @include font-size(10px);
+                    color: $red;
+                }
+            }
+        }
+    }
+}

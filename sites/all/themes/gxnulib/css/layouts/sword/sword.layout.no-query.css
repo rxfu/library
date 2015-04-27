@@ -13,152 +13,26 @@ and open the template in the editor.
     Author     : Stephen
 */
 /* line 13, ../../../sass/layouts/sword/sword.layout.scss */
-.l-constrained, .l-region--highlighted, .l-region--footer {
-  width: 95%;
+.l-page {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2220%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2226%2E66667%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2246%2E66667%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2253%2E33333%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2273%2E33333%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2280%2E0%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); }
+
+/* line 17, ../../../sass/layouts/sword/sword.layout.scss */
+.l-constrained, .wrapper, .l-useful-link, .l-copyright {
+  max-width: 1200px;
   margin: 0 auto;
   *zoom: 1; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-  .l-constrained:after, .l-region--highlighted:after, .l-region--footer:after {
+  .l-constrained:after, .wrapper:after, .l-useful-link:after, .l-copyright:after {
     content: "";
     display: table;
     clear: both; }
 
-/* Header */
-/* line 20, ../../../sass/layouts/sword/sword.layout.scss */
-.l-region--header {
-  padding: 20px 0; }
-  /* line 23, ../../../sass/layouts/sword/sword.layout.scss */
-  .l-region--header .block {
-    float: right; }
+/* line 27, ../../../sass/layouts/sword/sword.layout.scss */
+.l-header, .l-main, .l-footer {
+  margin: 20px 0; }
 
-/* Content Area */
-/* line 29, ../../../sass/layouts/sword/sword.layout.scss */
-.l-highlighted-wrapper {
-  padding: 20px 0; }
-
-/* line 35, ../../../sass/layouts/sword/sword.layout.scss */
-.l-region--help {
-  margin-bottom: 20px; }
-
-/* line 38, ../../../sass/layouts/sword/sword.layout.scss */
-.l-main {
-  margin-top: 40px;
-  margin-bottom: 40px; }
-
-/* Sidebars */
-/* line 44, ../../../sass/layouts/sword/sword.layout.scss */
-.l-region--sidebar-first,
-.l-region--sidebar-second {
-  padding: 20px 1em; }
-
-/* Footer */
-/* line 50, ../../../sass/layouts/sword/sword.layout.scss */
-.l-footer-wrapper {
-  padding: 20px 0; }
-
-/* line 58, ../../../sass/layouts/sword/sword.layout.scss */
-.l-constrained, .l-region--highlighted, .l-region--footer {
-  width: 90%; }
-
-/* Header */
-/* line 63, ../../../sass/layouts/sword/sword.layout.scss */
+/* line 31, ../../../sass/layouts/sword/sword.layout.scss */
 .l-branding {
-  -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-  width: 23.40426%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none; }
-
-/* line 66, ../../../sass/layouts/sword/sword.layout.scss */
-.l-region--navigation {
-  -sgs-span-settings: ("span": 6, "location": 4, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-  width: 48.93617%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 25.53191%;
-  clear: none; }
-
-/* line 69, ../../../sass/layouts/sword/sword.layout.scss */
-.l-region--header {
-  -sgs-span-settings: ("span": 3, "location": 10, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-  width: 23.40426%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-
-/* Sidebars */
-/* line 76, ../../../sass/layouts/sword/sword.layout.scss */
-.has-two-sidebars .l-content,
-.has-one-sidebar .l-content {
-  -sgs-span-settings: ("span": 8, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-  width: 65.95745%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none; }
-/* line 79, ../../../sass/layouts/sword/sword.layout.scss */
-.has-two-sidebars .l-region--sidebar-first,
-.has-two-sidebars .l-region--sidebar-second,
-.has-one-sidebar .l-region--sidebar-first,
-.has-one-sidebar .l-region--sidebar-second {
-  -sgs-span-settings: ("span": 4, "location": 9, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-  width: 31.91489%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-  clear: right; }
-
-/* line 88, ../../../sass/layouts/sword/sword.layout.scss */
-.l-constrained, .l-region--highlighted, .l-region--footer {
-  width: 80%; }
-
-/* Sidebars */
-/* line 94, ../../../sass/layouts/sword/sword.layout.scss */
-.has-one-sidebar .l-content {
-  -sgs-span-settings: ("span": 8, "location": 1, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-  width: 49.20635%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none; }
-/* line 97, ../../../sass/layouts/sword/sword.layout.scss */
-.has-one-sidebar .l-region--sidebar-first {
-  -sgs-span-settings: ("span": 4, "location": 9, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-  width: 23.80952%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 50.79365%;
-  clear: none;
-  clear: none; }
-
-/* line 103, ../../../sass/layouts/sword/sword.layout.scss */
-.has-two-sidebars .l-content {
-  -sgs-span-settings: ("span": 6, "location": 1, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-  width: 36.50794%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none; }
-/* line 106, ../../../sass/layouts/sword/sword.layout.scss */
-.has-two-sidebars .l-region--sidebar-first,
-.has-two-sidebars .l-region--sidebar-second {
-  -sgs-span-settings: ("span": 3, "location": 7, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-  width: 17.46032%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 38.09524%;
-  clear: none;
-  clear: none; }
-/* line 111, ../../../sass/layouts/sword/sword.layout.scss */
-.has-two-sidebars .l-region--sidebar-second {
-  -sgs-span-settings: ("span": 3, "location": 10, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-  width: 17.46032%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 57.14286%;
-  clear: none; }
+  padding: 20px 0; }
 
 /*# sourceMappingURL=sword.layout.no-query.css.map */

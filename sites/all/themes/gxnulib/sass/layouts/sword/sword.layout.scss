@@ -10,106 +10,46 @@
 // Globbing from within sub-folders only works with relative paths.
 @import "../../variables/**/*";
 
+.l-page {
+    @include background-grid();
+}
+
 .l-constrained {
-  width: 95%;
-  margin: 0 auto;
-  @include pie-clearfix;
+    max-width: 1200px;
+    margin: 0 auto;
+    @include pie-clearfix();
 }
 
-/* Header */
-.l-region--header {
-  padding: $vert-spacing-unit 0;
-
-  .block {
-    float: right;
-  }
+.wrapper, .l-useful-link, .l-copyright {
+    @extend .l-constrained;
 }
 
-/* Content Area */
-.l-highlighted-wrapper {
-  padding: $vert-spacing-unit 0;
-}
-.l-region--highlighted {
-  @extend .l-constrained;
-}
-.l-region--help {
-  margin-bottom: $vert-spacing-unit;
-}
-.l-main {
-  margin-top: 2 * $vert-spacing-unit;
-  margin-bottom: 2 * $vert-spacing-unit;
+.l-header, .l-main, .l-footer {
+    margin: $vert-spacing-unit 0;
 }
 
-/* Sidebars */
-.l-region--sidebar-first,
-.l-region--sidebar-second {
-  padding: $vert-spacing-unit $horz-spacing-unit;
+.l-branding {
+    padding: $vert-spacing-unit 0;
 }
 
-/* Footer */
-.l-footer-wrapper {
-  padding: $vert-spacing-unit 0;
-}
-.l-region--footer {
-  @extend .l-constrained;
-}
-
-@include breakpoint($tablet, true) {
-  .l-constrained {
-    width: 90%;
-  }
-
-  /* Header */
-  .l-branding {
-    @include grid-span(3, 1);
-  }
-  .l-region--navigation {
-    @include grid-span(6, 4);
-  }
-  .l-region--header {
-    @include grid-span(3, 10);
-  }
-
-  /* Sidebars */
-  .has-two-sidebars,
-  .has-one-sidebar {
-    .l-content {
-      @include grid-span(8, 1);
+@include breakpoint($desktop) {
+    .l-branding {
+        @include grid-span(8, 1);
     }
-    .l-region--sidebar-first,
-    .l-region--sidebar-second {
-      @include grid-span(4, 9);
-      clear: right;
-    }
-  }
-}
 
-@include breakpoint($desktop, true) {
-  .l-constrained {
-    width: 80%;
-  }
-
-  /* Sidebars */
-  .has-one-sidebar {
-    .l-content {
-      @include grid-span(8, 1);
+    .l-region--navigation {
+        @include grid-span(8, 9);
     }
+    
     .l-region--sidebar-first {
-      @include grid-span(4, 9);
-      clear: none;
+        @include grid-span(4, 1);
     }
-  }
-  .has-two-sidebars {
+    
     .l-content {
-      @include grid-span(6, 1);
+        @include grid-span(12, 5);
     }
-    .l-region--sidebar-first,
+    
     .l-region--sidebar-second {
-      @include grid-span(3, 7);
-      clear: none;
+        @include grid-span(4, 13);
     }
-    .l-region--sidebar-second {
-      @include grid-span(3, 10);
-    }
-  }
 }

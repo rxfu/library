@@ -1,18 +1,18 @@
 name = Sword
-description = Left sidebar and main.
+description = Fluid layout.
 preview = preview.png
 template = sword-layout
 
 ; Regions
 regions[branding]       = Branding
-regions[navigation]     = Navigation bar
+regions[navigation]     = Navigation
 regions[header]         = Header
-regions[hero]           = Hero
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
+regions[link]           = Link
 regions[footer]         = Footer
 
 ; Stylesheets
