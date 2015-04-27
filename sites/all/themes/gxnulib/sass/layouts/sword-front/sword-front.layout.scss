@@ -57,26 +57,3 @@
         @include grid-span(4, 13);
     }
 }
-
-/* Quick links*/
-.l-region--express {
-    .block__title {
-        font-size: 18px;
-        border-bottom: 1px dotted $silver;
-        padding-bottom: 0.5em;
-    }
-    .block__content {
-        .field__item {
-            display: inline-block;
-            padding: 0.8em 0.5em;
-            width: 12em;
-            
-            &:before {
-                font-family: "FontAwesome";
-                content: "\f0da";
-                padding-right: 0.5em;
-                color: $red;
-            }
-        }
-    }
-}

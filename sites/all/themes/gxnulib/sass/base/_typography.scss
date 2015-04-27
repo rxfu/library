@@ -184,17 +184,3 @@ footer,
         color: $light-grey;
     }
 }
-
-/**
- * $EXPRESSES
- */
-.l-express {
-    padding: $vert-spacing-unit 0;
-    
-    a {
-        color: $grey;
-        &:hover {
-            color: $red;
-        }
-    }
-}

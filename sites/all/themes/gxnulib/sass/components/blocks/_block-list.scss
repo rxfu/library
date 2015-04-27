@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 24, 2015, 10:16:51 AM
+    Author     : Stephen
+*/
+.l-region--stacked-first {
+    .block {
+        padding: $vert-spacing-unit 0;
+
+        a {
+            color: $grey;
+        }
+        
+        .block__content {
+            .field__item {
+                @include inline-block;
+                padding: .4em .5em .4em 0;
+                width: 10.5em;
+            }
+        }
+        
+        ul.menu {
+            padding-left: 0;
+            li {
+               @include inline-block;
+               padding: .4em .5em .4em 0;
+               width: 10.5em;
+            }
+        }
+    }
+}
+
+.l-region--stacked-second {
+    .block {
+        padding: $vert-spacing-unit 0;
+
+        a {
+            color: $grey;
+        }
+        
+        .block__content {
+            .field__item {
+                @include inline-block;
+                padding: .4em .5em .4em 0;
+                width: 6.8em;
+            }
+        }
+    }
+}

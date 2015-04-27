@@ -8,15 +8,20 @@ and open the template in the editor.
     Author     : Stephen
 */
 .block--quicktabs-news-tabs {
+    > .block__content {
+        .block {
+            padding: 0;
+        }
+        border: 1px solid $smoke;
+        @include border-radius($radius);
+    }
+    
     .quicktabs_main {
         padding: 0.5em;
         background: $white;
         color: $grey;
         @include pie-clearfix;
 
-        input[type="text"] {
-            width: 55%;
-        }
         a {
             color: $grey;
             &:hover {
@@ -27,12 +32,12 @@ and open the template in the editor.
         ul {
             padding: 0.5em;
             li {
-                border-bottom: 1px dashed $lighter-grey;
                 padding: 0.5em 0;
                 &:before {
                     font-family: "FontAwesome";
-                    content: "\f111";
-                    @include font-size(12px);
+                    content: "\f0da";
+                    padding-right: 0.5em;
+                    @include font-size(10px);
                     color: $red;
                 }
             }
@@ -44,6 +49,7 @@ and open the template in the editor.
         margin: 0;
         @extend .delta;
         @include pie-clearfix;
+        font-weight: bold;
 
         a {
             color: $grey;

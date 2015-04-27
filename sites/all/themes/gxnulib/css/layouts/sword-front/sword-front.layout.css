@@ -97,22 +97,5 @@ and open the template in the editor.
     margin-left: 0;
     margin-right: 0;
     clear: none; } }
-/* Quick links*/
-/* line 63, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--express .block__title {
-  font-size: 18px;
-  border-bottom: 1px dotted #cccccc;
-  padding-bottom: 0.5em; }
-/* line 69, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-region--express .block__content .field__item {
-  display: inline-block;
-  padding: 0.8em 0.5em;
-  width: 12em; }
-  /* line 74, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-region--express .block__content .field__item:before {
-    font-family: "FontAwesome";
-    content: "\f0da";
-    padding-right: 0.5em;
-    color: #9a2525; }
 
 /*# sourceMappingURL=sword-front.layout.css.map */

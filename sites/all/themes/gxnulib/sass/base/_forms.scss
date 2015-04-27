@@ -2,10 +2,9 @@ select,
 input,
 textarea {
     padding: 0.5em;
-    margin: $vert-spacing-unit 0.5em;
     border: 1px solid $smoke;
     @include transition(all 0.30s ease-in-out);
-    @include border-radius(4px);
+    @include border-radius($radius);
     outline: none;
     
     &:focus {

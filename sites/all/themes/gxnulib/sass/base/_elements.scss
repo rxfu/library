@@ -11,3 +11,7 @@ and open the template in the editor.
 * {
     @include box-sizing("border-box");
 }
+
+body {
+    background: $white;
+}

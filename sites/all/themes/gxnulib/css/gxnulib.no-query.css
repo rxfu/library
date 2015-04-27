@@ -40,12 +40,15 @@ and open the template in the editor.
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* line 15, ../sass/base/_elements.scss */
+body {
+  background: #ffffff; }
+
 /* line 1, ../sass/base/_forms.scss */
 select,
 input,
 textarea {
   padding: 0.5em;
-  margin: 20px 0.5em;
   border: 1px solid #e6e6e6;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -55,7 +58,7 @@ textarea {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   outline: none; }
-  /* line 11, ../sass/base/_forms.scss */
+  /* line 10, ../sass/base/_forms.scss */
   select:focus,
   input:focus,
   textarea:focus {
@@ -63,32 +66,32 @@ textarea {
     -webkit-box-shadow: 0 0 6px #9a2525;
     box-shadow: 0 0 6px #9a2525; }
 
-/* line 16, ../sass/base/_forms.scss */
+/* line 15, ../sass/base/_forms.scss */
 fieldset {
   margin-left: 0;
   margin-right: 0;
   padding: 10px 1em 20px 1em;
   border-color: #666666; }
 
-/* line 24, ../sass/base/_forms.scss */
+/* line 23, ../sass/base/_forms.scss */
 legend {
   padding: 0 0.8em;
   color: #666666; }
 
-/* line 30, ../sass/base/_forms.scss */
+/* line 29, ../sass/base/_forms.scss */
 input[type="submit"], input[type="button"] {
   background: #9a2525;
   padding: 0.5em 1em;
   border: none;
   color: #ffffff; }
-  /* line 36, ../sass/base/_forms.scss */
+  /* line 35, ../sass/base/_forms.scss */
   input[type="submit"]:hover, input[type="button"]:hover {
     background: #852020;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-/* line 42, ../sass/base/_forms.scss */
+/* line 41, ../sass/base/_forms.scss */
 input[type="checkbox"], input[type="radio"] {
   padding: 20px 0.5em; }
 
@@ -343,18 +346,58 @@ footer,
   .l-copyright a {
     color: #666666; }
 
-/**
- * $EXPRESSES
- */
-/* line 191, ../sass/base/_typography.scss */
-.l-express {
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 24, 2015, 10:16:51 AM
+    Author     : Stephen
+*/
+/* line 11, ../sass/components/blocks/_block-list.scss */
+.l-region--stacked-first .block {
   padding: 20px 0; }
-  /* line 194, ../sass/base/_typography.scss */
-  .l-express a {
+  /* line 14, ../sass/components/blocks/_block-list.scss */
+  .l-region--stacked-first .block a {
     color: #333333; }
-    /* line 196, ../sass/base/_typography.scss */
-    .l-express a:hover {
-      color: #9a2525; }
+  /* line 19, ../sass/components/blocks/_block-list.scss */
+  .l-region--stacked-first .block .block__content .field__item {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    padding: .4em .5em .4em 0;
+    width: 10.5em; }
+  /* line 26, ../sass/components/blocks/_block-list.scss */
+  .l-region--stacked-first .block ul.menu {
+    padding-left: 0; }
+    /* line 28, ../sass/components/blocks/_block-list.scss */
+    .l-region--stacked-first .block ul.menu li {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      padding: .4em .5em .4em 0;
+      width: 10.5em; }
+
+/* line 38, ../sass/components/blocks/_block-list.scss */
+.l-region--stacked-second .block {
+  padding: 20px 0; }
+  /* line 41, ../sass/components/blocks/_block-list.scss */
+  .l-region--stacked-second .block a {
+    color: #333333; }
+  /* line 46, ../sass/components/blocks/_block-list.scss */
+  .l-region--stacked-second .block .block__content .field__item {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    padding: .4em .5em .4em 0;
+    width: 6.8em; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -365,6 +408,10 @@ and open the template in the editor.
     Created on : Apr 23, 2015, 9:33:24 PM
     Author     : Stephen
 */
+/* line 10, ../sass/components/blocks/_block.scss */
+.block__title {
+  font-weight: bold; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -556,6 +603,15 @@ and open the template in the editor.
     Author     : Stephen
 */
 /* line 11, ../sass/components/tabs/_news-tab.scss */
+.block--quicktabs-news-tabs > .block__content {
+  border: 1px solid #e6e6e6;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  /* line 12, ../sass/components/tabs/_news-tab.scss */
+  .block--quicktabs-news-tabs > .block__content .block {
+    padding: 0; }
+/* line 19, ../sass/components/tabs/_news-tab.scss */
 .block--quicktabs-news-tabs .quicktabs_main {
   padding: 0.5em;
   background: #ffffff;
@@ -566,43 +622,41 @@ and open the template in the editor.
     content: "";
     display: table;
     clear: both; }
-  /* line 17, ../sass/components/tabs/_news-tab.scss */
-  .block--quicktabs-news-tabs .quicktabs_main input[type="text"] {
-    width: 55%; }
-  /* line 20, ../sass/components/tabs/_news-tab.scss */
+  /* line 25, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs .quicktabs_main a {
     color: #333333; }
-    /* line 22, ../sass/components/tabs/_news-tab.scss */
+    /* line 27, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs .quicktabs_main a:hover {
       color: #9a2525; }
-  /* line 27, ../sass/components/tabs/_news-tab.scss */
+  /* line 32, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs .quicktabs_main ul {
     padding: 0.5em; }
-    /* line 29, ../sass/components/tabs/_news-tab.scss */
+    /* line 34, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs .quicktabs_main ul li {
-      border-bottom: 1px dashed #a6a6a6;
       padding: 0.5em 0; }
-      /* line 32, ../sass/components/tabs/_news-tab.scss */
+      /* line 36, ../sass/components/tabs/_news-tab.scss */
       .block--quicktabs-news-tabs .quicktabs_main ul li:before {
         font-family: "FontAwesome";
-        content: "\f111";
-        font-size: 12px;
-        font-size: 0.85714rem;
+        content: "\f0da";
+        padding-right: 0.5em;
+        font-size: 10px;
+        font-size: 0.71429rem;
         color: #9a2525; }
-/* line 42, ../sass/components/tabs/_news-tab.scss */
+/* line 47, ../sass/components/tabs/_news-tab.scss */
 .block--quicktabs-news-tabs ul.quicktabs-tabs {
   padding: 0;
   margin: 0;
-  *zoom: 1; }
+  *zoom: 1;
+  font-weight: bold; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .block--quicktabs-news-tabs ul.quicktabs-tabs:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 48, ../sass/components/tabs/_news-tab.scss */
+  /* line 54, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs ul.quicktabs-tabs a {
     color: #333333; }
-  /* line 52, ../sass/components/tabs/_news-tab.scss */
+  /* line 58, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs ul.quicktabs-tabs li {
     background: #9a2525;
     margin: 0 auto;
@@ -621,31 +675,31 @@ and open the template in the editor.
       content: "";
       display: table;
       clear: both; }
-    /* line 62, ../sass/components/tabs/_news-tab.scss */
+    /* line 68, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li:hover {
       background: #852020;
       border-bottom: none; }
-    /* line 66, ../sass/components/tabs/_news-tab.scss */
+    /* line 72, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li:first-child {
       -moz-border-radius-topleft: 4px;
       -webkit-border-top-left-radius: 4px;
       border-top-left-radius: 4px; }
-    /* line 69, ../sass/components/tabs/_news-tab.scss */
+    /* line 75, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li:last-child {
       -moz-border-radius-topright: 4px;
       -webkit-border-top-right-radius: 4px;
       border-top-right-radius: 4px; }
-      /* line 71, ../sass/components/tabs/_news-tab.scss */
+      /* line 77, ../sass/components/tabs/_news-tab.scss */
       .block--quicktabs-news-tabs ul.quicktabs-tabs li:last-child a {
         border-right: none; }
-    /* line 76, ../sass/components/tabs/_news-tab.scss */
+    /* line 82, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li.active {
       background: #ffffff;
       border-top: 3px solid #9a2525; }
-      /* line 80, ../sass/components/tabs/_news-tab.scss */
+      /* line 86, ../sass/components/tabs/_news-tab.scss */
       .block--quicktabs-news-tabs ul.quicktabs-tabs li.active a {
         color: #9a2525; }
-    /* line 85, ../sass/components/tabs/_news-tab.scss */
+    /* line 91, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li a {
       border-right: 1px solid #333333; }
 
@@ -660,7 +714,7 @@ and open the template in the editor.
 */
 /* line 11, ../sass/components/tabs/_search-tab.scss */
 .block--quicktabs-search-tabs .quicktabs_main {
-  padding: 0.5em;
+  padding: 20px;
   background: #ffffff;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -669,30 +723,59 @@ and open the template in the editor.
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
   *zoom: 1;
-  text-align: center;
-  height: 191px; }
+  text-align: center; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .block--quicktabs-search-tabs .quicktabs_main:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 19, ../sass/components/tabs/_search-tab.scss */
+  /* line 18, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs .quicktabs_main input[type="text"] {
-    width: 55%; }
-/* line 24, ../sass/components/tabs/_search-tab.scss */
+    width: 85%;
+    height: 3em;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0; }
+    /* line 61, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+    .block--quicktabs-search-tabs .quicktabs_main input[type="text"]:-moz-placeholder {
+      font-style: italic; }
+    /* line 64, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+    .block--quicktabs-search-tabs .quicktabs_main input[type="text"]::-moz-placeholder {
+      font-style: italic; }
+    /* line 67, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+    .block--quicktabs-search-tabs .quicktabs_main input[type="text"]:-ms-input-placeholder {
+      font-style: italic; }
+    /* line 56, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+    .block--quicktabs-search-tabs .quicktabs_main input[type="text"]::-webkit-input-placeholder {
+      font-style: italic; }
+  /* line 26, ../sass/components/tabs/_search-tab.scss */
+  .block--quicktabs-search-tabs .quicktabs_main input[type="submit"] {
+    width: 15%;
+    height: 3em;
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0; }
+/* line 33, ../sass/components/tabs/_search-tab.scss */
 .block--quicktabs-search-tabs ul.quicktabs-tabs {
   padding: 0;
   margin: 0;
-  *zoom: 1; }
+  *zoom: 1;
+  font-weight: bold; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .block--quicktabs-search-tabs ul.quicktabs-tabs:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 30, ../sass/components/tabs/_search-tab.scss */
+  /* line 40, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs ul.quicktabs-tabs a {
     color: #ffffff; }
-  /* line 34, ../sass/components/tabs/_search-tab.scss */
+  /* line 44, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs ul.quicktabs-tabs li {
     background: #9a2525;
     margin: 0 auto;
@@ -711,31 +794,28 @@ and open the template in the editor.
       content: "";
       display: table;
       clear: both; }
-    /* line 44, ../sass/components/tabs/_search-tab.scss */
+    /* line 54, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:hover {
       background: #852020;
       border-bottom: none; }
-    /* line 48, ../sass/components/tabs/_search-tab.scss */
+    /* line 58, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:first-child {
       -moz-border-radius-topleft: 4px;
       -webkit-border-top-left-radius: 4px;
       border-top-left-radius: 4px; }
-    /* line 51, ../sass/components/tabs/_search-tab.scss */
+    /* line 61, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child {
       -moz-border-radius-topright: 4px;
       -webkit-border-top-right-radius: 4px;
       border-top-right-radius: 4px; }
-      /* line 53, ../sass/components/tabs/_search-tab.scss */
+      /* line 63, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child a {
         border-right: none; }
-    /* line 58, ../sass/components/tabs/_search-tab.scss */
+    /* line 68, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li.active {
       background: #ffffff; }
-      /* line 61, ../sass/components/tabs/_search-tab.scss */
+      /* line 71, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li.active a {
         color: #000000; }
-    /* line 66, ../sass/components/tabs/_search-tab.scss */
-    .block--quicktabs-search-tabs ul.quicktabs-tabs li a {
-      border-right: 1px solid #af2a2a; }
 
 /*# sourceMappingURL=gxnulib.no-query.css.map */
