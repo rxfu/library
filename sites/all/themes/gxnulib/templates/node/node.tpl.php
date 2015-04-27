@@ -93,6 +93,7 @@
     <footer class="node__submitted">
       <?php print $user_picture; ?>
       <p class="submitted"><?php print $submitted; ?></p>
+      <p class="category"><?php print render($content['field_category']); ?></p>
     </footer>
   <?php endif; ?>
 
@@ -101,6 +102,7 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      hide($content['field_category']);
       print render($content);
     ?>
   </div>

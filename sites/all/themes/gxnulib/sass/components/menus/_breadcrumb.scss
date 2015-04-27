@@ -11,7 +11,7 @@ and open the template in the editor.
     @include horizontal-list(false);
     
     li {
-        padding: $vert-spacing-unit 0.5em;
+        padding: $vert-spacing-unit 0.5em $vert-spacing-unit 0;
         
         &:after {
             font-family: "FontAwesome";

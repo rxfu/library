@@ -510,7 +510,7 @@ and open the template in the editor.
     float: left; }
   /* line 13, ../sass/components/menus/_breadcrumb.scss */
   .breadcrumb li {
-    padding: 20px 0.5em; }
+    padding: 20px 0.5em 20px 0; }
     /* line 16, ../sass/components/menus/_breadcrumb.scss */
     .breadcrumb li:after {
       font-family: "FontAwesome";
@@ -609,6 +609,31 @@ and open the template in the editor.
 /* line 10, ../sass/components/misc/_article-title.scss */
 .article-title {
   text-align: center; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 27, 2015, 5:02:44 PM
+    Author     : Stephen
+*/
+/* line 10, ../sass/components/nodes/_node.scss */
+.node__submitted {
+  background: transparent;
+  padding: 0;
+  margin: 0 auto; }
+  /* line 15, ../sass/components/nodes/_node.scss */
+  .node__submitted .category {
+    @incoude font-size(14px); }
+
+/* line 20, ../sass/components/nodes/_node.scss */
+.node__content {
+  padding: 20px 0.5em; }
+  /* line 23, ../sass/components/nodes/_node.scss */
+  .node__content p {
+    text-indent: 2em; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
