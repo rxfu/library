@@ -13,7 +13,7 @@ and open the template in the editor.
     margin: 0 auto;
     
     .category {
-        @incoude font-size(14px);
+        @include font-size(14px);
     }
 }
 

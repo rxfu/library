@@ -103,7 +103,9 @@
       hide($content['comments']);
       hide($content['links']);
       hide($content['field_category']);
+      hide($content['field_image']);
       print render($content);
+      print render($content['field_image']);
     ?>
   </div>
 

@@ -111,7 +111,7 @@ img, media {
 /* line 106, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 87.5%;
-  line-height: 1.42857em; }
+  line-height: 1.71429em; }
 
 /**
  * $BASE-TYPOGRAPHY
@@ -158,7 +158,7 @@ h6, .zeta {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.28571em;
+  margin-bottom: 0.34286em;
   color: #9a2525;
   text-transform: uppercase; }
   /* line 38, ../sass/base/_typography.scss */
@@ -236,7 +236,7 @@ blockquote {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 1.42857em; }
+  margin-bottom: 1.71429em; }
 
 /* line 80, ../sass/base/_typography.scss */
 p + img {
@@ -249,16 +249,16 @@ p + img {
 /* line 88, ../sass/base/_typography.scss */
 blockquote {
   margin-top: 0em;
-  padding-top: 1.42857em;
-  padding-bottom: 1.42857em;
-  margin-bottom: 1.42857em;
+  padding-top: 1.71429em;
+  padding-bottom: 1.71429em;
+  margin-bottom: 1.71429em;
   padding: 0, 1.5em;
   border-width: 0.07143em;
   border-style: solid;
-  padding: 1.35714em;
+  padding: 1.64286em;
   border-left-width: 0.71429em;
   border-left-style: solid;
-  padding-left: 0.71429em;
+  padding-left: 1em;
   font-style: italic;
   color: #852020; }
   /* line 98, ../sass/base/_typography.scss */
@@ -432,6 +432,19 @@ and open the template in the editor.
 .l-bar .field__item {
   display: inline-block;
   margin: 0.5em; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 29, 2015, 9:22:16 AM
+    Author     : Stephen
+*/
+/* line 11, ../sass/components/fields/_field-image.scss */
+.field--name-field-image .field-items {
+  text-align: center; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -626,7 +639,8 @@ and open the template in the editor.
   margin: 0 auto; }
   /* line 15, ../sass/components/nodes/_node.scss */
   .node__submitted .category {
-    @incoude font-size(14px); }
+    font-size: 14px;
+    font-size: 1rem; }
 
 /* line 20, ../sass/components/nodes/_node.scss */
 .node__content {
