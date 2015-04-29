@@ -11,10 +11,10 @@ and open the template in the editor.
     background: transparent;
     padding: 0;
     margin: 0 auto;
-    
-    .category {
-        @include font-size(14px);
-    }
+}
+
+.category {
+    text-align: center;
 }
 
 .node__content {

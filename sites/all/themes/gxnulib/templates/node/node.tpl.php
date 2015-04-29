@@ -92,10 +92,13 @@
   <?php if ($display_submitted): ?>
     <footer class="node__submitted">
       <?php print $user_picture; ?>
-      <p class="submitted"><?php print $submitted; ?></p>
-      <p class="category"><?php print render($content['field_category']); ?></p>
+      <div class="submitted">
+        <?php print $submitted; ?>
+      </div>
     </footer>
   <?php endif; ?>
+  
+  <div class="category"><?php print render($content['field_category']); ?></div>
 
   <div<?php print $content_attributes; ?>>
     <?php

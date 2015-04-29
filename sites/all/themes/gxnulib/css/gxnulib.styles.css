@@ -637,10 +637,10 @@ and open the template in the editor.
   background: transparent;
   padding: 0;
   margin: 0 auto; }
-  /* line 15, ../sass/components/nodes/_node.scss */
-  .node__submitted .category {
-    font-size: 14px;
-    font-size: 1rem; }
+
+/* line 16, ../sass/components/nodes/_node.scss */
+.category {
+  text-align: center; }
 
 /* line 20, ../sass/components/nodes/_node.scss */
 .node__content {
