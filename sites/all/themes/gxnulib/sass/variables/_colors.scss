@@ -18,7 +18,7 @@ $menu-bgcolor: $bgcolor;
 $menu-link-color: $font-color;
 $menu-link-hover-color: $link-color;
 $menu-box-shadow-color: #646464;
-$menu-link-bgcolor: #efede8;
+$menu-link-bgcolor: $menu-bgcolor;
 $menu-link-hover-bgcolor: #e8e6df;
 $menu-border-color: $menu-link-hover-bgcolor;
 
@@ -26,7 +26,7 @@ $heading-bgcolor: rgba(142, 150, 160, 0.75);
 
 $tab-bgcolor: #efede8;
 $tab-menu-link-color: $white;
-$tab-menu-bgcolor: #494f57;
+$tab-menu-link-bgcolor: #494f57;
 $tab-menu-link-hover-bgcolor: #606873;
 $tab-menu-border-color: #877d60;
 

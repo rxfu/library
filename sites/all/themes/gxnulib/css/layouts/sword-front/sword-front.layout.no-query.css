@@ -12,10 +12,6 @@ and open the template in the editor.
     Created on : Apr 1, 2015, 10:51:36 AM
     Author     : Stephen
 */
-/* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-page {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2220%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2226%2E66667%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2246%2E66667%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2253%2E33333%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2273%2E33333%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2280%2E0%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); }
-
 /* line 17, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-constrained, .wrapper, .l-content, .l-useful-link, .l-copyright {
   max-width: 1200px;

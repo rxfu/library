@@ -12,33 +12,32 @@ and open the template in the editor.
         .block {
             padding: 0;
         }
-        border: 1px solid $smoke;
+        border: 1px solid $tab-menu-border-color;
         @include border-radius($radius);
     }
     
     .quicktabs_main {
-        padding: 0.5em;
-        background: $white;
-        color: $grey;
+        padding: $spacing;
+        background: $tab-bgcolor;
         @include pie-clearfix;
 
         a {
-            color: $grey;
+            color: $font-color;
             &:hover {
-                color: $red;
+                color: $link-color;
             }
         }
         
         ul {
-            padding: 0.5em;
+            padding: $spacing;
             li {
-                padding: 0.5em 0;
+                padding: $spacing 0;
                 &:before {
                     font-family: "FontAwesome";
                     content: "\f0da";
-                    padding-right: 0.5em;
+                    padding-right: $spacing;
                     @include font-size(10px);
-                    color: $red;
+                    color: $link-color;
                 }
             }
         }
@@ -52,13 +51,13 @@ and open the template in the editor.
         font-weight: bold;
 
         a {
-            color: $grey;
+            color: $font-color;
         }
 
         li {
-            background: $red;
+            background: $tab-menu-link-bgcolor;
             margin: 0 auto;
-            padding: 0.5em;
+            padding: $spacing;
             width: (100% / 2);
             text-align: center;
             float: left;
@@ -66,7 +65,7 @@ and open the template in the editor.
             @include pie-clearfix;
 
             &:hover {
-                background: $dark-red;
+                background: $tab-menu-link-hover-bgcolor;
                 border-bottom: none;
             }
             &:first-child {
@@ -80,16 +79,12 @@ and open the template in the editor.
             }
 
             &.active {
-                background: $white;
-                border-top: 3px solid $red;
-
-                a {
-                    color: $red;
-                }
+                background: $tab-bgcolor;
+                border-top: 3px solid $header-color;
             }
             
             a {
-                border-right: 1px solid $grey;
+                border-right: 1px solid $tab-menu-border-color;
             }
         }
     }

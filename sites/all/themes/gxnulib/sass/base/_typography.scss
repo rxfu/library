@@ -15,6 +15,7 @@ html {
  * $LINKS
  */
 a {
+    outline: 0;
     background: transparent;
     @include link-colors($link-color, $link-hover-color $link-active-color, $link-visited-color, $link-focus-color);
     text-decoration: none;
@@ -127,10 +128,10 @@ footer,
     padding: $vert-spacing-unit 0;
     margin: 0 auto;
     
-    background: darken($font-color, 50%);
+    background: darken($font-color, 10%);
     
     text-align: center;
-    color: darken($font-color, 15%);
+    color: lighten($font-color, 15%);
     @include font-size(12px);
     
     a {
@@ -142,18 +143,18 @@ footer,
  * $BARS
  */
 .l-bar {
-    padding: $spacing $horz-spacing-unit;
+    padding: .1em $horz-spacing-unit;
     
     background: $black;
     
     text-align: right;
-    color: darken($font-color, 15%);
+    color: darken($font-color, 30%);
     @include font-size(12px);
     
     a {
-        color: lighten($font-color, 15%);
+        color: lighten($font-color, 30%);
         &:hover {
-            color: lighten($font-color, 30%);
+            color: lighten($font-color, 60%);
         }
     }
 }
@@ -164,15 +165,15 @@ footer,
 .l-useful-link {    
     text-align: center;
     @include font-size(12px);
-    color: lighten($font-color, 15%);
+    color: lighten($font-color, 30%);
     
     a {
-        color: lighten($font-color, 15%);
+        color: lighten($font-color, 30%);
         &:visited {
-            color: lighten($font-color, 15%);
+            color: lighten($font-color, 30%);
         }
         &:hover {
-            color: lighten($font-color, 30%);
+            color: lighten($font-color, 60%);
         }     
     }
 }

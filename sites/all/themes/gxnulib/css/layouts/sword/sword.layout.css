@@ -12,18 +12,6 @@ and open the template in the editor.
     Created on : Apr 1, 2015, 10:51:36 AM
     Author     : Stephen
 */
-/* line 13, ../../../sass/layouts/sword/sword.layout.scss */
-.l-page {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2220%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2226%2E66667%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2246%2E66667%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2253%2E33333%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2273%2E33333%25%22%20fill%3D%22%23dd8e56%22%20width%3D%226%2E66667%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2280%2E0%25%22%20fill%3D%22chocolate%22%20width%3D%2220%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); }
-  @media (min-width: 704px) {
-    /* line 13, ../../../sass/layouts/sword/sword.layout.scss */
-    .l-page {
-      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%226%2E38298%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%228%2E51064%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2214%2E89362%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2217%2E02128%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2223%2E40426%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2225%2E53191%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2231%2E91489%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2234%2E04255%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2240%2E42553%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2242%2E55319%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2248%2E93617%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2251%2E06383%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2257%2E44681%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2259%2E57447%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2265%2E95745%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2268%2E08511%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2274%2E46809%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2276%2E59574%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2282%2E97872%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2285%2E10638%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2291%2E48936%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2293%2E61702%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); } }
-  @media (min-width: 1120px) {
-    /* line 13, ../../../sass/layouts/sword/sword.layout.scss */
-    .l-page {
-      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%224%2E7619%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%226%2E34921%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2211%2E11111%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2212%2E69841%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2217%2E46032%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2219%2E04762%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2223%2E80952%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2225%2E39683%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2230%2E15873%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2231%2E74603%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2236%2E50794%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2238%2E09524%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2242%2E85714%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2244%2E44444%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2249%2E20635%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2250%2E79365%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2255%2E55556%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2257%2E14286%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2261%2E90476%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2263%2E49206%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2268%2E25397%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2269%2E84127%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2274%2E60317%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2276%2E19048%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2280%2E95238%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2282%2E53968%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2287%2E30159%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2288%2E88889%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2293%2E65079%25%22%20fill%3D%22%23dd8e56%22%20width%3D%221%2E5873%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2295%2E2381%25%22%20fill%3D%22chocolate%22%20width%3D%224%2E7619%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); } }
-
 /* line 17, ../../../sass/layouts/sword/sword.layout.scss */
 .l-constrained, .wrapper, .l-useful-link, .l-copyright {
   max-width: 1200px;
@@ -46,7 +34,6 @@ and open the template in the editor.
 @media (min-width: 70em) {
   /* line 36, ../../../sass/layouts/sword/sword.layout.scss */
   .l-branding {
-    -sgs-span-settings: ("span": 8, "location": 1, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 49.20635%;
     float: left;
     margin-right: -100%;
@@ -55,7 +42,6 @@ and open the template in the editor.
 
   /* line 40, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--navigation {
-    -sgs-span-settings: ("span": 8, "location": 9, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 49.20635%;
     float: right;
     margin-left: 0;
@@ -64,7 +50,6 @@ and open the template in the editor.
 
   /* line 44, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--sidebar-first {
-    -sgs-span-settings: ("span": 4, "location": 1, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 23.80952%;
     float: left;
     margin-right: -100%;
@@ -73,7 +58,6 @@ and open the template in the editor.
 
   /* line 48, ../../../sass/layouts/sword/sword.layout.scss */
   .l-content {
-    -sgs-span-settings: ("span": 12, "location": 5, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 74.60317%;
     float: right;
     margin-left: 0;
@@ -82,7 +66,6 @@ and open the template in the editor.
 
   /* line 52, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--sidebar-second {
-    -sgs-span-settings: ("span": 4, "location": 13, "grid": 16, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 23.80952%;
     float: right;
     margin-left: 0;

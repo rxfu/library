@@ -1,146 +1,135 @@
 %caret {
-  border-top-color: $black;
-  border-bottom-color: $black;
+    border-top-color: $menu-link-color;
+    border-bottom-color: $menu-link-color;
 }
 
 %menu {
-  background-color: $smoke;
-  border-right-color: $white;
-  color: $red;
-  @include box-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+    background-color: $menu-bgcolor;
+    border: 0;
+    color: $menu-link-color;
 }
 
 %submenu {
-  background-color: $smoke;
-  border-color: $white;
-  @include box-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+    background-color: $menu-bgcolor;
+    border-bottom: .3em solid $link-color;
+    @include border-bottom-radius($radius);
+    @include box-shadow(0 5px 10px $menu-box-shadow-color);
 }
 
 .tb-megamenu {
-  background-color: $white;
-  border-bottom: 1px solid $smoke;
-  
-  .nav-collapse {
-      .nav {
-          > li {
-              > a {
-                  &:hover,
-                  &:focus {
-                      color: $red;
-                  }
-              }
-              &.active {
-                  > a {
-                      &:hover,
-                      &:focus {
-                          background-color: $white;
-                          color: $red;
-                      }
-                  }
-              }
-          }
-      }
-  }
-  
-  .nav {
-    > li > a {
-      color: $black;
-      border-color: $white;
-      @extend .zeta;
-      
-      &:focus,
-      &:hover {
-        @extend %menu;
-      }
-    }
-    
-    li.dropdown {
-      > .dropdown-toggle {
-        &,
-        &:hover {
-          .caret {
-            @extend %caret;
-          }
-        }
-      }
-      
-      &.active > .dropdown-toggle {
-          @extend %menu;
-      }
-      
-      &.open {
-        > .dropdown-toggle {
-          @extend %menu;
-          
-          &,
-          &:hover {
-            .caret {
-              @extend %caret;
+    background-color: $menu-bgcolor;
+    border-bottom: 1px solid $menu-border-color;
+
+    .nav-collapse {
+        .nav {
+            > li {
+                padding-bottom: 0;
+                > a {
+                    @include font-size(16px);
+                    @extend %menu;
+                    
+                    &:hover,
+                    &:focus {
+                        color: $menu-link-hover-color;
+                    }
+                }
+                &.active {
+                    > a {
+                        &:hover,
+                        &:focus {
+                            background-color: $menu-link-hover-bgcolor;
+                            color: $menu-link-hover-color;
+                        }
+                    }
+                }
             }
-          }
+
+            li.dropdown {
+                > .dropdown-toggle {
+                    &,
+                    &:hover {
+                        .caret {
+                            @extend %caret;
+                        }
+                    }
+                }
+
+                &.active {
+                    > .dropdown-toggle {
+                        @extend %menu;
+                    }
+                }
+
+                &.open {
+                    > .dropdown-toggle {
+                        @extend %menu;
+                        color: $menu-link-hover-color;
+
+                        &,
+                        &:hover {
+                            .caret {
+                                @extend %caret;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        > .dropdown-toggle,
+                        > a:hover,
+                        > a:focus {
+                            @extend %menu;
+                        }
+                    }
+                }
+            }
+
+            .active > a {
+                &,
+                &:hover,
+                &:focus {
+                    color: $link-color;
+                    text-shadow: none;
+                    background-color: $menu-link-bgcolor;
+                    background-image: none;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
         }
-        &.active {
-          > .dropdown-toggle,
-          > a:hover,
-          > a:focus {
-            @extend %menu;
-          }
+    }
+  
+    .dropdown-menu {
+        @extend %submenu;
+
+        li {
+            > a {
+                &:hover,
+                &:focus {
+                    color: $link-color;
+                }
+            }
         }
-      }
     }
     
-    .active > a {
-        &,
-        &:hover,
-        &:focus {
-            color: $red;
-            text-shadow: none;
-            background-color: #fff;
-            background-image: none;
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-            box-shadow: none;
-            outline: none;
+    .dropdown-submenu:hover {
+        > a {
+            color: $link-color;
         }
     }
-  }
-  
-  .dropdown-menu {
-    @extend %submenu;
-    
-    li > a {
-      &:hover,
-      &:focus {
-        color: $red;
-      }
-    }
-  }
-  
-  .dropdown-submenu:hover > a {
-    color: $red;
-  }
-  
-  .block-view-demo {
-      .views-field-field-image img {
-          border: 1px solid #eee;
-      }
-      .item-list ul li {
-          border-bottom: 1px solid #eee;
-      }
-  }
 }
 
 .tb-megamenu-submenu {
     nav {
         ul.menu {
             li {
-                padding: .1em .5em;
+                padding: .1em $spacing;
                 &:before {
                     font-family: "FontAwesome";
                     content: "\f101";
-                    padding-right: .5em;
-                    @include font-size(10px);
-                    color: $red;
+                    padding-right: $spacing;
+                    color: $link-color;
                 }
             }
         }
