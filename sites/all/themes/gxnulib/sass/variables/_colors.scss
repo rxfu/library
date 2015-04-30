@@ -1,18 +1,36 @@
 $white: #ffffff;
 $black: #000000;
 
-$grey: lighten($black, 20%);
-$dark-grey: darken($grey, 5%);
-$light-grey: lighten($grey, 20%);
-$lighter-grey: lighten($grey, 45%);
-$silver: lighten($grey, 60%);
-$smoke: lighten($grey, 70%);
+$bgcolor: #f5f4f1;
+$font-color: #333333;
+$header-color: #e87411;
+$link-color: $header-color;
+$link-visited-color: $link-color;
+$link-hover-color: darken($link-color, 15%);
+$link-active-color: $link-hover-color;
+$link-focus-color: $link-hover-color;
+$border-color: #737373;
 
-$blue: #3bafef;
+$branding-bgcolor: #494f57;
+$branding-border-color: $link-color;
 
-$red: #9a2525;
-$dark-red: darken($red, 5%);
-$light-red: lighten($red, 5%);
+$menu-bgcolor: $bgcolor;
+$menu-link-color: $font-color;
+$menu-link-hover-color: $link-color;
+$menu-box-shadow-color: #646464;
+$menu-link-bgcolor: #efede8;
+$menu-link-hover-bgcolor: #e8e6df;
+$menu-border-color: $menu-link-hover-bgcolor;
 
-$pink: #ffc0c9;
-$light-pink: #fbd0d6;
+$heading-bgcolor: rgba(142, 150, 160, 0.75);
+
+$tab-bgcolor: #efede8;
+$tab-menu-link-color: $white;
+$tab-menu-bgcolor: #494f57;
+$tab-menu-link-hover-bgcolor: #606873;
+$tab-menu-border-color: #877d60;
+
+$input-border-color: $border-color;
+$input-color: $white;
+$input-bgcolor: $header-color;
+$input-hover-bgcolor: darken($input-bgcolor, 15%);

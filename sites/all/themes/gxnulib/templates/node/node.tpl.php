@@ -97,18 +97,13 @@
       </div>
     </footer>
   <?php endif; ?>
-  
-  <div class="category"><?php print render($content['field_category']); ?></div>
 
   <div<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
-      hide($content['field_category']);
-      hide($content['field_image']);
       print render($content);
-      print render($content['field_image']);
     ?>
   </div>
 

@@ -1,14 +1,13 @@
-select,
-input,
+input[type="text"],
 textarea {
-    padding: 0.5em;
-    border: 1px solid $smoke;
+    padding: $spacing;
+    border: 1px solid $input-border-color;
     @include transition(all 0.30s ease-in-out);
     @include border-radius($radius);
     outline: none;
     
     &:focus {
-        @include box-shadow(0 0 6px rgba($red, 1));
+        @include box-shadow(0 0 6px rgba($input-border-color, 0.7));
     }
 }
 
@@ -17,27 +16,26 @@ fieldset {
     margin-right: 0;
     padding: ($vert-spacing-unit / 2) $horz-spacing-unit $vert-spacing-unit $horz-spacing-unit;
 
-    border-color: $light-grey;
+    border-color: $border-color;
 }
 
 legend {
     @extend .delta;
-    padding: 0 0.8em;
-    color: $light-grey;
+    padding: 0 $spacing;
+    color: $font-color;
 }
 
 input[type="submit"], input[type="button"]{
-    background: $red;
-    padding: 0.5em 1em;
+    background: $input-bgcolor;
+    padding: $spacing;
     border: none;
-    color: $white;
+    color: $input-color;
     
     &:hover {
-        background: $dark-red;
-        @include box-shadow(none);
+        background: $input-hover-bgcolor;
     }
 }
 
 input[type="checkbox"], input[type="radio"] {
-    padding: $vert-spacing-unit 0.5em;
+    padding: $vert-spacing-unit $spacing;
 }

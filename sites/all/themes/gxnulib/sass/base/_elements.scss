@@ -13,5 +13,24 @@ and open the template in the editor.
 }
 
 body {
-    background: $white;
+    margin: 0;
+    background: $bgcolor;
+}
+
+article, aside, details, figure, figcaption, header, footer, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden], template {
+    display: none;
 }

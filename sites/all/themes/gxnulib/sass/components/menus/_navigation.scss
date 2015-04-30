@@ -20,26 +20,33 @@
   background-color: $white;
   border-bottom: 1px solid $smoke;
   
-  .nav-collapse .nav > li > a {
-    &:hover,
-    &:focus {
-      color: $red;
-    }
-  }
-  
-  .nav-collapse .nav > li.active > a {
-    &:hover,
-    &:focus {
-      background-color: $white;
-      color: $red;
-    }
+  .nav-collapse {
+      .nav {
+          > li {
+              > a {
+                  &:hover,
+                  &:focus {
+                      color: $red;
+                  }
+              }
+              &.active {
+                  > a {
+                      &:hover,
+                      &:focus {
+                          background-color: $white;
+                          color: $red;
+                      }
+                  }
+              }
+          }
+      }
   }
   
   .nav {
     > li > a {
       color: $black;
       border-color: $white;
-      @include font-size(16px);
+      @extend .zeta;
       
       &:focus,
       &:hover {

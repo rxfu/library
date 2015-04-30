@@ -37,11 +37,11 @@ and open the template in the editor.
 
 /* line 27, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-header, .l-main, .l-footer {
-  margin: 20px 0; }
+  margin: 1.5em 0; }
 
 /* line 31, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-branding {
-  padding: 20px 0; }
+  padding: 1.5em 0; }
 
 @media (min-width: 70em) {
   /* line 36, ../../../sass/layouts/sword-front/sword-front.layout.scss */
