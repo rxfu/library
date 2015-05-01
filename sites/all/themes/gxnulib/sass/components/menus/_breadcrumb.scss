@@ -11,12 +11,12 @@ and open the template in the editor.
     @include horizontal-list(false);
     
     li {
-        padding: $vert-spacing-unit 0.5em $vert-spacing-unit 0;
+        padding: $vert-spacing-unit $spacing $vert-spacing-unit 0;
         
         &:after {
             font-family: "FontAwesome";
             content: "\f101";
-            padding-left: .5em;
+            padding-left: $spacing;
             vertical-align: baseline;
         }
         &:last-child:after {

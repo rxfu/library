@@ -32,6 +32,10 @@
     padding: $vert-spacing-unit 0;
 }
 
+.l-header {
+    background: $heading-bgcolor;
+}
+
 @include breakpoint($desktop) {
     .l-branding {
         @include grid-span(8, 1);

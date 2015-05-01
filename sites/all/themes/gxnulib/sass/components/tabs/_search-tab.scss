@@ -8,28 +8,6 @@ and open the template in the editor.
     Author     : Stephen
 */
 .block--quicktabs-search-tabs {
-    .quicktabs_main {
-        padding: $vert-spacing-unit $horz-spacing-unit;
-        background: $tab-bgcolor;
-        @include border-bottom-radius($radius);
-        @include pie-clearfix;
-        text-align: center;
-
-        input[type="text"] {
-            width: 85%;
-            height: 3em;
-            @include input-placeholder {
-                font-style: italic;
-            }
-            @include border-right-radius(0);
-        }
-        input[type="submit"] {
-            width: 15%;
-            height: 3em;
-            @include border-left-radius(0);
-        }
-    }
-
     ul.quicktabs-tabs {
         padding: 0;
         margin: 0;
@@ -44,7 +22,7 @@ and open the template in the editor.
         li {
             background: $tab-menu-link-bgcolor;
             margin: 0 auto;
-            padding: $vert-spacing-unit $spacing;
+            padding: $spacing;
             width: (100% / 2);
             text-align: center;
             float: left;
@@ -73,6 +51,27 @@ and open the template in the editor.
                     color: $black;
                 }
             }          
+        }
+    }
+    
+    .quicktabs_main {
+        padding: $vert-spacing-unit;
+        background: $tab-bgcolor;
+        @include border-bottom-radius($radius);
+        @include pie-clearfix;
+        text-align: center;
+
+        input[type="text"] {
+            width: 85%;
+            height: 3.5em;
+            @include rhythm-margins(1);
+            @include border-right-radius(0);
+        }
+        input[type="submit"] {
+            width: 15%;
+            height: 3.5em;
+            @include rhythm-margins(1);
+            @include border-left-radius(0);
         }
     }
 }

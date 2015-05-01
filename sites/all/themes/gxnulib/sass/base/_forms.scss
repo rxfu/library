@@ -1,11 +1,15 @@
 input[type="text"],
 textarea {
-    padding: $spacing;
+    padding: $spacing $spacing*2;
     border: 1px solid $input-border-color;
     @include transition(all 0.30s ease-in-out);
     @include border-radius($radius);
     outline: none;
     
+    @include input-placeholder {
+        font-style: italic;
+    }
+
     &:focus {
         @include box-shadow(0 0 6px rgba($input-border-color, 0.7));
     }
@@ -27,9 +31,10 @@ legend {
 
 input[type="submit"], input[type="button"]{
     background: $input-bgcolor;
-    padding: $spacing;
-    border: none;
+    padding: $spacing $spacing*2;
+    border: 1px solid $input-border-color;
     color: $input-color;
+    @include border-radius($radius);
     
     &:hover {
         background: $input-hover-bgcolor;

@@ -1,7 +1,7 @@
 ul {
     li {
         @include no-bullet;
-        padding: .5em;
+        padding: $spacing;
         margin: 0 auto;
     }
 }
