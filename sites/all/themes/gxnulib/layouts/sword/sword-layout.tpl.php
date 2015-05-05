@@ -19,13 +19,17 @@
                     <?php endif; ?>
                 </h2>
             </section>
-            <?php print render($page['navigation']); ?>
         </div>
         <div class="wrapper wrapper--header">
-            <?php print render($page['header']); ?>
+            <div class="l-menu">
+                <?php print render($page['navigation']); ?>
+                <?php print render($page['header']); ?>
+            </div>
         </div>
-        <div class="wrapper wrapper--hightlighted">
-            <?php print render($page['highlighted']); ?>
+        <div class="wrapper wrapper--highlighted">
+            <div class="l-highlighted">
+              <?php print render($page['highlighted']); ?>
+            </div>
         </div>
     </header>
     <section class="l-main" id="main-content">

@@ -196,3 +196,12 @@ footer,
         color: lighten($font-color, 15%);
     }
 }
+
+/**
+ * $CONTENT
+ */
+.l-content {
+    border: 1px solid $border-color;
+    @include border-radius($radius);
+    padding: 0 $vert-spacing-unit;
+}

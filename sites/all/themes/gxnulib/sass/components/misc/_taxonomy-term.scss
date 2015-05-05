@@ -17,6 +17,14 @@ and open the template in the editor.
                 content: "\f101";
                 padding-right: $spacing;
             }
+            
+            a {
+                color: $font-color;
+                
+                &:hover {
+                    color: $link-color;
+                }
+            }
         }
     }
 }

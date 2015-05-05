@@ -20,7 +20,7 @@
     @include pie-clearfix();
 }
 
-.wrapper, .l-useful-link, .l-copyright {
+.l-branding, .l-menu, .l-highlighted, .l-content, .l-useful-link, .l-copyright, .wrapper--main {
     @extend .l-constrained;
 }
 
@@ -30,17 +30,11 @@
 
 .l-branding {
     padding: $vert-spacing-unit 0;
+    text-align: center;
+    margin: 0 auto;
 }
 
 @include breakpoint($desktop) {
-    .l-branding {
-        @include grid-span(8, 1);
-    }
-
-    .l-region--navigation {
-        @include grid-span(8, 9);
-    }
-    
     .l-region--sidebar-first {
         @include grid-span(4, 1);
     }

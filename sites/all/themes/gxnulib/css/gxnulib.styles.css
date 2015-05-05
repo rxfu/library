@@ -67,7 +67,7 @@ audio:not([controls]) {
 input[type="text"],
 textarea {
   padding: 0.5em 1em;
-  border: 1px solid #737373;
+  border: 1px solid #f0f0f0;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -95,16 +95,16 @@ textarea {
   /* line 13, ../sass/base/_forms.scss */
   input[type="text"]:focus,
   textarea:focus {
-    -moz-box-shadow: 0 0 6px rgba(115, 115, 115, 0.7);
-    -webkit-box-shadow: 0 0 6px rgba(115, 115, 115, 0.7);
-    box-shadow: 0 0 6px rgba(115, 115, 115, 0.7); }
+    -moz-box-shadow: 0 0 6px rgba(240, 240, 240, 0.7);
+    -webkit-box-shadow: 0 0 6px rgba(240, 240, 240, 0.7);
+    box-shadow: 0 0 6px rgba(240, 240, 240, 0.7); }
 
 /* line 18, ../sass/base/_forms.scss */
 fieldset {
   margin-left: 0;
   margin-right: 0;
   padding: 0.75em 1em 1.5em 1em;
-  border-color: #737373; }
+  border-color: #f0f0f0; }
 
 /* line 26, ../sass/base/_forms.scss */
 legend {
@@ -115,7 +115,7 @@ legend {
 input[type="submit"], input[type="button"] {
   background: #e87411;
   padding: 0.5em 1em;
-  border: 1px solid #737373;
+  border: 1px solid #f0f0f0;
   color: #ffffff;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -403,6 +403,18 @@ footer,
   .l-copyright a {
     color: #595959; }
 
+/**
+ * $CONTENT
+ */
+/* line 203, ../sass/base/_typography.scss */
+.l-content {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0 1.5em; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -567,7 +579,7 @@ and open the template in the editor.
     float: left; }
   /* line 13, ../sass/components/menus/_breadcrumb.scss */
   .breadcrumb li {
-    padding: 1.5em 0.5em 1.5em 0; }
+    padding: 0 0.5em 1.5em 0; }
     /* line 16, ../sass/components/menus/_breadcrumb.scss */
     .breadcrumb li:after {
       font-family: "FontAwesome";
@@ -672,43 +684,52 @@ and open the template in the editor.
 */
 /* line 11, ../sass/components/menus/_navigation.scss */
 .l-region--sidebar-first .block--menu-block {
-  border: 1px solid #cccccc;
+  border: 1px solid #f0f0f0;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
   /* line 15, ../sass/components/menus/_navigation.scss */
   .l-region--sidebar-first .block--menu-block .block__title {
     border-top: 3px solid #e87411;
-    border-bottom: 1px solid #cccccc;
-    color: #333333;
-    text-align: center;
+    color: #e87411;
     height: 3em;
-    line-height: 3em; }
-  /* line 24, ../sass/components/menus/_navigation.scss */
+    line-height: 3em;
+    padding-left: 1.5em; }
+  /* line 23, ../sass/components/menus/_navigation.scss */
   .l-region--sidebar-first .block--menu-block ul.menu {
     padding: 0;
     margin: 0; }
-    /* line 28, ../sass/components/menus/_navigation.scss */
+    /* line 27, ../sass/components/menus/_navigation.scss */
     .l-region--sidebar-first .block--menu-block ul.menu li {
       list-style-image: none;
       list-style-type: none;
       margin-left: 0;
-      border-bottom: 1px dotted #333333;
-      text-align: center;
+      padding-left: 1.5em;
+      border-bottom: 1px dotted #f0f0f0;
+      background: #fdfdfd;
       cursor: pointer; }
       /* line 35, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.active, .l-region--sidebar-first .block--menu-block ul.menu li.active:hover {
         background: #e87411; }
       /* line 40, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li:hover {
-        background: gray; }
+      .l-region--sidebar-first .block--menu-block ul.menu li:before {
+        font-family: "FontAwesome";
+        content: "\f105";
+        padding-right: 0.5em; }
       /* line 45, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li a.active {
-        color: #ffffff; }
+      .l-region--sidebar-first .block--menu-block ul.menu li:hover {
+        background: #f0f0f0; }
       /* line 49, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li a:hover {
-        color: #ffffff;
-        text-decoration: none; }
+      .l-region--sidebar-first .block--menu-block ul.menu li a {
+        display: inline-block;
+        color: #333333; }
+        /* line 54, ../sass/components/menus/_navigation.scss */
+        .l-region--sidebar-first .block--menu-block ul.menu li a.active, .l-region--sidebar-first .block--menu-block ul.menu li a.active:before, .l-region--sidebar-first .block--menu-block ul.menu li a.active:hover {
+          color: #ffffff; }
+        /* line 61, ../sass/components/menus/_navigation.scss */
+        .l-region--sidebar-first .block--menu-block ul.menu li a:hover {
+          color: #e87411;
+          text-decoration: none; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -740,6 +761,12 @@ and open the template in the editor.
     font-family: "FontAwesome";
     content: "\f101";
     padding-right: 0.5em; }
+  /* line 21, ../sass/components/misc/_taxonomy-term.scss */
+  .view-taxonomy-term .item-list li.views-row a {
+    color: #333333; }
+    /* line 24, ../sass/components/misc/_taxonomy-term.scss */
+    .view-taxonomy-term .item-list li.views-row a:hover {
+      color: #e87411; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -865,10 +892,8 @@ and open the template in the editor.
         font-family: "FontAwesome";
         content: "\f0da";
         padding-right: 0.5em;
-        font-size: 10px;
-        font-size: 0.71429rem;
         color: #e87411; }
-/* line 45, ../sass/components/tabs/_news-tab.scss */
+/* line 44, ../sass/components/tabs/_news-tab.scss */
 .block--quicktabs-news-tabs ul.quicktabs-tabs {
   padding: 0;
   margin: 0;
@@ -879,10 +904,10 @@ and open the template in the editor.
     content: "";
     display: table;
     clear: both; }
-  /* line 52, ../sass/components/tabs/_news-tab.scss */
+  /* line 51, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs ul.quicktabs-tabs a {
     color: #333333; }
-  /* line 56, ../sass/components/tabs/_news-tab.scss */
+  /* line 55, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs ul.quicktabs-tabs li {
     background: #494f57;
     margin: 0 auto;
@@ -901,28 +926,28 @@ and open the template in the editor.
       content: "";
       display: table;
       clear: both; }
-    /* line 66, ../sass/components/tabs/_news-tab.scss */
+    /* line 65, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li:hover {
       background: #606873;
       border-bottom: none; }
-    /* line 70, ../sass/components/tabs/_news-tab.scss */
+    /* line 69, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li:first-child {
       -moz-border-radius-topleft: 4px;
       -webkit-border-top-left-radius: 4px;
       border-top-left-radius: 4px; }
-    /* line 73, ../sass/components/tabs/_news-tab.scss */
+    /* line 72, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li:last-child {
       -moz-border-radius-topright: 4px;
       -webkit-border-top-right-radius: 4px;
       border-top-right-radius: 4px; }
-      /* line 75, ../sass/components/tabs/_news-tab.scss */
+      /* line 74, ../sass/components/tabs/_news-tab.scss */
       .block--quicktabs-news-tabs ul.quicktabs-tabs li:last-child a {
         border-right: none; }
-    /* line 80, ../sass/components/tabs/_news-tab.scss */
+    /* line 79, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li.active {
       background: #efede8;
       border-top: 3px solid #e87411; }
-    /* line 85, ../sass/components/tabs/_news-tab.scss */
+    /* line 84, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li a {
       border-right: 1px solid #877d60; }
 
