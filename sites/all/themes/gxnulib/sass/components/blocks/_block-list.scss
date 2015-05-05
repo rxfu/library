@@ -11,10 +11,6 @@ and open the template in the editor.
     .block {
         padding: $vert-spacing-unit 0;
 
-        a {
-            color: $font-color;
-        }
-        
         .block__content {
             .field__item {
                 @include inline-block;
@@ -37,10 +33,6 @@ and open the template in the editor.
 .l-region--stacked-second {
     .block {
         padding: $vert-spacing-unit 0;
-
-        a {
-            color: $font-color;
-        }
         
         .block__content {
             .field__item {

@@ -20,7 +20,7 @@
     @include pie-clearfix();
 }
 
-.wrapper, .l-content, .l-useful-link, .l-copyright {
+.l-branding, .l-menu, .l-highlighted, .l-content, .l-useful-link, .l-copyright {
     @extend .l-constrained;
 }
 
@@ -30,21 +30,16 @@
 
 .l-branding {
     padding: $vert-spacing-unit 0;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.l-header {
+.wrapper--highlighted {
     background: $heading-bgcolor;
+    padding: $vert-spacing-unit $horz-spacing-unit;
 }
 
 @include breakpoint($desktop) {
-    .l-branding {
-        @include grid-span(8, 1);
-    }
-
-    .l-region--navigation {
-        @include grid-span(8, 9);
-    }
-    
     .l-region--search-tab {
         @include grid-span(12, 1);
     }

@@ -17,11 +17,17 @@ html {
 a {
     outline: 0;
     background: transparent;
-    @include link-colors($link-color, $link-hover-color $link-active-color, $link-visited-color, $link-focus-color);
+    @include link-colors($link-color, $link-hover-color, $link-active-color, $link-visited-color, $link-focus-color);
     text-decoration: none;
     
     &:hover {
         text-decoration: underline;
+    }
+}
+
+.front-page {
+    a {
+        @include link-colors($font-color, $link-color, $link-color, $font-color, $font-color);
     }
 }
 

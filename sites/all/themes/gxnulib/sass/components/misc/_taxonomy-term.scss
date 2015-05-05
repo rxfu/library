@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 3, 2015, 11:12:37 AM
+    Author     : Stephen
+*/
+.view-taxonomy-term {
+    .item-list {
+        li.views-row {
+            border-bottom: 1px dotted lighten($font-color, 30%);
+            
+            &:before {
+                font-family: "FontAwesome";
+                content: "\f101";
+                padding-right: $spacing;
+            }
+        }
+    }
+}

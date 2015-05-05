@@ -13,12 +13,12 @@ and open the template in the editor.
     Author     : Stephen
 */
 /* line 17, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-constrained, .wrapper, .l-content, .l-useful-link, .l-copyright {
+.l-constrained, .l-branding, .l-menu, .l-highlighted, .l-content, .l-useful-link, .l-copyright {
   max-width: 1200px;
   margin: 0 auto;
   *zoom: 1; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-  .l-constrained:after, .wrapper:after, .l-content:after, .l-useful-link:after, .l-copyright:after {
+  .l-constrained:after, .l-branding:after, .l-menu:after, .l-highlighted:after, .l-content:after, .l-useful-link:after, .l-copyright:after {
     content: "";
     display: table;
     clear: both; }
@@ -29,10 +29,13 @@ and open the template in the editor.
 
 /* line 31, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-branding {
-  padding: 1.5em 0; }
+  padding: 1.5em 0;
+  text-align: center;
+  margin: 0 auto; }
 
-/* line 35, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-header {
-  background: rgba(142, 150, 160, 0.75); }
+/* line 37, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+.wrapper--highlighted {
+  background: rgba(142, 150, 160, 0.75);
+  padding: 1.5em 1em; }
 
 /*# sourceMappingURL=sword-front.layout.no-query.css.map */

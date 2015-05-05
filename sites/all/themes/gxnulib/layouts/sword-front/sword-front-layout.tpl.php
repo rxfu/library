@@ -20,15 +20,19 @@
                     <?php endif; ?>
                 </h2>
             </section>
-            <?php print render($page['navigation']); ?>
         </div>
         <div class="wrapper wrapper--header">
-            <?php print render($page['header']); ?>
-            <?php print render($page['search_tab']); ?>
-            <?php print render($page['showcase']); ?>
+            <div class="l-menu">
+                <?php print render($page['navigation']); ?>
+                <?php print render($page['header']); ?>
+            </div>
         </div>
-        <div class="wrapper wrapper--hightlighted">
-            <?php print render($page['highlighted']); ?>
+        <div class="wrapper wrapper--highlighted">
+            <div class="l-highlighted">
+              <?php print render($page['search_tab']); ?>
+              <?php print render($page['showcase']); ?>
+              <?php print render($page['highlighted']); ?>
+            </div>
         </div>
     </header>
     <section class="l-main" id="main-content">

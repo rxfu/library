@@ -13,12 +13,12 @@ and open the template in the editor.
     Author     : Stephen
 */
 /* line 17, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-constrained, .wrapper, .l-content, .l-useful-link, .l-copyright {
+.l-constrained, .l-branding, .l-menu, .l-highlighted, .l-content, .l-useful-link, .l-copyright {
   max-width: 1200px;
   margin: 0 auto;
   *zoom: 1; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-  .l-constrained:after, .wrapper:after, .l-content:after, .l-useful-link:after, .l-copyright:after {
+  .l-constrained:after, .l-branding:after, .l-menu:after, .l-highlighted:after, .l-content:after, .l-useful-link:after, .l-copyright:after {
     content: "";
     display: table;
     clear: both; }
@@ -29,30 +29,17 @@ and open the template in the editor.
 
 /* line 31, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-branding {
-  padding: 1.5em 0; }
+  padding: 1.5em 0;
+  text-align: center;
+  margin: 0 auto; }
 
-/* line 35, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-header {
-  background: rgba(142, 150, 160, 0.75); }
+/* line 37, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+.wrapper--highlighted {
+  background: rgba(142, 150, 160, 0.75);
+  padding: 1.5em 1em; }
 
 @media (min-width: 70em) {
-  /* line 40, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-branding {
-    width: 49.20635%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none; }
-
-  /* line 44, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-region--navigation {
-    width: 49.20635%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-
-  /* line 48, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 43, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--search-tab {
     width: 74.60317%;
     float: left;
@@ -60,7 +47,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 52, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 47, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--showcase {
     width: 23.80952%;
     float: right;
@@ -68,7 +55,7 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; }
 
-  /* line 56, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 51, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--stacked-first {
     width: 74.60317%;
     float: left;
@@ -76,7 +63,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 60, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 55, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--stacked-second {
     width: 23.80952%;
     float: right;
