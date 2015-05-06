@@ -9,13 +9,11 @@ and open the template in the editor.
 */
 .l-region--stacked-first {
     .block {
-        padding: $vert-spacing-unit 0;
-
         .block__content {
             .field__item {
                 @include inline-block;
                 padding: 0 $spacing $spacing $spacing;
-                width: 6em;
+                width: 7em;
                 text-align: center;
                 
                 a {
@@ -39,8 +37,6 @@ and open the template in the editor.
 
 .l-region--stacked-second {
     .block {
-        padding: $vert-spacing-unit 0;
-        
         .block__content {
             .field__item {
                 @include inline-block;
