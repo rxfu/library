@@ -64,10 +64,22 @@ audio:not([controls]) {
   display: none; }
 
 /* line 1, ../sass/base/_forms.scss */
+fieldset {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.75em 1em 1.5em 1em;
+  border-color: #f0f0f0; }
+
+/* line 9, ../sass/base/_forms.scss */
+legend {
+  padding: 0 0.5em;
+  color: #333333; }
+
+/* line 15, ../sass/base/_forms.scss */
 input[type="text"],
 textarea {
   padding: 0.5em 1em;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #a3a3a3;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -92,30 +104,18 @@ textarea {
   input[type="text"]::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {
     font-style: italic; }
-  /* line 13, ../sass/base/_forms.scss */
+  /* line 27, ../sass/base/_forms.scss */
   input[type="text"]:focus,
   textarea:focus {
-    -moz-box-shadow: 0 0 6px rgba(240, 240, 240, 0.7);
-    -webkit-box-shadow: 0 0 6px rgba(240, 240, 240, 0.7);
-    box-shadow: 0 0 6px rgba(240, 240, 240, 0.7); }
-
-/* line 18, ../sass/base/_forms.scss */
-fieldset {
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0.75em 1em 1.5em 1em;
-  border-color: #f0f0f0; }
-
-/* line 26, ../sass/base/_forms.scss */
-legend {
-  padding: 0 0.5em;
-  color: #333333; }
+    -moz-box-shadow: 0 0 6px rgba(163, 163, 163, 0.7);
+    -webkit-box-shadow: 0 0 6px rgba(163, 163, 163, 0.7);
+    box-shadow: 0 0 6px rgba(163, 163, 163, 0.7); }
 
 /* line 32, ../sass/base/_forms.scss */
 input[type="submit"], input[type="button"] {
   background: #922525;
   padding: 0.5em 1em;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #a3a3a3;
   color: #ffffff;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -204,7 +204,7 @@ a {
 h1, .alpha,
 h2, .beta, .article-title,
 h3, .gamma,
-h4, .delta, legend, .block__title, .block--quicktabs-news-tabs ul.quicktabs-tabs, .block--quicktabs-search-tabs ul.quicktabs-tabs,
+h4, .delta, legend, .block__title, .block--quicktabs-news-tabs ul.quicktabs-tabs,
 h5, .epsilon,
 h6, .zeta {
   margin-top: 0em;
@@ -225,12 +225,11 @@ h6, .zeta {
   h3 a:visited, .gamma a,
   .gamma a:visited,
   h4 a,
-  h4 a:visited, .delta a, legend a, .block__title a, .block--quicktabs-news-tabs ul.quicktabs-tabs a, .block--quicktabs-search-tabs ul.quicktabs-tabs a,
+  h4 a:visited, .delta a, legend a, .block__title a, .block--quicktabs-news-tabs ul.quicktabs-tabs a,
   .delta a:visited,
   legend a:visited,
   .block__title a:visited,
   .block--quicktabs-news-tabs ul.quicktabs-tabs a:visited,
-  .block--quicktabs-search-tabs ul.quicktabs-tabs a:visited,
   h5 a,
   h5 a:visited, .epsilon a,
   .epsilon a:visited,
@@ -261,7 +260,7 @@ h3, .gamma {
   line-height: 40px; }
 
 /* line 68, ../sass/base/_typography.scss */
-h4, .delta, legend, .block__title, .block--quicktabs-news-tabs ul.quicktabs-tabs, .block--quicktabs-search-tabs ul.quicktabs-tabs {
+h4, .delta, legend, .block__title, .block--quicktabs-news-tabs ul.quicktabs-tabs {
   font-size: 18px;
   font-size: 1.28571rem;
   line-height: 32px; }
@@ -1007,10 +1006,10 @@ and open the template in the editor.
     content: "";
     display: table;
     clear: both; }
-  /* line 18, ../sass/components/tabs/_search-tab.scss */
+  /* line 17, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs ul.quicktabs-tabs a {
     color: #ffffff; }
-  /* line 22, ../sass/components/tabs/_search-tab.scss */
+  /* line 21, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs ul.quicktabs-tabs li {
     background: #494f57;
     margin: 0 auto;
@@ -1030,32 +1029,32 @@ and open the template in the editor.
       content: "";
       display: table;
       clear: both; }
-    /* line 33, ../sass/components/tabs/_search-tab.scss */
+    /* line 32, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:hover {
       background: #606873;
       border-bottom: none; }
-    /* line 37, ../sass/components/tabs/_search-tab.scss */
+    /* line 36, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:first-child {
       -moz-border-radius-topleft: 4px;
       -webkit-border-top-left-radius: 4px;
       border-top-left-radius: 4px; }
-    /* line 40, ../sass/components/tabs/_search-tab.scss */
+    /* line 39, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child {
       -moz-border-radius-topright: 4px;
       -webkit-border-top-right-radius: 4px;
       border-top-right-radius: 4px; }
-      /* line 42, ../sass/components/tabs/_search-tab.scss */
+      /* line 41, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child a {
         border-right: none; }
-    /* line 47, ../sass/components/tabs/_search-tab.scss */
+    /* line 46, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li.active {
       background: #efede8; }
-      /* line 50, ../sass/components/tabs/_search-tab.scss */
+      /* line 49, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li.active a {
         color: #000000; }
-/* line 57, ../sass/components/tabs/_search-tab.scss */
+/* line 56, ../sass/components/tabs/_search-tab.scss */
 .block--quicktabs-search-tabs .quicktabs_main {
-  padding: 1.5em;
+  padding: 0 1.5em;
   background: #efede8;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -1070,10 +1069,10 @@ and open the template in the editor.
     content: "";
     display: table;
     clear: both; }
-  /* line 64, ../sass/components/tabs/_search-tab.scss */
+  /* line 63, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs .quicktabs_main input[type="text"] {
     width: 85%;
-    height: 3.5em;
+    height: 2.5em;
     margin-top: 1.71429em;
     margin-bottom: 1.71429em;
     -moz-border-radius-topright: 0;
@@ -1082,10 +1081,10 @@ and open the template in the editor.
     -moz-border-radius-bottomright: 0;
     -webkit-border-bottom-right-radius: 0;
     border-bottom-right-radius: 0; }
-  /* line 70, ../sass/components/tabs/_search-tab.scss */
+  /* line 69, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs .quicktabs_main input[type="submit"] {
     width: 15%;
-    height: 3.5em;
+    height: 2.5em;
     margin-top: 1.71429em;
     margin-bottom: 1.71429em;
     -moz-border-radius-topleft: 0;

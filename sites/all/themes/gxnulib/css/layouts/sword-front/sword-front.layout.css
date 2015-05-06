@@ -55,8 +55,8 @@ and open the template in the editor.
 @media (min-width: 70em) {
   /* line 41, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--search-tab {
-    -sgs-span-settings: ("span": 8, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
-    width: 65.95745%;
+    -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 48.93617%;
     float: left;
     margin-right: -100%;
     margin-left: 0;

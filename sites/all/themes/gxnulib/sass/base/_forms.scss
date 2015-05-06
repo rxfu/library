@@ -1,3 +1,17 @@
+fieldset {
+    margin-left: 0;
+    margin-right: 0;
+    padding: ($vert-spacing-unit / 2) $horz-spacing-unit $vert-spacing-unit $horz-spacing-unit;
+
+    border-color: $border-color;
+}
+
+legend {
+    @extend .delta;
+    padding: 0 $spacing;
+    color: $font-color;
+}
+
 input[type="text"],
 textarea {
     padding: $spacing $spacing*2;
@@ -13,20 +27,6 @@ textarea {
     &:focus {
         @include box-shadow(0 0 6px rgba($input-border-color, 0.7));
     }
-}
-
-fieldset {
-    margin-left: 0;
-    margin-right: 0;
-    padding: ($vert-spacing-unit / 2) $horz-spacing-unit $vert-spacing-unit $horz-spacing-unit;
-
-    border-color: $border-color;
-}
-
-legend {
-    @extend .delta;
-    padding: 0 $spacing;
-    color: $font-color;
 }
 
 input[type="submit"], input[type="button"]{

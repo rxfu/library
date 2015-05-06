@@ -31,7 +31,7 @@ $tab-menu-link-bgcolor: #494f57;
 $tab-menu-link-hover-bgcolor: #606873;
 $tab-menu-border-color: #877d60;
 
-$input-border-color: $border-color;
+$input-border-color: darken($border-color, 30%);
 $input-color: $white;
 $input-bgcolor: $header-color;
 $input-hover-bgcolor: darken($input-bgcolor, 5%);

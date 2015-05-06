@@ -11,7 +11,6 @@ and open the template in the editor.
     ul.quicktabs-tabs {
         padding: 0;
         margin: 0;
-        @extend .delta;
         @include pie-clearfix;
         font-weight: bold;
 
@@ -55,7 +54,7 @@ and open the template in the editor.
     }
     
     .quicktabs_main {
-        padding: $vert-spacing-unit;
+        padding: 0 $vert-spacing-unit;
         background: $tab-bgcolor;
         @include border-bottom-radius($radius);
         @include pie-clearfix;
@@ -63,13 +62,13 @@ and open the template in the editor.
 
         input[type="text"] {
             width: 85%;
-            height: 3.5em;
+            height: 2.5em;
             @include rhythm-margins(1);
             @include border-right-radius(0);
         }
         input[type="submit"] {
             width: 15%;
-            height: 3.5em;
+            height: 2.5em;
             @include rhythm-margins(1);
             @include border-left-radius(0);
         }

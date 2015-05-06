@@ -39,7 +39,7 @@
 
 @include breakpoint($desktop) {
     .l-region--search-tab {
-        @include grid-span(8, 1);
+        @include grid-span(6, 1);
     }
     
     .l-region--stacked-first {
