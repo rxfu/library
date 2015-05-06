@@ -354,53 +354,35 @@ footer,
     color: #595959; }
 
 /**
- * $BARS
- */
-/* line 151, ../sass/base/_typography.scss */
-.l-bar {
-  padding: 0.1em 1em;
-  background: #000000;
-  text-align: right;
-  color: black;
-  font-size: 12px;
-  font-size: 0.85714rem; }
-  /* line 160, ../sass/base/_typography.scss */
-  .l-bar a {
-    color: gray; }
-    /* line 162, ../sass/base/_typography.scss */
-    .l-bar a:hover {
-      color: #cccccc; }
-
-/**
  * $USERFUL LINKS
  */
-/* line 171, ../sass/base/_typography.scss */
+/* line 151, ../sass/base/_typography.scss */
 .l-useful-link {
   text-align: center;
   font-size: 12px;
   font-size: 0.85714rem;
   color: gray; }
-  /* line 176, ../sass/base/_typography.scss */
+  /* line 156, ../sass/base/_typography.scss */
   .l-useful-link a {
     color: gray; }
-    /* line 178, ../sass/base/_typography.scss */
+    /* line 158, ../sass/base/_typography.scss */
     .l-useful-link a:visited {
       color: gray; }
-    /* line 181, ../sass/base/_typography.scss */
+    /* line 161, ../sass/base/_typography.scss */
     .l-useful-link a:hover {
       color: #cccccc; }
 
 /**
  * $COPYRIGHT
  */
-/* line 190, ../sass/base/_typography.scss */
+/* line 170, ../sass/base/_typography.scss */
 .l-copyright {
   text-align: center;
   font-size: 12px;
   font-size: 0.85714rem;
   color: #595959; }
-  /* line 195, ../sass/base/_typography.scss */
-  .l-copyright a {
+  /* line 176, ../sass/base/_typography.scss */
+  .l-copyright a, .l-copyright a:visited, .l-copyright a:hover {
     color: #595959; }
 
 /*

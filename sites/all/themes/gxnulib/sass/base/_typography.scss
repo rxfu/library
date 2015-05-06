@@ -146,26 +146,6 @@ footer,
 }
 
 /**
- * $BARS
- */
-.l-bar {
-    padding: .1em $horz-spacing-unit;
-    
-    background: $black;
-    
-    text-align: right;
-    color: darken($font-color, 30%);
-    @include font-size(12px);
-    
-    a {
-        color: lighten($font-color, 30%);
-        &:hover {
-            color: lighten($font-color, 60%);
-        }
-    }
-}
-
-/**
  * $USERFUL LINKS
  */
 .l-useful-link {    
@@ -193,6 +173,10 @@ footer,
     color: lighten($font-color, 15%);
     
     a {
-        color: lighten($font-color, 15%);
+        &,
+        &:visited,
+        &:hover {
+            color: lighten($font-color, 15%);            
+        }
     }
 }
