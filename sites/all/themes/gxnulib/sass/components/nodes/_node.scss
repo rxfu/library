@@ -11,6 +11,10 @@ and open the template in the editor.
     background: transparent;
     padding: 0;
     margin: 0 auto;
+    
+    a {
+        color: $link-color;
+    }
 }
 
 .category {

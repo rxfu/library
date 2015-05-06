@@ -95,7 +95,7 @@
       <div class="submitted">
         <?php print $submitted; ?>
       </div>
-      <?php render($content['field_tags']); ?>
+      <?php print render($content['field_tags']); ?>
     </footer>
   <?php endif; ?>
 

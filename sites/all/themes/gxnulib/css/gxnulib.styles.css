@@ -713,6 +713,10 @@ and open the template in the editor.
       /* line 52, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li a {
         display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        *zoom: 1;
+        *display: inline;
         color: #333333; }
         /* line 57, ../sass/components/menus/_navigation.scss */
         .l-region--sidebar-first .block--menu-block ul.menu li a.active, .l-region--sidebar-first .block--menu-block ul.menu li a.active:before, .l-region--sidebar-first .block--menu-block ul.menu li a.active:hover {
@@ -741,32 +745,75 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : May 6, 2015, 11:51:22 AM
+    Author     : Stephen
+*/
+/* line 10, ../sass/components/misc/_related-article.scss */
+.block--views-view-related-article-block {
+  border: 1px solid #f0f0f0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  /* line 14, ../sass/components/misc/_related-article.scss */
+  .block--views-view-related-article-block .block__title {
+    border-top: 3px solid #e87411;
+    color: #e87411;
+    height: 3em;
+    line-height: 3em;
+    padding-left: 1.5em; }
+  /* line 22, ../sass/components/misc/_related-article.scss */
+  .block--views-view-related-article-block ul {
+    padding-left: 1.5em; }
+    /* line 26, ../sass/components/misc/_related-article.scss */
+    .block--views-view-related-article-block ul li.views-row-odd {
+      background: #ffffff; }
+    /* line 30, ../sass/components/misc/_related-article.scss */
+    .block--views-view-related-article-block ul li:before {
+      font-family: "FontAwesome";
+      content: "\f101";
+      padding-right: 0.5em;
+      display: inline-block; }
+    /* line 37, ../sass/components/misc/_related-article.scss */
+    .block--views-view-related-article-block ul li a {
+      color: #333333;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline; }
+      /* line 41, ../sass/components/misc/_related-article.scss */
+      .block--views-view-related-article-block ul li a:hover {
+        color: #e87411; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : May 3, 2015, 11:12:37 AM
     Author     : Stephen
 */
-/* line 11, ../sass/components/misc/_taxonomy-term.scss */
-.view-taxonomy-term .block__title {
-  border-top: 3px solid #e87411; }
-/* line 16, ../sass/components/misc/_taxonomy-term.scss */
+/* line 12, ../sass/components/misc/_taxonomy-term.scss */
 .view-taxonomy-term .item-list ul {
   padding-left: 0; }
-  /* line 19, ../sass/components/misc/_taxonomy-term.scss */
+  /* line 15, ../sass/components/misc/_taxonomy-term.scss */
   .view-taxonomy-term .item-list ul li {
     border-bottom: 1px dotted #f0f0f0; }
-    /* line 22, ../sass/components/misc/_taxonomy-term.scss */
+    /* line 18, ../sass/components/misc/_taxonomy-term.scss */
     .view-taxonomy-term .item-list ul li:before {
       font-family: "FontAwesome";
       content: "\f0da";
       padding-right: 0.5em;
       display: inline-block;
       color: #e87411; }
-    /* line 30, ../sass/components/misc/_taxonomy-term.scss */
+    /* line 26, ../sass/components/misc/_taxonomy-term.scss */
     .view-taxonomy-term .item-list ul li .views-field-title {
       padding-right: 1.5em; }
-    /* line 34, ../sass/components/misc/_taxonomy-term.scss */
+    /* line 30, ../sass/components/misc/_taxonomy-term.scss */
     .view-taxonomy-term .item-list ul li a {
       color: #333333; }
-      /* line 37, ../sass/components/misc/_taxonomy-term.scss */
+      /* line 33, ../sass/components/misc/_taxonomy-term.scss */
       .view-taxonomy-term .item-list ul li a:hover {
         color: #e87411; }
 
@@ -784,15 +831,18 @@ and open the template in the editor.
   background: transparent;
   padding: 0;
   margin: 0 auto; }
+  /* line 15, ../sass/components/nodes/_node.scss */
+  .node__submitted a {
+    color: #e87411; }
 
-/* line 16, ../sass/components/nodes/_node.scss */
+/* line 20, ../sass/components/nodes/_node.scss */
 .category {
   text-align: center; }
 
-/* line 20, ../sass/components/nodes/_node.scss */
+/* line 24, ../sass/components/nodes/_node.scss */
 .node__content {
   padding: 1.5em 0.5em; }
-  /* line 23, ../sass/components/nodes/_node.scss */
+  /* line 27, ../sass/components/nodes/_node.scss */
   .node__content p {
     text-indent: 2em; }
 
