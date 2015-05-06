@@ -14,17 +14,24 @@ and open the template in the editor.
         .block__content {
             .field__item {
                 @include inline-block;
-                padding: .4em .5em .4em 0;
-                width: 10.5em;
-            }
-        }
-        
-        ul.menu {
-            padding-left: 0;
-            li {
-               @include inline-block;
-               padding: .4em .5em .4em 0;
-               width: 10.5em;
+                padding: 0 $spacing $spacing $spacing;
+                width: 6em;
+                text-align: center;
+                
+                a {
+                    margin: 0 auto;
+                    
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    
+                    i {
+                        display: block;
+                        @include font-size(60px);
+                        color: $link-color;
+                        margin: 0 auto;
+                    }
+                }
             }
         }
     }

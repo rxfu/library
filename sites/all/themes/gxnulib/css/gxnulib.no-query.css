@@ -403,25 +403,27 @@ and open the template in the editor.
     *vertical-align: auto;
     *zoom: 1;
     *display: inline;
-    padding: .4em .5em .4em 0;
-    width: 10.5em; }
-  /* line 22, ../sass/components/blocks/_block-list.scss */
-  .l-region--stacked-first .block ul.menu {
-    padding-left: 0; }
-    /* line 24, ../sass/components/blocks/_block-list.scss */
-    .l-region--stacked-first .block ul.menu li {
-      display: inline-block;
-      vertical-align: middle;
-      *vertical-align: auto;
-      *zoom: 1;
-      *display: inline;
-      padding: .4em .5em .4em 0;
-      width: 10.5em; }
+    padding: 0 0.5em 0.5em 0.5em;
+    width: 6em;
+    text-align: center; }
+    /* line 21, ../sass/components/blocks/_block-list.scss */
+    .l-region--stacked-first .block .block__content .field__item a {
+      margin: 0 auto; }
+      /* line 24, ../sass/components/blocks/_block-list.scss */
+      .l-region--stacked-first .block .block__content .field__item a:hover {
+        text-decoration: none; }
+      /* line 28, ../sass/components/blocks/_block-list.scss */
+      .l-region--stacked-first .block .block__content .field__item a i {
+        display: block;
+        font-size: 60px;
+        font-size: 4.28571rem;
+        color: #922525;
+        margin: 0 auto; }
 
-/* line 34, ../sass/components/blocks/_block-list.scss */
+/* line 41, ../sass/components/blocks/_block-list.scss */
 .l-region--stacked-second .block {
   padding: 1.5em 0; }
-  /* line 38, ../sass/components/blocks/_block-list.scss */
+  /* line 45, ../sass/components/blocks/_block-list.scss */
   .l-region--stacked-second .block .block__content .field__item {
     display: inline-block;
     vertical-align: middle;
@@ -442,7 +444,8 @@ and open the template in the editor.
 */
 /* line 10, ../sass/components/blocks/_block.scss */
 .block__title {
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 0.5em; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
