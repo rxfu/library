@@ -113,7 +113,7 @@ legend {
 
 /* line 32, ../sass/base/_forms.scss */
 input[type="submit"], input[type="button"] {
-  background: #e87411;
+  background: #922525;
   padding: 0.5em 1em;
   border: 1px solid #f0f0f0;
   color: #ffffff;
@@ -122,7 +122,7 @@ input[type="submit"], input[type="button"] {
   border-radius: 4px; }
   /* line 39, ../sass/base/_forms.scss */
   input[type="submit"]:hover, input[type="button"]:hover {
-    background: #d0680f; }
+    background: #7e2020; }
 
 /* line 44, ../sass/base/_forms.scss */
 input[type="checkbox"], input[type="radio"] {
@@ -163,20 +163,20 @@ html {
 a {
   outline: 0;
   background: transparent;
-  color: #e87411;
+  color: #922525;
   text-decoration: none; }
   /* line 18, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
   a:visited {
-    color: #e87411; }
+    color: #922525; }
   /* line 21, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
-    color: #a1500c; }
+    color: #551616; }
   /* line 24, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
-    color: #a1500c; }
+    color: #551616; }
   /* line 27, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
-    color: #a1500c; }
+    color: #551616; }
   /* line 23, ../sass/base/_typography.scss */
   a:hover {
     text-decoration: underline; }
@@ -192,10 +192,10 @@ a {
     color: #333333; }
   /* line 24, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
   .front-page a:hover {
-    color: #e87411; }
+    color: #922525; }
   /* line 27, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
   .front-page a:active {
-    color: #e87411; }
+    color: #922525; }
 
 /**
  * $HEADINGS
@@ -211,7 +211,7 @@ h6, .zeta {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.34286em;
-  color: #e87411;
+  color: #922525;
   text-transform: uppercase; }
   /* line 47, ../sass/base/_typography.scss */
   h1 a,
@@ -594,7 +594,7 @@ and open the template in the editor.
 /* line 12, ../sass/components/menus/_menu.scss */
 .tb-megamenu .dropdown-menu {
   background-color: #f5f4f1;
-  border-bottom: 0.3em solid #e87411;
+  border-bottom: 0.3em solid #922525;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -618,17 +618,17 @@ and open the template in the editor.
       font-size: 1.14286rem; }
       /* line 31, ../sass/components/menus/_menu.scss */
       .tb-megamenu .nav-collapse .nav > li > a:hover, .tb-megamenu .nav-collapse .nav > li > a:focus {
-        color: #e87411; }
+        color: #922525; }
     /* line 38, ../sass/components/menus/_menu.scss */
     .tb-megamenu .nav-collapse .nav > li.active > a:hover, .tb-megamenu .nav-collapse .nav > li.active > a:focus {
       background-color: #e8e6df;
-      color: #e87411; }
+      color: #922525; }
   /* line 64, ../sass/components/menus/_menu.scss */
   .tb-megamenu .nav-collapse .nav li.dropdown.open > .dropdown-toggle {
-    color: #e87411; }
+    color: #922525; }
   /* line 87, ../sass/components/menus/_menu.scss */
   .tb-megamenu .nav-collapse .nav .active > a, .tb-megamenu .nav-collapse .nav .active > a:hover, .tb-megamenu .nav-collapse .nav .active > a:focus {
-    color: #e87411;
+    color: #922525;
     text-shadow: none;
     background-color: #f5f4f1;
     background-image: none;
@@ -641,10 +641,10 @@ and open the template in the editor.
     display: inline-block; }
     /* line 110, ../sass/components/menus/_menu.scss */
     .tb-megamenu .dropdown-menu li > a:hover, .tb-megamenu .dropdown-menu li > a:focus {
-      color: #e87411; }
+      color: #922525; }
   /* line 119, ../sass/components/menus/_menu.scss */
   .tb-megamenu .dropdown-submenu:hover > a {
-    color: #e87411; }
+    color: #922525; }
 
 /* line 127, ../sass/components/menus/_menu.scss */
 .tb-megamenu-submenu ul li {
@@ -654,7 +654,7 @@ and open the template in the editor.
     font-family: "FontAwesome";
     content: "\f101";
     margin-right: 0.5em;
-    color: #e87411;
+    color: #922525;
     display: inline-block;
     vertical-align: middle;
     *vertical-align: auto;
@@ -678,8 +678,8 @@ and open the template in the editor.
   border-radius: 4px; }
   /* line 15, ../sass/components/menus/_navigation.scss */
   .l-region--sidebar-first .block--menu-block .block__title {
-    border-top: 3px solid #e87411;
-    color: #e87411;
+    border-top: 3px solid #922525;
+    color: #922525;
     height: 3em;
     line-height: 3em;
     padding-left: 1.5em; }
@@ -698,7 +698,7 @@ and open the template in the editor.
       cursor: pointer; }
       /* line 35, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.active, .l-region--sidebar-first .block--menu-block ul.menu li.active:hover {
-        background: #e87411; }
+        background: #922525; }
       /* line 39, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.active:before {
         color: #ffffff; }
@@ -723,7 +723,7 @@ and open the template in the editor.
           color: #ffffff; }
         /* line 64, ../sass/components/menus/_navigation.scss */
         .l-region--sidebar-first .block--menu-block ul.menu li a:hover {
-          color: #e87411;
+          color: #922525;
           text-decoration: none; }
 
 /*
@@ -756,8 +756,8 @@ and open the template in the editor.
   border-radius: 4px; }
   /* line 14, ../sass/components/misc/_related-article.scss */
   .block--views-view-related-article-block .block__title {
-    border-top: 3px solid #e87411;
-    color: #e87411;
+    border-top: 3px solid #922525;
+    color: #922525;
     height: 3em;
     line-height: 3em;
     padding-left: 1.5em; }
@@ -783,7 +783,7 @@ and open the template in the editor.
       *display: inline; }
       /* line 41, ../sass/components/misc/_related-article.scss */
       .block--views-view-related-article-block ul li a:hover {
-        color: #e87411; }
+        color: #922525; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -806,7 +806,7 @@ and open the template in the editor.
       content: "\f0da";
       padding-right: 0.5em;
       display: inline-block;
-      color: #e87411; }
+      color: #922525; }
     /* line 26, ../sass/components/misc/_taxonomy-term.scss */
     .view-taxonomy-term .item-list ul li .views-field-title {
       padding-right: 1.5em; }
@@ -815,7 +815,7 @@ and open the template in the editor.
       color: #333333; }
       /* line 33, ../sass/components/misc/_taxonomy-term.scss */
       .view-taxonomy-term .item-list ul li a:hover {
-        color: #e87411; }
+        color: #922525; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -833,7 +833,7 @@ and open the template in the editor.
   margin: 0 auto; }
   /* line 15, ../sass/components/nodes/_node.scss */
   .node__submitted a {
-    color: #e87411; }
+    color: #922525; }
 
 /* line 20, ../sass/components/nodes/_node.scss */
 .category {
@@ -932,7 +932,7 @@ and open the template in the editor.
     color: #333333; }
     /* line 25, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs .quicktabs_main a:hover {
-      color: #e87411; }
+      color: #922525; }
   /* line 30, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs .quicktabs_main ul {
     padding: 0.5em; }
@@ -944,7 +944,7 @@ and open the template in the editor.
         font-family: "FontAwesome";
         content: "\f0da";
         padding-right: 0.5em;
-        color: #e87411; }
+        color: #922525; }
 /* line 44, ../sass/components/tabs/_news-tab.scss */
 .block--quicktabs-news-tabs ul.quicktabs-tabs {
   padding: 0;
@@ -998,7 +998,7 @@ and open the template in the editor.
     /* line 79, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li.active {
       background: #efede8;
-      border-top: 3px solid #e87411; }
+      border-top: 3px solid #922525; }
     /* line 84, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li a {
       border-right: 1px solid #877d60; }

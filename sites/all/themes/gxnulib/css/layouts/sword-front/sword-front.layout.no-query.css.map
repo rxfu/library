@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";;;;;;;;;;;;;;;AAgBA,8FAAe;EACX,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;ECWd,KAAK,EAAE,CAAC;;ECQV,wIAAQ;IACN,OAAO,EAAE,EAAE;IACX,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,IAAI;;;AFdf,6BAA8B;EAC1B,MAAM,EAAE,OAAoB;;;AAGhC,WAAY;EACR,OAAO,EAAE,OAAoB;EAC7B,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,MAAM;;;AAGlB,qBAAsB;EAClB,UAAU,EGbI,yBAAyB;EHcvC,OAAO,EAAE,SAAqC",
-"sources": ["../../../sass/layouts/sword-front/sword-front.layout.scss","file:///D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_hacks.scss","file:///D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss","../../../sass/variables/_colors.scss"],
+"mappings": ";;;;;;;;;;;;;;;AAYA,OAAQ;EC8MA,gBAAgB,EAAE,2qBAAiC;;;AD1M3D,8FAAe;EACX,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM;EEWd,KAAK,EAAE,CAAC;;ECQV,wIAAQ;IACN,OAAO,EAAE,EAAE;IACX,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,IAAI;;;AHdf,6BAA8B;EAC1B,MAAM,EAAE,OAAoB;;;AAGhC,WAAY;EACR,UAAU,EAAE,MAAM;;;AAGtB,qBAAsB;EAClB,UAAU,EIVI,yBAAyB;EJWvC,OAAO,EAAE,SAAqC",
+"sources": ["../../../sass/layouts/sword-front/sword-front.layout.scss","file:///D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/singularitygs-1.6.2/stylesheets/singularitygs/helpers/_background-grid.scss","file:///D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_hacks.scss","file:///D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss","../../../sass/variables/_colors.scss"],
 "names": [],
 "file": "sword-front.layout.no-query.css"
 }

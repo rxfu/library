@@ -12,9 +12,13 @@ and open the template in the editor.
     Created on : Apr 1, 2015, 10:51:36 AM
     Author     : Stephen
 */
+/* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+.l-page {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%2227%2E27273%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2227%2E27273%25%22%20fill%3D%22%23dd8e56%22%20width%3D%229%2E09091%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2236%2E36364%25%22%20fill%3D%22chocolate%22%20width%3D%2227%2E27273%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2263%2E63636%25%22%20fill%3D%22%23dd8e56%22%20width%3D%229%2E09091%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2272%2E72727%25%22%20fill%3D%22chocolate%22%20width%3D%2227%2E27273%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); }
+
 /* line 17, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-constrained, .l-branding, .l-menu, .l-highlighted, .l-content, .l-useful-link, .l-copyright {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   *zoom: 1; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -29,11 +33,9 @@ and open the template in the editor.
 
 /* line 31, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-branding {
-  padding: 1.5em 0;
-  text-align: center;
-  margin: 0 auto; }
+  text-align: center; }
 
-/* line 37, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 35, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .wrapper--highlighted {
   background: rgba(142, 150, 160, 0.75);
   padding: 1.5em 1em; }

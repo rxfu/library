@@ -4,18 +4,15 @@ preview = preview.png
 template = sword-front-layout
 
 ; Regions
-regions[bar] = Bar
 regions[branding] = Branding
 regions[header] = Header
 regions[navigation] = Navigation
 regions[highlighted] = Highlighted
 regions[help] = Help
 regions[search_tab] = Search Tab
-regions[showcase] = Showcase
 regions[stacked_first] = Stacked First
 regions[stacked_second] = Stacked Second
-regions[stacked] = Stacked
-regions[express] = Express
+regions[stacked_third] = Stacked Third
 regions[link] = Link
 regions[footer] = Footer
 

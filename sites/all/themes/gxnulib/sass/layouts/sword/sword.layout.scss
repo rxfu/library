@@ -15,7 +15,7 @@
 }
 
 .l-constrained {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     @include pie-clearfix();
 }
@@ -40,10 +40,10 @@
     }
     
     .l-content {
-        @include grid-span(12, 5);
+        @include grid-span(8, 5);
     }
     
     .l-region--sidebar-second {
-        @include grid-span(4, 13);
+        @include grid-span(4, 9);
     }
 }

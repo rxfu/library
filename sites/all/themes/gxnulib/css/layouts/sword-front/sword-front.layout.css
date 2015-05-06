@@ -12,9 +12,25 @@ and open the template in the editor.
     Created on : Apr 1, 2015, 10:51:36 AM
     Author     : Stephen
 */
+/* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+.l-page {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%2227%2E27273%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2227%2E27273%25%22%20fill%3D%22%23dd8e56%22%20width%3D%229%2E09091%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2236%2E36364%25%22%20fill%3D%22chocolate%22%20width%3D%2227%2E27273%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2263%2E63636%25%22%20fill%3D%22%23dd8e56%22%20width%3D%229%2E09091%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2272%2E72727%25%22%20fill%3D%22chocolate%22%20width%3D%2227%2E27273%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); }
+  @media (min-width: 480px) {
+    /* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    .l-page {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%2213%2E04348%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2213%2E04348%25%22%20fill%3D%22%23dd8e56%22%20width%3D%224%2E34783%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2217%2E3913%25%22%20fill%3D%22chocolate%22%20width%3D%2213%2E04348%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2230%2E43478%25%22%20fill%3D%22%23dd8e56%22%20width%3D%224%2E34783%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2234%2E78261%25%22%20fill%3D%22chocolate%22%20width%3D%2213%2E04348%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2247%2E82609%25%22%20fill%3D%22%23dd8e56%22%20width%3D%224%2E34783%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2252%2E17391%25%22%20fill%3D%22chocolate%22%20width%3D%2213%2E04348%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2265%2E21739%25%22%20fill%3D%22%23dd8e56%22%20width%3D%224%2E34783%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2269%2E56522%25%22%20fill%3D%22chocolate%22%20width%3D%2213%2E04348%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2282%2E6087%25%22%20fill%3D%22%23dd8e56%22%20width%3D%224%2E34783%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2286%2E95652%25%22%20fill%3D%22chocolate%22%20width%3D%2213%2E04348%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); } }
+  @media (min-width: 720px) {
+    /* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    .l-page {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%228%2E57143%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%228%2E57143%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E85714%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2211%2E42857%25%22%20fill%3D%22chocolate%22%20width%3D%228%2E57143%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2220%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E85714%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2222%2E85714%25%22%20fill%3D%22chocolate%22%20width%3D%228%2E57143%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2231%2E42857%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E85714%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2234%2E28571%25%22%20fill%3D%22chocolate%22%20width%3D%228%2E57143%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2242%2E85714%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E85714%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2245%2E71429%25%22%20fill%3D%22chocolate%22%20width%3D%228%2E57143%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2254%2E28571%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E85714%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2257%2E14286%25%22%20fill%3D%22chocolate%22%20width%3D%228%2E57143%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2265%2E71429%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E85714%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2268%2E57143%25%22%20fill%3D%22chocolate%22%20width%3D%228%2E57143%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2277%2E14286%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E85714%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2280%25%22%20fill%3D%22chocolate%22%20width%3D%228%2E57143%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2288%2E57143%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E85714%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2291%2E42857%25%22%20fill%3D%22chocolate%22%20width%3D%228%2E57143%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); } }
+  @media (min-width: 1120px) {
+    /* line 13, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    .l-page {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%3E%3Crect%20x%3D%220%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%226%2E38298%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%228%2E51064%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2214%2E89362%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2217%2E02128%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2223%2E40426%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2225%2E53191%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2231%2E91489%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2234%2E04255%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2240%2E42553%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2242%2E55319%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2248%2E93617%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2251%2E06383%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2257%2E44681%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2259%2E57447%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2265%2E95745%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2268%2E08511%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2274%2E46809%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2276%2E59574%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2282%2E97872%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2285%2E10638%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2291%2E48936%25%22%20fill%3D%22%23dd8e56%22%20width%3D%222%2E12766%25%22%20height%3D%22100%25%22%2F%3E%3Crect%20x%3D%2293%2E61702%25%22%20fill%3D%22chocolate%22%20width%3D%226%2E38298%25%22%20height%3D%22100%25%22%2F%3E%3C%2Fsvg%3E"); } }
+
 /* line 17, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-constrained, .l-branding, .l-menu, .l-highlighted, .l-content, .l-useful-link, .l-copyright {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   *zoom: 1; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -29,43 +45,45 @@ and open the template in the editor.
 
 /* line 31, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-branding {
-  padding: 1.5em 0;
-  text-align: center;
-  margin: 0 auto; }
+  text-align: center; }
 
-/* line 37, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 35, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .wrapper--highlighted {
   background: rgba(142, 150, 160, 0.75);
   padding: 1.5em 1em; }
 
 @media (min-width: 70em) {
-  /* line 43, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 41, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--search-tab {
-    width: 74.60317%;
+    -sgs-span-settings: ("span": 8, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 65.95745%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
 
-  /* line 47, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-  .l-region--showcase {
-    width: 23.80952%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-
-  /* line 51, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 45, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--stacked-first {
-    width: 74.60317%;
+    -sgs-span-settings: ("span": 4, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 31.91489%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
 
-  /* line 55, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 49, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--stacked-second {
-    width: 23.80952%;
+    -sgs-span-settings: ("span": 4, "location": 5, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 31.91489%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.04255%;
+    clear: none; }
+
+  /* line 53, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  .l-region--stacked-third {
+    -sgs-span-settings: ("span": 4, "location": 9, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 31.91489%;
     float: right;
     margin-left: 0;
     margin-right: 0;

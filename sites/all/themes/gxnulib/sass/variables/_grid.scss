@@ -12,16 +12,18 @@ and open the template in the editor.
 $vert-spacing-unit: 1.5em;
 $horz-spacing-unit: 1em;
 
-$tablet: 44em;
+$portrait: 30em;
+$landscape: 45em;
 $desktop: 70em;
 
-@include add-grid(4);
-@include add-grid(12 at $tablet);
-@include add-grid(16 at $desktop);
+@include add-grid(3);
+@include add-grid(6 at $portrait);
+@include add-grid(9 at $landscape);
+@include add-grid(12 at $desktop);
 
 @include add-gutter(1/3);
 
-@include sgs-change('debug', false);
+@include sgs-change('debug', true);
 
 $radius: 4px;
 $spacing: 0.5em;

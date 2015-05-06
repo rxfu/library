@@ -1,5 +1,4 @@
 <div class="l-page front-page"<?php print $attributes?>>
-    <div class="l-bar"><?php print render($page['bar']); ?></div>
     <header class="l-header" role="banner">
         <div class="wrapper wrapper--branding">
             <section class="l-branding">
@@ -30,7 +29,6 @@
         <div class="wrapper wrapper--highlighted">
             <div class="l-highlighted">
               <?php print render($page['search_tab']); ?>
-              <?php print render($page['showcase']); ?>
               <?php print render($page['highlighted']); ?>
             </div>
         </div>
@@ -39,6 +37,7 @@
         <div class="l-content" role="main">
             <?php print render($page['stacked_first']); ?>
             <?php print render($page['stacked_second']); ?>
+            <?php print render($page['stacked_third']); ?>
         </div>
     </section>
     <footer class="l-footer" role="contentinfo">

@@ -15,7 +15,7 @@
 }
 
 .l-constrained {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     @include pie-clearfix();
 }
@@ -29,9 +29,7 @@
 }
 
 .l-branding {
-    padding: $vert-spacing-unit 0;
     text-align: center;
-    margin: 0 auto;
 }
 
 .wrapper--highlighted {
@@ -41,18 +39,18 @@
 
 @include breakpoint($desktop) {
     .l-region--search-tab {
-        @include grid-span(12, 1);
-    }
-    
-    .l-region--showcase {
-        @include grid-span(4, 13);
+        @include grid-span(8, 1);
     }
     
     .l-region--stacked-first {
-        @include grid-span(12, 1);
+        @include grid-span(4, 1);
     }
     
     .l-region--stacked-second {
-        @include grid-span(4, 13);
+        @include grid-span(4, 5);
+    }
+    
+    .l-region--stacked-third {
+        @include grid-span(4, 9);
     }
 }
