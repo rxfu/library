@@ -591,20 +591,18 @@ and open the template in the editor.
 .tb-megamenu {
   background-color: #f5f4f1;
   border-bottom: 1px solid #e8e6df; }
-  /* line 25, ../sass/components/menus/_menu.scss */
-  .tb-megamenu .nav-collapse .nav > li {
-    padding-bottom: 0; }
-    /* line 27, ../sass/components/menus/_menu.scss */
-    .tb-megamenu .nav-collapse .nav > li > a {
-      font-size: 16px;
-      font-size: 1.14286rem; }
-      /* line 31, ../sass/components/menus/_menu.scss */
-      .tb-megamenu .nav-collapse .nav > li > a:hover, .tb-megamenu .nav-collapse .nav > li > a:focus {
-        color: #922525; }
-    /* line 38, ../sass/components/menus/_menu.scss */
-    .tb-megamenu .nav-collapse .nav > li.active > a:hover, .tb-megamenu .nav-collapse .nav > li.active > a:focus {
-      background-color: #e8e6df;
+  /* line 26, ../sass/components/menus/_menu.scss */
+  .tb-megamenu .nav-collapse .nav > li > a {
+    font-size: 16px;
+    font-size: 1.14286rem;
+    padding: 0.5em 1.5em; }
+    /* line 31, ../sass/components/menus/_menu.scss */
+    .tb-megamenu .nav-collapse .nav > li > a:hover, .tb-megamenu .nav-collapse .nav > li > a:focus {
       color: #922525; }
+  /* line 38, ../sass/components/menus/_menu.scss */
+  .tb-megamenu .nav-collapse .nav > li.active > a:hover, .tb-megamenu .nav-collapse .nav > li.active > a:focus {
+    background-color: #e8e6df;
+    color: #922525; }
   /* line 64, ../sass/components/menus/_menu.scss */
   .tb-megamenu .nav-collapse .nav li.dropdown.open > .dropdown-toggle {
     color: #922525; }
@@ -620,7 +618,11 @@ and open the template in the editor.
     outline: none; }
   /* line 107, ../sass/components/menus/_menu.scss */
   .tb-megamenu .dropdown-menu li > a {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline; }
     /* line 110, ../sass/components/menus/_menu.scss */
     .tb-megamenu .dropdown-menu li > a:hover, .tb-megamenu .dropdown-menu li > a:focus {
       color: #922525; }
