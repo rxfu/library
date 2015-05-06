@@ -8,21 +8,35 @@ and open the template in the editor.
     Author     : Stephen
 */
 .view-taxonomy-term {
+    .block__title {
+        border-top: 3px solid $link-color;
+    }
+    
     .item-list {
-        li.views-row {
-            border-bottom: 1px dotted lighten($font-color, 30%);
+        ul {
+            padding-left: 0;
             
-            &:before {
-                font-family: "FontAwesome";
-                content: "\f101";
-                padding-right: $spacing;
-            }
-            
-            a {
-                color: $font-color;
+            li {
+                border-bottom: 1px dotted $border-color;
                 
-                &:hover {
+                &:before {
+                    font-family: "FontAwesome";
+                    content: "\f0da";
+                    padding-right: $spacing;
+                    display: inline-block;
                     color: $link-color;
+                }
+
+                .views-field-title {
+                    padding-right: $vert-spacing-unit;
+                }
+                
+                a {
+                    color: $font-color;
+
+                    &:hover {
+                        color: $link-color;
+                    }
                 }
             }
         }

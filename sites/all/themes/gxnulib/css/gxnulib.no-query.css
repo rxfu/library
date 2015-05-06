@@ -403,18 +403,6 @@ footer,
   .l-copyright a {
     color: #595959; }
 
-/**
- * $CONTENT
- */
-/* line 203, ../sass/base/_typography.scss */
-.l-content {
-  background: #ffffff;
-  border: 1px solid #f0f0f0;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  padding: 0 1.5em; }
-
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -711,22 +699,25 @@ and open the template in the editor.
       /* line 35, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.active, .l-region--sidebar-first .block--menu-block ul.menu li.active:hover {
         background: #e87411; }
-      /* line 40, ../sass/components/menus/_navigation.scss */
+      /* line 39, ../sass/components/menus/_navigation.scss */
+      .l-region--sidebar-first .block--menu-block ul.menu li.active:before {
+        color: #ffffff; }
+      /* line 43, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li:before {
         font-family: "FontAwesome";
-        content: "\f105";
+        content: "\f101";
         padding-right: 0.5em; }
-      /* line 45, ../sass/components/menus/_navigation.scss */
+      /* line 48, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li:hover {
         background: #f0f0f0; }
-      /* line 49, ../sass/components/menus/_navigation.scss */
+      /* line 52, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li a {
         display: inline-block;
         color: #333333; }
-        /* line 54, ../sass/components/menus/_navigation.scss */
+        /* line 57, ../sass/components/menus/_navigation.scss */
         .l-region--sidebar-first .block--menu-block ul.menu li a.active, .l-region--sidebar-first .block--menu-block ul.menu li a.active:before, .l-region--sidebar-first .block--menu-block ul.menu li a.active:hover {
           color: #ffffff; }
-        /* line 61, ../sass/components/menus/_navigation.scss */
+        /* line 64, ../sass/components/menus/_navigation.scss */
         .l-region--sidebar-first .block--menu-block ul.menu li a:hover {
           color: #e87411;
           text-decoration: none; }
@@ -753,20 +744,31 @@ and open the template in the editor.
     Created on : May 3, 2015, 11:12:37 AM
     Author     : Stephen
 */
-/* line 12, ../sass/components/misc/_taxonomy-term.scss */
-.view-taxonomy-term .item-list li.views-row {
-  border-bottom: 1px dotted gray; }
-  /* line 15, ../sass/components/misc/_taxonomy-term.scss */
-  .view-taxonomy-term .item-list li.views-row:before {
-    font-family: "FontAwesome";
-    content: "\f101";
-    padding-right: 0.5em; }
-  /* line 21, ../sass/components/misc/_taxonomy-term.scss */
-  .view-taxonomy-term .item-list li.views-row a {
-    color: #333333; }
-    /* line 24, ../sass/components/misc/_taxonomy-term.scss */
-    .view-taxonomy-term .item-list li.views-row a:hover {
+/* line 11, ../sass/components/misc/_taxonomy-term.scss */
+.view-taxonomy-term .block__title {
+  border-top: 3px solid #e87411; }
+/* line 16, ../sass/components/misc/_taxonomy-term.scss */
+.view-taxonomy-term .item-list ul {
+  padding-left: 0; }
+  /* line 19, ../sass/components/misc/_taxonomy-term.scss */
+  .view-taxonomy-term .item-list ul li {
+    border-bottom: 1px dotted #f0f0f0; }
+    /* line 22, ../sass/components/misc/_taxonomy-term.scss */
+    .view-taxonomy-term .item-list ul li:before {
+      font-family: "FontAwesome";
+      content: "\f0da";
+      padding-right: 0.5em;
+      display: inline-block;
       color: #e87411; }
+    /* line 30, ../sass/components/misc/_taxonomy-term.scss */
+    .view-taxonomy-term .item-list ul li .views-field-title {
+      padding-right: 1.5em; }
+    /* line 34, ../sass/components/misc/_taxonomy-term.scss */
+    .view-taxonomy-term .item-list ul li a {
+      color: #333333; }
+      /* line 37, ../sass/components/misc/_taxonomy-term.scss */
+      .view-taxonomy-term .item-list ul li a:hover {
+        color: #e87411; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
