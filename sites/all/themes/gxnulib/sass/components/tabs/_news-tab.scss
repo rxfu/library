@@ -16,7 +16,7 @@ and open the template in the editor.
     }
     
     .quicktabs_main {
-        padding: $spacing;
+        padding: 0 $spacing;
         background: $tab-bgcolor;
         @include pie-clearfix;
 
@@ -30,7 +30,7 @@ and open the template in the editor.
         ul {
             padding: $spacing;
             li {
-                padding: $spacing 0;
+                padding: 0 0 $spacing 0;
                 &:before {
                     font-family: "FontAwesome";
                     content: "\f0da";
@@ -44,9 +44,8 @@ and open the template in the editor.
     ul.quicktabs-tabs {
         padding: 0;
         margin: 0;
-        @extend .delta;
+        @include font-size(14px);
         @include pie-clearfix;
-        font-weight: bold;
 
         a {
             color: $font-color;

@@ -20,24 +20,28 @@
     @include pie-clearfix();
 }
 
-.l-branding, .l-menu, .l-highlighted, .l-content, .l-useful-link, .l-copyright {
+.l-branding, .l-heading, .l-highlighted, .l-content, .l-useful-link, .l-copyright {
     @extend .l-constrained;
 }
 
-.l-header, .l-main, .l-footer {
+.l-main, .l-footer {
     margin: $vert-spacing-unit 0;
 }
 
-.l-branding {
-    text-align: center;
-}
-
-.wrapper--highlighted {
-    background: $heading-bgcolor;
-    padding: $vert-spacing-unit $horz-spacing-unit;
+.l-heading {
+    background: url(../../../images/banner.jpg) center 0 no-repeat;
+    width: 100%;
+    height: 220px;
+    @include border-radius($radius);
 }
 
 @include breakpoint($desktop) {
+    .site-branding {
+        @include grid-span(6, 1);
+    }
+    .l-region--navigation {
+        @include grid-span(6, 7);
+    }
     .l-region--search-tab {
         @include grid-span(6, 1);
     }

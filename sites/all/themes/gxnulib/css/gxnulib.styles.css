@@ -204,7 +204,7 @@ a {
 h1, .alpha,
 h2, .beta, .article-title,
 h3, .gamma,
-h4, .delta, legend, .block__title, .block--quicktabs-news-tabs ul.quicktabs-tabs,
+h4, .delta, legend, .block__title,
 h5, .epsilon,
 h6, .zeta {
   margin-top: 0em;
@@ -225,11 +225,10 @@ h6, .zeta {
   h3 a:visited, .gamma a,
   .gamma a:visited,
   h4 a,
-  h4 a:visited, .delta a, legend a, .block__title a, .block--quicktabs-news-tabs ul.quicktabs-tabs a,
+  h4 a:visited, .delta a, legend a, .block__title a,
   .delta a:visited,
   legend a:visited,
   .block__title a:visited,
-  .block--quicktabs-news-tabs ul.quicktabs-tabs a:visited,
   h5 a,
   h5 a:visited, .epsilon a,
   .epsilon a:visited,
@@ -260,7 +259,7 @@ h3, .gamma {
   line-height: 40px; }
 
 /* line 68, ../sass/base/_typography.scss */
-h4, .delta, legend, .block__title, .block--quicktabs-news-tabs ul.quicktabs-tabs {
+h4, .delta, legend, .block__title {
   font-size: 18px;
   font-size: 1.28571rem;
   line-height: 32px; }
@@ -589,9 +588,9 @@ and open the template in the editor.
   border-bottom: 1px solid #e8e6df; }
   /* line 26, ../sass/components/menus/_menu.scss */
   .tb-megamenu .nav-collapse .nav > li > a {
-    font-size: 16px;
-    font-size: 1.14286rem;
-    padding: 0.5em 1.5em; }
+    font-size: 14px;
+    font-size: 1rem;
+    padding: 0.5em; }
     /* line 31, ../sass/components/menus/_menu.scss */
     .tb-megamenu .nav-collapse .nav > li > a:hover, .tb-megamenu .nav-collapse .nav > li > a:focus {
       color: #922525; }
@@ -899,7 +898,7 @@ and open the template in the editor.
     padding: 0; }
 /* line 18, ../sass/components/tabs/_news-tab.scss */
 .block--quicktabs-news-tabs .quicktabs_main {
-  padding: 0.5em;
+  padding: 0 0.5em;
   background: #efede8;
   *zoom: 1; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -918,7 +917,7 @@ and open the template in the editor.
     padding: 0.5em; }
     /* line 32, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs .quicktabs_main ul li {
-      padding: 0.5em 0; }
+      padding: 0 0 0.5em 0; }
       /* line 34, ../sass/components/tabs/_news-tab.scss */
       .block--quicktabs-news-tabs .quicktabs_main ul li:before {
         font-family: "FontAwesome";
@@ -929,17 +928,18 @@ and open the template in the editor.
 .block--quicktabs-news-tabs ul.quicktabs-tabs {
   padding: 0;
   margin: 0;
-  *zoom: 1;
-  font-weight: bold; }
+  font-size: 14px;
+  font-size: 1rem;
+  *zoom: 1; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .block--quicktabs-news-tabs ul.quicktabs-tabs:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 51, ../sass/components/tabs/_news-tab.scss */
+  /* line 50, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs ul.quicktabs-tabs a {
     color: #333333; }
-  /* line 55, ../sass/components/tabs/_news-tab.scss */
+  /* line 54, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs ul.quicktabs-tabs li {
     background: #494f57;
     margin: 0 auto;
@@ -958,28 +958,28 @@ and open the template in the editor.
       content: "";
       display: table;
       clear: both; }
-    /* line 65, ../sass/components/tabs/_news-tab.scss */
+    /* line 64, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li:hover {
       background: #606873;
       border-bottom: none; }
-    /* line 69, ../sass/components/tabs/_news-tab.scss */
+    /* line 68, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li:first-child {
       -moz-border-radius-topleft: 4px;
       -webkit-border-top-left-radius: 4px;
       border-top-left-radius: 4px; }
-    /* line 72, ../sass/components/tabs/_news-tab.scss */
+    /* line 71, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li:last-child {
       -moz-border-radius-topright: 4px;
       -webkit-border-top-right-radius: 4px;
       border-top-right-radius: 4px; }
-      /* line 74, ../sass/components/tabs/_news-tab.scss */
+      /* line 73, ../sass/components/tabs/_news-tab.scss */
       .block--quicktabs-news-tabs ul.quicktabs-tabs li:last-child a {
         border-right: none; }
-    /* line 79, ../sass/components/tabs/_news-tab.scss */
+    /* line 78, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li.active {
       background: #efede8;
       border-top: 3px solid #922525; }
-    /* line 84, ../sass/components/tabs/_news-tab.scss */
+    /* line 83, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li a {
       border-right: 1px solid #877d60; }
 
@@ -992,103 +992,107 @@ and open the template in the editor.
     Created on : Apr 20, 2015, 9:42:05 PM
     Author     : Stephen
 */
-/* line 11, ../sass/components/tabs/_search-tab.scss */
-.block--quicktabs-search-tabs ul.quicktabs-tabs {
-  padding: 0;
-  margin: 0;
-  *zoom: 1;
-  font-weight: bold; }
-  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-  .block--quicktabs-search-tabs ul.quicktabs-tabs:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 17, ../sass/components/tabs/_search-tab.scss */
-  .block--quicktabs-search-tabs ul.quicktabs-tabs a {
-    color: #ffffff; }
-  /* line 21, ../sass/components/tabs/_search-tab.scss */
-  .block--quicktabs-search-tabs ul.quicktabs-tabs li {
-    background: #494f57;
-    margin: 0 auto;
-    padding: 0.5em;
-    width: 50%;
-    text-align: center;
-    float: left;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
+/* line 10, ../sass/components/tabs/_search-tab.scss */
+.block--quicktabs-search-tabs {
+  margin-top: 10%;
+  margin-left: 10%; }
+  /* line 14, ../sass/components/tabs/_search-tab.scss */
+  .block--quicktabs-search-tabs ul.quicktabs-tabs {
+    padding: 0;
+    margin: 0;
     *zoom: 1;
-    *display: inline;
-    *zoom: 1;
-    cursor: pointer; }
+    font-weight: bold; }
     /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-    .block--quicktabs-search-tabs ul.quicktabs-tabs li:after {
+    .block--quicktabs-search-tabs ul.quicktabs-tabs:after {
       content: "";
       display: table;
       clear: both; }
-    /* line 32, ../sass/components/tabs/_search-tab.scss */
-    .block--quicktabs-search-tabs ul.quicktabs-tabs li:hover {
-      background: #606873;
-      border-bottom: none; }
-    /* line 36, ../sass/components/tabs/_search-tab.scss */
-    .block--quicktabs-search-tabs ul.quicktabs-tabs li:first-child {
-      -moz-border-radius-topleft: 4px;
-      -webkit-border-top-left-radius: 4px;
-      border-top-left-radius: 4px; }
-    /* line 39, ../sass/components/tabs/_search-tab.scss */
-    .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child {
-      -moz-border-radius-topright: 4px;
-      -webkit-border-top-right-radius: 4px;
-      border-top-right-radius: 4px; }
-      /* line 41, ../sass/components/tabs/_search-tab.scss */
-      .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child a {
-        border-right: none; }
-    /* line 46, ../sass/components/tabs/_search-tab.scss */
-    .block--quicktabs-search-tabs ul.quicktabs-tabs li.active {
-      background: #efede8; }
+    /* line 20, ../sass/components/tabs/_search-tab.scss */
+    .block--quicktabs-search-tabs ul.quicktabs-tabs a {
+      color: #ffffff; }
+    /* line 24, ../sass/components/tabs/_search-tab.scss */
+    .block--quicktabs-search-tabs ul.quicktabs-tabs li {
+      background: #494f57;
+      margin: 0 auto;
+      padding: 0.5em;
+      width: 50%;
+      text-align: center;
+      float: left;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      *zoom: 1;
+      cursor: pointer; }
+      /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+      .block--quicktabs-search-tabs ul.quicktabs-tabs li:after {
+        content: "";
+        display: table;
+        clear: both; }
+      /* line 35, ../sass/components/tabs/_search-tab.scss */
+      .block--quicktabs-search-tabs ul.quicktabs-tabs li:hover {
+        background: #606873;
+        border-bottom: none; }
+      /* line 39, ../sass/components/tabs/_search-tab.scss */
+      .block--quicktabs-search-tabs ul.quicktabs-tabs li:first-child {
+        -moz-border-radius-topleft: 4px;
+        -webkit-border-top-left-radius: 4px;
+        border-top-left-radius: 4px; }
+      /* line 42, ../sass/components/tabs/_search-tab.scss */
+      .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child {
+        -moz-border-radius-topright: 4px;
+        -webkit-border-top-right-radius: 4px;
+        border-top-right-radius: 4px; }
+        /* line 44, ../sass/components/tabs/_search-tab.scss */
+        .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child a {
+          border-right: none; }
       /* line 49, ../sass/components/tabs/_search-tab.scss */
-      .block--quicktabs-search-tabs ul.quicktabs-tabs li.active a {
-        color: #000000; }
-/* line 56, ../sass/components/tabs/_search-tab.scss */
-.block--quicktabs-search-tabs .quicktabs_main {
-  padding: 0 1.5em;
-  background: #efede8;
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  *zoom: 1;
-  text-align: center; }
-  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-  .block--quicktabs-search-tabs .quicktabs_main:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 63, ../sass/components/tabs/_search-tab.scss */
-  .block--quicktabs-search-tabs .quicktabs_main input[type="text"] {
-    width: 85%;
-    height: 2.5em;
-    margin-top: 1.71429em;
-    margin-bottom: 1.71429em;
-    -moz-border-radius-topright: 0;
-    -webkit-border-top-right-radius: 0;
-    border-top-right-radius: 0;
-    -moz-border-radius-bottomright: 0;
-    -webkit-border-bottom-right-radius: 0;
-    border-bottom-right-radius: 0; }
-  /* line 69, ../sass/components/tabs/_search-tab.scss */
-  .block--quicktabs-search-tabs .quicktabs_main input[type="submit"] {
-    width: 15%;
-    height: 2.5em;
-    margin-top: 1.71429em;
-    margin-bottom: 1.71429em;
-    -moz-border-radius-topleft: 0;
-    -webkit-border-top-left-radius: 0;
-    border-top-left-radius: 0;
-    -moz-border-radius-bottomleft: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0; }
+      .block--quicktabs-search-tabs ul.quicktabs-tabs li.active {
+        background: #efede8; }
+        /* line 52, ../sass/components/tabs/_search-tab.scss */
+        .block--quicktabs-search-tabs ul.quicktabs-tabs li.active a {
+          color: #000000; }
+  /* line 59, ../sass/components/tabs/_search-tab.scss */
+  .block--quicktabs-search-tabs .quicktabs_main {
+    padding: 0 1.5em;
+    background: #efede8;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    *zoom: 1;
+    text-align: center; }
+    /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+    .block--quicktabs-search-tabs .quicktabs_main:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 66, ../sass/components/tabs/_search-tab.scss */
+    .block--quicktabs-search-tabs .quicktabs_main input[type="text"] {
+      width: 85%;
+      height: 2.5em;
+      margin-top: 1.71429em;
+      margin-bottom: 1.71429em;
+      -moz-border-radius-topright: 0;
+      -webkit-border-top-right-radius: 0;
+      border-top-right-radius: 0;
+      -moz-border-radius-bottomright: 0;
+      -webkit-border-bottom-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    /* line 72, ../sass/components/tabs/_search-tab.scss */
+    .block--quicktabs-search-tabs .quicktabs_main input[type="submit"] {
+      width: 15%;
+      height: 2.5em;
+      margin-top: 1.71429em;
+      margin-bottom: 1.71429em;
+      -moz-border-radius-topleft: 0;
+      -webkit-border-top-left-radius: 0;
+      border-top-left-radius: 0;
+      -moz-border-radius-bottomleft: 0;
+      -webkit-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0; }
 
 /*# sourceMappingURL=gxnulib.styles.css.map */

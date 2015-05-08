@@ -24,9 +24,9 @@
         .nav {
             > li {
                 > a {
-                    @include font-size(16px);
+                    @include font-size(14px);
                     @extend %menu;
-                    padding: $spacing $vert-spacing-unit;
+                    padding: $spacing;
                     
                     &:hover,
                     &:focus {
