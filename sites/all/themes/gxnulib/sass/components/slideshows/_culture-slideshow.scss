@@ -16,11 +16,10 @@ and open the template in the editor.
             a {
                 position: absolute;
                 display: block;
-                bottom: 0;
+                bottom: 5px;
                 width: 100%;
-                height: 20%;
+                height: 15%;
                 padding: 0.5em 0.75em;
-                @include text-shadow(2px 2px $black);
                 @include border-bottom-radius($radius);
                 @include font-size(12px);
                 color: $white;
@@ -32,6 +31,24 @@ and open the template in the editor.
         z-index: 10;
         text-align: center;
         width: 100%;
+        
+        .views_slideshow_pager_field_item {
+            .views-field-counter {
+                background: $font-color;
+                border: 1px solid $font-color;
+                
+                .views-content-counter {
+                    color: $white;
+                }
+            }
+        }
+        
+        .active {
+            .views-field-counter {
+                background: $link-color;
+                border: 1px solid $link-color;
+            }
+        }
         
         .views_slideshow_pager_field_item {
             cursor: pointer;

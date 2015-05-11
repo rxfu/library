@@ -29,10 +29,9 @@
 }
 
 .l-heading {
-    background: url(../../../images/banner.jpg) center 0 no-repeat;
     width: 100%;
-    height: 220px;
     @include border-radius($radius);
+    @include rhythm(1, 0, 0, 0);
 }
 
 @include breakpoint($desktop) {

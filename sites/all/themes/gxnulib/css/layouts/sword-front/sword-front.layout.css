@@ -45,15 +45,17 @@ and open the template in the editor.
 
 /* line 31, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-heading {
-  background: url(../../../images/banner.jpg) center 0 no-repeat;
   width: 100%;
-  height: 220px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin-top: 1.71429em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em; }
 
 @media (min-width: 70em) {
-  /* line 39, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 38, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .site-branding {
     -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 48.93617%;
@@ -62,7 +64,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 43, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 42, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--navigation {
     -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 48.93617%;
@@ -73,7 +75,7 @@ and open the template in the editor.
     position: relative;
     bottom: -15px; }
 
-  /* line 49, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 48, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--search-tab {
     -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 48.93617%;
@@ -82,7 +84,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 53, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 52, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--showcase {
     -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 48.93617%;
@@ -91,7 +93,7 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; }
 
-  /* line 57, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 56, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--sidebar-first {
     -sgs-span-settings: ("span": 4, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 31.91489%;
@@ -100,7 +102,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 61, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 60, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--sidebar-second {
     -sgs-span-settings: ("span": 8, "location": 5, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
     width: 65.95745%;
@@ -108,7 +110,7 @@ and open the template in the editor.
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 64, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    /* line 63, ../../../sass/layouts/sword-front/sword-front.layout.scss */
     .l-region--sidebar-second .block--quicktabs-resource-service-tabs {
       -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
       width: 48.93617%;
@@ -116,7 +118,7 @@ and open the template in the editor.
       margin-right: -100%;
       margin-left: 0;
       clear: none; }
-    /* line 68, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    /* line 67, ../../../sass/layouts/sword-front/sword-front.layout.scss */
     .l-region--sidebar-second .block--quicktabs-news-tabs {
       -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
       width: 48.93617%;
