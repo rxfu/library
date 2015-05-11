@@ -33,12 +33,19 @@ and open the template in the editor.
         width: 100%;
         
         .views_slideshow_pager_field_item {
+            @include inline-block;
+            margin-top: -1em;
+            
             .views-field-counter {
                 background: $font-color;
                 border: 1px solid $font-color;
+                width: .5em;
+                height: .5em;
                 
                 .views-content-counter {
-                    color: $white;
+                    color: $font-color;
+                    @include font-size(8px);
+                    line-height: .5em;
                 }
             }
         }
@@ -47,14 +54,11 @@ and open the template in the editor.
             .views-field-counter {
                 background: $link-color;
                 border: 1px solid $link-color;
+                
+                .views-content-counter {
+                    color: $link-color;
+                }
             }
-        }
-        
-        .views_slideshow_pager_field_item {
-            cursor: pointer;
-            @include inline-block;
-            font-family: "FontAwesome";
-            content: "\f111";
         }
     }
 }

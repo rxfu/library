@@ -24,13 +24,17 @@ and open the template in the editor.
         ul.menu {
             padding: 0 $spacing;
             
-            li.expanded 
-            {
+            li.expanded {
                 @include no-bullet;
                 padding: 0;
                 > a{
                     color: $link-color;
                     font-weight: bold;
+                }
+                
+                > ul.menu {
+                    overflow: hidden;
+                    max-height: (em($base-line-height) + $spacing) * 2;
                 }
             }
             
