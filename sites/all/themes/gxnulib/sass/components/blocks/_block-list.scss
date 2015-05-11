@@ -12,14 +12,16 @@ and open the template in the editor.
         .block__content {
             .field__item {
                 @include inline-block;
-                padding: 0 $spacing $spacing*2 $spacing;
+                padding: $spacing $spacing $vert-spacing-unit $spacing;
                 width: 7em;
                 text-align: center;
                 
                 a {
                     margin: 0 auto;
+                    color: $font-color;
                     
                     &:hover {
+                        color: $link-color;
                         text-decoration: none;
                     }
                     

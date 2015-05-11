@@ -200,7 +200,7 @@ h2, .beta,
 h3, .gamma,
 h4, .delta, legend, .block__title,
 h5, .epsilon,
-h6, .zeta {
+h6, .zeta, .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
@@ -226,8 +226,9 @@ h6, .zeta {
   h5 a:visited, .epsilon a,
   .epsilon a:visited,
   h6 a,
-  h6 a:visited, .zeta a,
-  .zeta a:visited {
+  h6 a:visited, .zeta a, .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a a,
+  .zeta a:visited,
+  .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a a:visited {
     color: inherit;
     text-decoration: none; }
 
@@ -264,7 +265,7 @@ h5, .epsilon {
   line-height: 26px; }
 
 /* line 76, ../sass/base/_typography.scss */
-h6, .zeta {
+h6, .zeta, .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a {
   font-size: 16px;
   font-size: 1.14286rem;
   line-height: 24px; }
@@ -392,22 +393,24 @@ and open the template in the editor.
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
-  padding: 0 0.5em 1em 0.5em;
+  padding: 0.5em 0.5em 1.5em 0.5em;
   width: 7em;
   text-align: center; }
   /* line 19, ../sass/components/blocks/_block-list.scss */
   .l-region--sidebar-first .block .block__content .field__item a {
-    margin: 0 auto; }
-    /* line 22, ../sass/components/blocks/_block-list.scss */
+    margin: 0 auto;
+    color: #333333; }
+    /* line 23, ../sass/components/blocks/_block-list.scss */
     .l-region--sidebar-first .block .block__content .field__item a:hover {
+      color: #922525;
       text-decoration: none; }
-    /* line 26, ../sass/components/blocks/_block-list.scss */
+    /* line 28, ../sass/components/blocks/_block-list.scss */
     .l-region--sidebar-first .block .block__content .field__item a i {
       display: block;
       color: #922525;
       margin: 0 auto; }
 
-/* line 40, ../sass/components/blocks/_block-list.scss */
+/* line 42, ../sass/components/blocks/_block-list.scss */
 .l-region--sidebar-second .block .block__content .field__item {
   display: inline-block;
   vertical-align: middle;
@@ -654,7 +657,26 @@ and open the template in the editor.
     padding: 0;
     margin: 0; }
     /* line 27, ../sass/components/menus/_navigation.scss */
-    .l-region--sidebar-first .block--menu-block ul.menu li {
+    .l-region--sidebar-first .block--menu-block ul.menu li.expanded {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      border-bottom: 1px dotted #f0f0f0;
+      background: #fdfdfd;
+      cursor: pointer; }
+      /* line 33, ../sass/components/menus/_navigation.scss */
+      .l-region--sidebar-first .block--menu-block ul.menu li.expanded:before {
+        font-family: "FontAwesome";
+        content: "\f0db";
+        padding-right: 0.5em; }
+      /* line 39, ../sass/components/menus/_navigation.scss */
+      .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a {
+        font-weight: bold; }
+        /* line 43, ../sass/components/menus/_navigation.scss */
+        .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a:hover {
+          text-decoration: none; }
+    /* line 49, ../sass/components/menus/_navigation.scss */
+    .l-region--sidebar-first .block--menu-block ul.menu li.leaf {
       list-style-image: none;
       list-style-type: none;
       margin-left: 0;
@@ -662,33 +684,33 @@ and open the template in the editor.
       border-bottom: 1px dotted #f0f0f0;
       background: #fdfdfd;
       cursor: pointer; }
-      /* line 35, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li.active, .l-region--sidebar-first .block--menu-block ul.menu li.active:hover {
+      /* line 57, ../sass/components/menus/_navigation.scss */
+      .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active, .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active:hover {
         background: #922525; }
-      /* line 39, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li.active:before {
+      /* line 61, ../sass/components/menus/_navigation.scss */
+      .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active:before {
         color: #ffffff; }
-      /* line 43, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li:before {
+      /* line 66, ../sass/components/menus/_navigation.scss */
+      .l-region--sidebar-first .block--menu-block ul.menu li.leaf:before {
         font-family: "FontAwesome";
         content: "\f0da";
         padding-right: 0.5em; }
-      /* line 48, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li:hover {
+      /* line 71, ../sass/components/menus/_navigation.scss */
+      .l-region--sidebar-first .block--menu-block ul.menu li.leaf:hover {
         background: #f0f0f0; }
-      /* line 52, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li a {
+      /* line 75, ../sass/components/menus/_navigation.scss */
+      .l-region--sidebar-first .block--menu-block ul.menu li.leaf a {
         display: inline-block;
         vertical-align: middle;
         *vertical-align: auto;
         *zoom: 1;
         *display: inline;
         color: #333333; }
-        /* line 57, ../sass/components/menus/_navigation.scss */
-        .l-region--sidebar-first .block--menu-block ul.menu li a.active, .l-region--sidebar-first .block--menu-block ul.menu li a.active:before, .l-region--sidebar-first .block--menu-block ul.menu li a.active:hover {
+        /* line 80, ../sass/components/menus/_navigation.scss */
+        .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active, .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active:before, .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active:hover {
           color: #ffffff; }
-        /* line 64, ../sass/components/menus/_navigation.scss */
-        .l-region--sidebar-first .block--menu-block ul.menu li a:hover {
+        /* line 87, ../sass/components/menus/_navigation.scss */
+        .l-region--sidebar-first .block--menu-block ul.menu li.leaf a:hover {
           color: #922525;
           text-decoration: none; }
 
@@ -1013,30 +1035,33 @@ and open the template in the editor.
     .block--quicktabs-search-tabs ul.quicktabs-tabs li a {
       display: block;
       border-right: 1px solid #555c65; }
-    /* line 38, ../sass/components/tabs/_search-tab.scss */
+      /* line 37, ../sass/components/tabs/_search-tab.scss */
+      .block--quicktabs-search-tabs ul.quicktabs-tabs li a:hover {
+        text-decoration: none; }
+    /* line 42, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:hover {
       background: #606873;
       border-bottom: none; }
-    /* line 42, ../sass/components/tabs/_search-tab.scss */
+    /* line 46, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:first-child {
       -moz-border-radius-topleft: 4px;
       -webkit-border-top-left-radius: 4px;
       border-top-left-radius: 4px; }
-    /* line 45, ../sass/components/tabs/_search-tab.scss */
+    /* line 49, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child {
       -moz-border-radius-topright: 4px;
       -webkit-border-top-right-radius: 4px;
       border-top-right-radius: 4px; }
-      /* line 47, ../sass/components/tabs/_search-tab.scss */
+      /* line 51, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child a {
         border-right: none; }
-    /* line 52, ../sass/components/tabs/_search-tab.scss */
+    /* line 56, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li.active {
       background: #efede8; }
-      /* line 55, ../sass/components/tabs/_search-tab.scss */
+      /* line 59, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li.active a {
         color: #000000; }
-/* line 62, ../sass/components/tabs/_search-tab.scss */
+/* line 66, ../sass/components/tabs/_search-tab.scss */
 .block--quicktabs-search-tabs .quicktabs_main {
   padding: 0 1.5em;
   background: #efede8;
@@ -1054,7 +1079,7 @@ and open the template in the editor.
     content: "";
     display: table;
     clear: both; }
-  /* line 70, ../sass/components/tabs/_search-tab.scss */
+  /* line 74, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs .quicktabs_main input[type="text"] {
     width: 85%;
     height: 2.5em;
@@ -1066,7 +1091,7 @@ and open the template in the editor.
     -moz-border-radius-bottomright: 0;
     -webkit-border-bottom-right-radius: 0;
     border-bottom-right-radius: 0; }
-  /* line 76, ../sass/components/tabs/_search-tab.scss */
+  /* line 80, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs .quicktabs_main input[type="submit"] {
     width: 15%;
     height: 2.5em;
