@@ -202,7 +202,7 @@ a {
  */
 /* line 37, ../sass/base/_typography.scss */
 h1, .alpha,
-h2, .beta, .article-title,
+h2, .beta,
 h3, .gamma,
 h4, .delta, legend, .block__title,
 h5, .epsilon,
@@ -218,9 +218,8 @@ h6, .zeta {
   h1 a:visited, .alpha a,
   .alpha a:visited,
   h2 a,
-  h2 a:visited, .beta a, .article-title a,
+  h2 a:visited, .beta a,
   .beta a:visited,
-  .article-title a:visited,
   h3 a,
   h3 a:visited, .gamma a,
   .gamma a:visited,
@@ -246,7 +245,7 @@ h1, .alpha {
   line-height: 80px; }
 
 /* line 59, ../sass/base/_typography.scss */
-h2, .beta, .article-title {
+h2, .beta {
   font-size: 34px;
   font-size: 2.42857rem;
   font-weight: 700;
@@ -393,7 +392,7 @@ and open the template in the editor.
     Author     : Stephen
 */
 /* line 13, ../sass/components/blocks/_block-list.scss */
-.l-region--stacked-first .block .block__content .field__item {
+.l-region--sidebar-first .block .block__content .field__item {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -403,21 +402,19 @@ and open the template in the editor.
   width: 7em;
   text-align: center; }
   /* line 19, ../sass/components/blocks/_block-list.scss */
-  .l-region--stacked-first .block .block__content .field__item a {
+  .l-region--sidebar-first .block .block__content .field__item a {
     margin: 0 auto; }
     /* line 22, ../sass/components/blocks/_block-list.scss */
-    .l-region--stacked-first .block .block__content .field__item a:hover {
+    .l-region--sidebar-first .block .block__content .field__item a:hover {
       text-decoration: none; }
     /* line 26, ../sass/components/blocks/_block-list.scss */
-    .l-region--stacked-first .block .block__content .field__item a i {
+    .l-region--sidebar-first .block .block__content .field__item a i {
       display: block;
-      font-size: 60px;
-      font-size: 4.28571rem;
       color: #922525;
       margin: 0 auto; }
 
-/* line 41, ../sass/components/blocks/_block-list.scss */
-.l-region--stacked-second .block .block__content .field__item {
+/* line 40, ../sass/components/blocks/_block-list.scss */
+.l-region--sidebar-second .block .block__content .field__item {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -684,7 +681,7 @@ and open the template in the editor.
       /* line 43, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li:before {
         font-family: "FontAwesome";
-        content: "\f101";
+        content: "\f0da";
         padding-right: 0.5em; }
       /* line 48, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li:hover {
@@ -742,27 +739,25 @@ and open the template in the editor.
     padding-left: 1.5em; }
   /* line 22, ../sass/components/misc/_related-article.scss */
   .block--views-view-related-article-block ul {
-    padding-left: 1.5em; }
-    /* line 26, ../sass/components/misc/_related-article.scss */
-    .block--views-view-related-article-block ul li.views-row-odd {
-      background: #ffffff; }
-    /* line 30, ../sass/components/misc/_related-article.scss */
-    .block--views-view-related-article-block ul li:before {
-      font-family: "FontAwesome";
-      content: "\f101";
-      padding-right: 0.5em;
-      display: inline-block; }
-    /* line 37, ../sass/components/misc/_related-article.scss */
-    .block--views-view-related-article-block ul li a {
-      color: #333333;
-      display: inline-block;
-      vertical-align: middle;
-      *vertical-align: auto;
-      *zoom: 1;
-      *display: inline; }
-      /* line 41, ../sass/components/misc/_related-article.scss */
-      .block--views-view-related-article-block ul li a:hover {
-        color: #922525; }
+    padding-left: 0; }
+    /* line 25, ../sass/components/misc/_related-article.scss */
+    .block--views-view-related-article-block ul li {
+      padding-left: 1.5em; }
+      /* line 28, ../sass/components/misc/_related-article.scss */
+      .block--views-view-related-article-block ul li.views-row-odd {
+        background: #ffffff; }
+      /* line 32, ../sass/components/misc/_related-article.scss */
+      .block--views-view-related-article-block ul li span.field-content:before {
+        font-family: "FontAwesome";
+        content: "\f101";
+        padding-right: 0.5em;
+        display: inline-block; }
+      /* line 39, ../sass/components/misc/_related-article.scss */
+      .block--views-view-related-article-block ul li a {
+        color: #333333; }
+        /* line 42, ../sass/components/misc/_related-article.scss */
+        .block--views-view-related-article-block ul li a:hover {
+          color: #922525; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -889,60 +884,50 @@ and open the template in the editor.
     Author     : Stephen
 */
 /* line 11, ../sass/components/tabs/_news-tab.scss */
-.block--quicktabs-news-tabs > .block__content {
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px; }
-  /* line 12, ../sass/components/tabs/_news-tab.scss */
-  .block--quicktabs-news-tabs > .block__content .block {
-    padding: 0; }
-/* line 18, ../sass/components/tabs/_news-tab.scss */
-.block--quicktabs-news-tabs .quicktabs_main {
+.block--quicktabs-news-tabs .quicktabs_main, .block--quicktabs-resource-service-tabs .quicktabs_main {
   padding: 0 0.5em;
   background: #efede8;
   *zoom: 1; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-  .block--quicktabs-news-tabs .quicktabs_main:after {
+  .block--quicktabs-news-tabs .quicktabs_main:after, .block--quicktabs-resource-service-tabs .quicktabs_main:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 23, ../sass/components/tabs/_news-tab.scss */
-  .block--quicktabs-news-tabs .quicktabs_main a {
+  /* line 16, ../sass/components/tabs/_news-tab.scss */
+  .block--quicktabs-news-tabs .quicktabs_main a, .block--quicktabs-resource-service-tabs .quicktabs_main a {
     color: #333333; }
-    /* line 25, ../sass/components/tabs/_news-tab.scss */
-    .block--quicktabs-news-tabs .quicktabs_main a:hover {
+    /* line 18, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs .quicktabs_main a:hover, .block--quicktabs-resource-service-tabs .quicktabs_main a:hover {
       color: #922525; }
-  /* line 30, ../sass/components/tabs/_news-tab.scss */
-  .block--quicktabs-news-tabs .quicktabs_main ul {
+  /* line 23, ../sass/components/tabs/_news-tab.scss */
+  .block--quicktabs-news-tabs .quicktabs_main ul, .block--quicktabs-resource-service-tabs .quicktabs_main ul {
     padding: 0.5em; }
-    /* line 32, ../sass/components/tabs/_news-tab.scss */
-    .block--quicktabs-news-tabs .quicktabs_main ul li {
+    /* line 25, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs .quicktabs_main ul li, .block--quicktabs-resource-service-tabs .quicktabs_main ul li {
       padding: 0 0 0.5em 0; }
-      /* line 34, ../sass/components/tabs/_news-tab.scss */
-      .block--quicktabs-news-tabs .quicktabs_main ul li:before {
+      /* line 27, ../sass/components/tabs/_news-tab.scss */
+      .block--quicktabs-news-tabs .quicktabs_main ul li:before, .block--quicktabs-resource-service-tabs .quicktabs_main ul li:before {
         font-family: "FontAwesome";
         content: "\f0da";
         padding-right: 0.5em;
         color: #922525; }
-/* line 44, ../sass/components/tabs/_news-tab.scss */
-.block--quicktabs-news-tabs ul.quicktabs-tabs {
+/* line 37, ../sass/components/tabs/_news-tab.scss */
+.block--quicktabs-news-tabs ul.quicktabs-tabs, .block--quicktabs-resource-service-tabs ul.quicktabs-tabs {
   padding: 0;
   margin: 0;
   font-size: 14px;
   font-size: 1rem;
   *zoom: 1; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-  .block--quicktabs-news-tabs ul.quicktabs-tabs:after {
+  .block--quicktabs-news-tabs ul.quicktabs-tabs:after, .block--quicktabs-resource-service-tabs ul.quicktabs-tabs:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 50, ../sass/components/tabs/_news-tab.scss */
-  .block--quicktabs-news-tabs ul.quicktabs-tabs a {
+  /* line 43, ../sass/components/tabs/_news-tab.scss */
+  .block--quicktabs-news-tabs ul.quicktabs-tabs a, .block--quicktabs-resource-service-tabs ul.quicktabs-tabs a {
     color: #333333; }
-  /* line 54, ../sass/components/tabs/_news-tab.scss */
-  .block--quicktabs-news-tabs ul.quicktabs-tabs li {
-    background: #494f57;
-    margin: 0 auto;
+  /* line 47, ../sass/components/tabs/_news-tab.scss */
+  .block--quicktabs-news-tabs ul.quicktabs-tabs li, .block--quicktabs-resource-service-tabs ul.quicktabs-tabs li {
     padding: 0.5em;
     width: 50%;
     text-align: center;
@@ -954,34 +939,19 @@ and open the template in the editor.
     *display: inline;
     *zoom: 1; }
     /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-    .block--quicktabs-news-tabs ul.quicktabs-tabs li:after {
+    .block--quicktabs-news-tabs ul.quicktabs-tabs li:after, .block--quicktabs-resource-service-tabs ul.quicktabs-tabs li:after {
       content: "";
       display: table;
       clear: both; }
+    /* line 55, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs ul.quicktabs-tabs li:hover, .block--quicktabs-resource-service-tabs ul.quicktabs-tabs li:hover {
+      color: #922525; }
+      /* line 58, ../sass/components/tabs/_news-tab.scss */
+      .block--quicktabs-news-tabs ul.quicktabs-tabs li:hover a, .block--quicktabs-resource-service-tabs ul.quicktabs-tabs li:hover a {
+        text-decoration: none; }
     /* line 64, ../sass/components/tabs/_news-tab.scss */
-    .block--quicktabs-news-tabs ul.quicktabs-tabs li:hover {
-      background: #606873;
-      border-bottom: none; }
-    /* line 68, ../sass/components/tabs/_news-tab.scss */
-    .block--quicktabs-news-tabs ul.quicktabs-tabs li:first-child {
-      -moz-border-radius-topleft: 4px;
-      -webkit-border-top-left-radius: 4px;
-      border-top-left-radius: 4px; }
-    /* line 71, ../sass/components/tabs/_news-tab.scss */
-    .block--quicktabs-news-tabs ul.quicktabs-tabs li:last-child {
-      -moz-border-radius-topright: 4px;
-      -webkit-border-top-right-radius: 4px;
-      border-top-right-radius: 4px; }
-      /* line 73, ../sass/components/tabs/_news-tab.scss */
-      .block--quicktabs-news-tabs ul.quicktabs-tabs li:last-child a {
-        border-right: none; }
-    /* line 78, ../sass/components/tabs/_news-tab.scss */
-    .block--quicktabs-news-tabs ul.quicktabs-tabs li.active {
-      background: #efede8;
-      border-top: 3px solid #922525; }
-    /* line 83, ../sass/components/tabs/_news-tab.scss */
-    .block--quicktabs-news-tabs ul.quicktabs-tabs li a {
-      border-right: 1px solid #877d60; }
+    .block--quicktabs-news-tabs ul.quicktabs-tabs li.active a, .block--quicktabs-resource-service-tabs ul.quicktabs-tabs li.active a {
+      color: #922525; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -1014,8 +984,8 @@ and open the template in the editor.
     .block--quicktabs-search-tabs ul.quicktabs-tabs li {
       background: #494f57;
       margin: 0 auto;
-      padding: 0.5em;
-      width: 50%;
+      padding: 0.5em 0;
+      width: 33.33333%;
       text-align: center;
       float: left;
       display: inline-block;
@@ -1031,29 +1001,33 @@ and open the template in the editor.
         display: table;
         clear: both; }
       /* line 35, ../sass/components/tabs/_search-tab.scss */
+      .block--quicktabs-search-tabs ul.quicktabs-tabs li a {
+        display: block;
+        border-right: 1px solid #f0f0f0; }
+      /* line 40, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li:hover {
         background: #606873;
         border-bottom: none; }
-      /* line 39, ../sass/components/tabs/_search-tab.scss */
+      /* line 44, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li:first-child {
         -moz-border-radius-topleft: 4px;
         -webkit-border-top-left-radius: 4px;
         border-top-left-radius: 4px; }
-      /* line 42, ../sass/components/tabs/_search-tab.scss */
+      /* line 47, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child {
         -moz-border-radius-topright: 4px;
         -webkit-border-top-right-radius: 4px;
         border-top-right-radius: 4px; }
-        /* line 44, ../sass/components/tabs/_search-tab.scss */
+        /* line 49, ../sass/components/tabs/_search-tab.scss */
         .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child a {
           border-right: none; }
-      /* line 49, ../sass/components/tabs/_search-tab.scss */
+      /* line 54, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li.active {
         background: #efede8; }
-        /* line 52, ../sass/components/tabs/_search-tab.scss */
+        /* line 57, ../sass/components/tabs/_search-tab.scss */
         .block--quicktabs-search-tabs ul.quicktabs-tabs li.active a {
           color: #000000; }
-  /* line 59, ../sass/components/tabs/_search-tab.scss */
+  /* line 64, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs .quicktabs_main {
     padding: 0 1.5em;
     background: #efede8;
@@ -1070,7 +1044,7 @@ and open the template in the editor.
       content: "";
       display: table;
       clear: both; }
-    /* line 66, ../sass/components/tabs/_search-tab.scss */
+    /* line 71, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs .quicktabs_main input[type="text"] {
       width: 85%;
       height: 2.5em;
@@ -1082,7 +1056,7 @@ and open the template in the editor.
       -moz-border-radius-bottomright: 0;
       -webkit-border-bottom-right-radius: 0;
       border-bottom-right-radius: 0; }
-    /* line 72, ../sass/components/tabs/_search-tab.scss */
+    /* line 77, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs .quicktabs_main input[type="submit"] {
       width: 15%;
       height: 2.5em;
@@ -1094,5 +1068,39 @@ and open the template in the editor.
       -moz-border-radius-bottomleft: 0;
       -webkit-border-bottom-left-radius: 0;
       border-bottom-left-radius: 0; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 10, 2015, 9:15:30 PM
+    Author     : Stephen
+*/
+/* line 11, ../sass/components/tabs/_tab-icon.scss */
+#quicktabs-tab-news_tabs-0:before, #quicktabs-tab-news_tabs-1:before, #quicktabs-tab-resource_service_tabs-0:before, #quicktabs-tab-resource_service_tabs-1:before {
+  font-family: "FontAwesome";
+  display: block;
+  margin: 0 auto;
+  font-size: 60px;
+  font-size: 4.28571rem;
+  padding-bottom: .3em; }
+
+/* line 20, ../sass/components/tabs/_tab-icon.scss */
+#quicktabs-tab-news_tabs-0:before {
+  content: "\f101"; }
+
+/* line 27, ../sass/components/tabs/_tab-icon.scss */
+#quicktabs-tab-news_tabs-1:before {
+  content: "\f102"; }
+
+/* line 34, ../sass/components/tabs/_tab-icon.scss */
+#quicktabs-tab-resource_service_tabs-0:before {
+  content: "\f101"; }
+
+/* line 41, ../sass/components/tabs/_tab-icon.scss */
+#quicktabs-tab-resource_service_tabs-1:before {
+  content: "\f102"; }
 
 /*# sourceMappingURL=gxnulib.styles.css.map */

@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : Apr 24, 2015, 10:16:51 AM
     Author     : Stephen
 */
-.l-region--stacked-first {
+.l-region--sidebar-first {
     .block {
         .block__content {
             .field__item {
@@ -25,7 +25,6 @@ and open the template in the editor.
                     
                     i {
                         display: block;
-                        @include font-size(60px);
                         color: $link-color;
                         margin: 0 auto;
                     }
@@ -35,7 +34,7 @@ and open the template in the editor.
     }
 }
 
-.l-region--stacked-second {
+.l-region--sidebar-second {
     .block {
         .block__content {
             .field__item {

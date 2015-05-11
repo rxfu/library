@@ -2,7 +2,7 @@
     <header class="l-header" role="banner">
         <div class="wrapper wrapper--branding">
             <section class="l-branding">
-                <h2>
+                <div class="site-branding">
                     <?php if ($logo): ?>
                     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="Home" class="site-logo">
                         <img src="<?php print $logo; ?>" alt="<?php print t('Home') ?>">
@@ -17,19 +17,19 @@
                         <div class="site-slogan"><?php print $site_slogan; ?></div>
                         <?php endif; ?>
                     <?php endif; ?>
-                </h2>
+                </div>
+                <?php print render($page['navigation']); ?> 
             </section>
         </div>
-        <div class="wrapper wrapper--header">
-            <div class="l-menu">
-                <?php print render($page['navigation']); ?>
+        <div class="wrapper wrapper--heading">
+            <section class="l-heading">
                 <?php print render($page['header']); ?>
-            </div>
+            </section>
         </div>
         <div class="wrapper wrapper--highlighted">
-            <div class="l-highlighted">
+            <section class="l-highlighted">
               <?php print render($page['highlighted']); ?>
-            </div>
+            </section>
         </div>
     </header>
     <section class="l-main" id="main-content">
@@ -50,7 +50,6 @@
             </div>
 
             <?php print render($page['sidebar_first']); ?>
-            <?php print render($page['sidebar_second']); ?>
         </div>
     </section>
     <footer class="l-footer" role="contentinfo">

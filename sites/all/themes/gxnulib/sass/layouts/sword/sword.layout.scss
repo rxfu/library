@@ -20,18 +20,12 @@
     @include pie-clearfix();
 }
 
-.l-branding, .l-menu, .l-highlighted, .l-content, .l-useful-link, .l-copyright, .wrapper--main {
+.l-branding, .l-heading, .l-highlighted, .l-useful-link, .l-copyright, .wrapper--main {
     @extend .l-constrained;
 }
 
-.l-header, .l-main, .l-footer {
+.l-main, .l-footer {
     margin: $vert-spacing-unit 0;
-}
-
-.l-branding {
-    padding: $vert-spacing-unit 0;
-    text-align: center;
-    margin: 0 auto;
 }
 
 @include breakpoint($desktop) {

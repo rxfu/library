@@ -30,6 +30,7 @@ Drupal.quicktabs.prepare = function(el) {
       $(element).addClass('quicktabs-loaded');
     }
     $(element).once(function() {$(this).bind('click', {tab: tab}, Drupal.quicktabs.clickHandler);});
+    $(element).once(function() {$(this).bind('mouseover', {tab: tab}, Drupal.quicktabs.clickHandler);});
   });
 }
 

@@ -35,9 +35,8 @@
     </header>
     <section class="l-main" id="main-content">
         <div class="l-content" role="main">
-            <?php print render($page['stacked_first']); ?>
-            <?php print render($page['stacked_second']); ?>
-            <?php print render($page['stacked_third']); ?>
+            <?php print render($page['sidebar_first']); ?>
+            <?php print render($page['sidebar_second']); ?>
         </div>
     </section>
     <footer class="l-footer" role="contentinfo">

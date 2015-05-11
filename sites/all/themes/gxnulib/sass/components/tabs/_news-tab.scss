@@ -7,14 +7,7 @@ and open the template in the editor.
     Created on : Apr 23, 2015, 9:27:25 AM
     Author     : Stephen
 */
-.block--quicktabs-news-tabs {
-    > .block__content {
-        .block {
-            padding: 0;
-        }
-        @include border-radius($radius);
-    }
-    
+.block--quicktabs-news-tabs, .block--quicktabs-resource-service-tabs {    
     .quicktabs_main {
         padding: 0 $spacing;
         background: $tab-bgcolor;
@@ -52,8 +45,6 @@ and open the template in the editor.
         }
 
         li {
-            background: $tab-menu-link-bgcolor;
-            margin: 0 auto;
             padding: $spacing;
             width: (100% / 2);
             text-align: center;
@@ -62,26 +53,17 @@ and open the template in the editor.
             @include pie-clearfix;
 
             &:hover {
-                background: $tab-menu-link-hover-bgcolor;
-                border-bottom: none;
-            }
-            &:first-child {
-                @include border-top-left-radius($radius);
-            }
-            &:last-child {
-                @include border-top-right-radius($radius);
+                color: $link-color;
+
                 a {
-                    border-right: none;
+                    text-decoration: none;
                 }
             }
 
             &.active {
-                background: $tab-bgcolor;
-                border-top: 3px solid $header-color;
-            }
-            
-            a {
-                border-right: 1px solid $tab-menu-border-color;
+                a {
+                    color: $link-color;
+                }
             }
         }
     }

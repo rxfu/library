@@ -41,20 +41,26 @@
     }
     .l-region--navigation {
         @include grid-span(6, 7);
+        position: relative;
+        bottom: -15px;
     }
     .l-region--search-tab {
         @include grid-span(6, 1);
     }
     
-    .l-region--stacked-first {
+    .l-region--sidebar-first {
         @include grid-span(4, 1);
     }
     
-    .l-region--stacked-second {
-        @include grid-span(4, 5);
-    }
-    
-    .l-region--stacked-third {
-        @include grid-span(4, 9);
+    .l-region--sidebar-second {
+        @include grid-span(8, 5);
+        
+        .block--quicktabs-resource-service-tabs {
+            @include grid-span(6, 1);
+        }
+        
+        .block--quicktabs-news-tabs {
+            @include grid-span(6, 7);
+        }
     }
 }

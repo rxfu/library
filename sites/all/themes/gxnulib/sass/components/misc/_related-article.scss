@@ -20,14 +20,16 @@ and open the template in the editor.
     }
     
     ul {
-        padding-left: $vert-spacing-unit;
+        padding-left: 0;
         
         li {
+            padding-left: $vert-spacing-unit;
+            
             &.views-row-odd {
                 background: $white;
             }
             
-            &:before {
+            span.field-content:before {
                 font-family: "FontAwesome";
                 content: "\f101";
                 padding-right: $spacing;
@@ -36,7 +38,6 @@ and open the template in the editor.
             
             a {
                 color: $font-color;
-                @include inline-block;
                 
                 &:hover {
                     color: $link-color;

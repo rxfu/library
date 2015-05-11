@@ -24,13 +24,18 @@ and open the template in the editor.
         li {
             background: $tab-menu-link-bgcolor;
             margin: 0 auto;
-            padding: $spacing;
-            width: (100% / 2);
+            padding: $spacing 0;
+            width: (100% / 3);
             text-align: center;
             float: left;
             @include inline-block;
             @include pie-clearfix;
             cursor: pointer;
+            
+            a {
+                display: block;
+                border-right: 1px solid $border-color;
+            }
 
             &:hover {
                 background: $tab-menu-link-hover-bgcolor;

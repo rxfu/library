@@ -10,9 +10,9 @@ regions[navigation] = Navigation
 regions[highlighted] = Highlighted
 regions[help] = Help
 regions[search_tab] = Search Tab
-regions[stacked_first] = Stacked First
-regions[stacked_second] = Stacked Second
-regions[stacked_third] = Stacked Third
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[content] = Content
 regions[link] = Link
 regions[footer] = Footer
 
