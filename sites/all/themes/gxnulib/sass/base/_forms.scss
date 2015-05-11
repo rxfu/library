@@ -12,8 +12,7 @@ legend {
     color: $font-color;
 }
 
-input[type="text"],
-textarea {
+input[type="text"], input[type="password"], textarea {
     padding: $spacing $spacing*2;
     border: 1px solid $input-border-color;
     @include transition(all 0.30s ease-in-out);

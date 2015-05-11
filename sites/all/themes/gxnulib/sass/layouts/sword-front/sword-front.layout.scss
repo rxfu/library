@@ -39,13 +39,19 @@
     .site-branding {
         @include grid-span(6, 1);
     }
+    
     .l-region--navigation {
         @include grid-span(6, 7);
         position: relative;
         bottom: -15px;
     }
+    
     .l-region--search-tab {
         @include grid-span(6, 1);
+    }
+    
+    .l-region--showcase {
+        @include grid-span(6, 7);
     }
     
     .l-region--sidebar-first {

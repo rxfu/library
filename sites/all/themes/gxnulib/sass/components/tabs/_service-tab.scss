@@ -4,10 +4,10 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Apr 23, 2015, 9:27:25 AM
+    Created on : May 11, 2015, 2:35:55 PM
     Author     : Stephen
 */
-.block--quicktabs-news-tabs {    
+.block--quicktabs-resource-service-tabs {    
     .quicktabs_main {
         padding: 0 $spacing;
         background: $tab-bgcolor;
@@ -21,10 +21,26 @@ and open the template in the editor.
             }
         }
         
-        ul {
-            padding: $spacing;
-            li {
+        ul.menu {
+            padding: 0 $spacing;
+            
+            li.expanded 
+            {
+                @include no-bullet;
+                padding: 0;
+                > a{
+                    color: $link-color;
+                    font-weight: bold;
+                }
+            }
+            
+            li.leaf {
                 padding: 0 0 $spacing 0;
+                @include no-bullet;
+                @include inline-block;
+                width: 6em;
+                white-space: nowrap;
+                
                 &:before {
                     font-family: "FontAwesome";
                     content: "\f0da";

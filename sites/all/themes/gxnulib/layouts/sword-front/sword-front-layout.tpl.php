@@ -25,6 +25,7 @@
             <section class="l-heading">
                 <?php print render($page['header']); ?>
                 <?php print render($page['search_tab']); ?>
+                <?php print render($page['showcase']); ?>
             </section>
         </div>
         <div class="wrapper wrapper--highlighted">

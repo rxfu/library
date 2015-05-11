@@ -19,27 +19,27 @@ and open the template in the editor.
 #quicktabs-tab-news_tabs-0 {
     &:before {
         @extend %icon;
-        content: "\f101";
+        content: "\f1ea";
     }
 }
 
 #quicktabs-tab-news_tabs-1 {
     &:before {
         @extend %icon;
-        content: "\f102";
+        content: "\f233";
     }
 }
 
 #quicktabs-tab-resource_service_tabs-0 {
     &:before {
         @extend %icon;
-        content: "\f101";
+        content: "\f0ac";
     }
 }
 
 #quicktabs-tab-resource_service_tabs-1 {
     &:before {
         @extend %icon;
-        content: "\f102";
+        content: "\f0c1";
     }
 }
