@@ -31,7 +31,11 @@
 .l-heading {
     width: 100%;
     @include border-radius($radius);
-    @include rhythm(1, 0, 0, 0);
+}
+
+.wrapper--heading {
+    background: $heading-bgcolor;
+    padding-top: $vert-spacing-unit;
 }
 
 @include breakpoint($desktop) {

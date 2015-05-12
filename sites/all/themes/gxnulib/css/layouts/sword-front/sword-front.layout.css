@@ -32,14 +32,15 @@ and open the template in the editor.
   width: 100%;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  border-radius: 4px;
-  margin-top: 1.71429em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0em; }
+  border-radius: 4px; }
+
+/* line 36, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+.wrapper--heading {
+  background: rgba(142, 150, 160, 0.75);
+  padding-top: 1.5em; }
 
 @media (min-width: 70em) {
-  /* line 38, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 42, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .site-branding {
     width: 48.93617%;
     float: left;
@@ -47,7 +48,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 42, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 46, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--navigation {
     width: 48.93617%;
     float: right;
@@ -57,7 +58,7 @@ and open the template in the editor.
     position: relative;
     bottom: -15px; }
 
-  /* line 48, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 52, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--search-tab {
     width: 48.93617%;
     float: left;
@@ -65,7 +66,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 52, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 56, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--showcase {
     width: 48.93617%;
     float: right;
@@ -73,7 +74,7 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; }
 
-  /* line 56, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 60, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--sidebar-first {
     width: 31.91489%;
     float: left;
@@ -81,21 +82,21 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 60, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 64, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--sidebar-second {
     width: 65.95745%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 63, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    /* line 67, ../../../sass/layouts/sword-front/sword-front.layout.scss */
     .l-region--sidebar-second .block--quicktabs-resource-service-tabs {
       width: 48.93617%;
       float: left;
       margin-right: -100%;
       margin-left: 0;
       clear: none; }
-    /* line 67, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    /* line 71, ../../../sass/layouts/sword-front/sword-front.layout.scss */
     .l-region--sidebar-second .block--quicktabs-news-tabs {
       width: 48.93617%;
       float: right;

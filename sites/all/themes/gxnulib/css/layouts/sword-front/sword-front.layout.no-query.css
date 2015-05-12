@@ -32,10 +32,11 @@ and open the template in the editor.
   width: 100%;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  border-radius: 4px;
-  margin-top: 1.71429em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0em; }
+  border-radius: 4px; }
+
+/* line 36, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+.wrapper--heading {
+  background: rgba(142, 150, 160, 0.75);
+  padding-top: 1.5em; }
 
 /*# sourceMappingURL=sword-front.layout.no-query.css.map */

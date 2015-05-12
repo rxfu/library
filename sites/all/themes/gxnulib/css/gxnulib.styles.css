@@ -681,14 +681,12 @@ and open the template in the editor.
   .l-region--sidebar-first .block--menu-block .block__title {
     border-top: 3px solid #922525;
     color: #922525;
-    height: 3em;
-    line-height: 3em;
     padding-left: 1.5em; }
-  /* line 23, ../sass/components/menus/_navigation.scss */
+  /* line 21, ../sass/components/menus/_navigation.scss */
   .l-region--sidebar-first .block--menu-block ul.menu {
     padding: 0;
     margin: 0; }
-    /* line 27, ../sass/components/menus/_navigation.scss */
+    /* line 25, ../sass/components/menus/_navigation.scss */
     .l-region--sidebar-first .block--menu-block ul.menu li.expanded {
       list-style-image: none;
       list-style-type: none;
@@ -696,18 +694,18 @@ and open the template in the editor.
       border-bottom: 1px dotted #f0f0f0;
       background: #fdfdfd;
       cursor: pointer; }
-      /* line 33, ../sass/components/menus/_navigation.scss */
+      /* line 31, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.expanded:before {
         font-family: "FontAwesome";
         content: "\f0d7";
         padding-right: 0.5em; }
-      /* line 39, ../sass/components/menus/_navigation.scss */
+      /* line 37, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a {
         font-weight: bold; }
-        /* line 43, ../sass/components/menus/_navigation.scss */
+        /* line 41, ../sass/components/menus/_navigation.scss */
         .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a:hover {
           text-decoration: none; }
-    /* line 49, ../sass/components/menus/_navigation.scss */
+    /* line 47, ../sass/components/menus/_navigation.scss */
     .l-region--sidebar-first .block--menu-block ul.menu li.leaf {
       list-style-image: none;
       list-style-type: none;
@@ -716,21 +714,21 @@ and open the template in the editor.
       border-bottom: 1px dotted #f0f0f0;
       background: #fdfdfd;
       cursor: pointer; }
-      /* line 57, ../sass/components/menus/_navigation.scss */
+      /* line 55, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active, .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active:hover {
         background: #922525; }
-      /* line 61, ../sass/components/menus/_navigation.scss */
+      /* line 59, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active:before {
         color: #ffffff; }
-      /* line 66, ../sass/components/menus/_navigation.scss */
+      /* line 64, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.leaf:before {
         font-family: "FontAwesome";
         content: "\f0da";
         padding-right: 0.5em; }
-      /* line 71, ../sass/components/menus/_navigation.scss */
+      /* line 69, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.leaf:hover {
         background: #f0f0f0; }
-      /* line 75, ../sass/components/menus/_navigation.scss */
+      /* line 73, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.leaf a {
         display: inline-block;
         vertical-align: middle;
@@ -738,10 +736,10 @@ and open the template in the editor.
         *zoom: 1;
         *display: inline;
         color: #333333; }
-        /* line 80, ../sass/components/menus/_navigation.scss */
+        /* line 78, ../sass/components/menus/_navigation.scss */
         .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active, .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active:before, .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active:hover {
           color: #ffffff; }
-        /* line 87, ../sass/components/menus/_navigation.scss */
+        /* line 85, ../sass/components/menus/_navigation.scss */
         .l-region--sidebar-first .block--menu-block ul.menu li.leaf a:hover {
           color: #922525;
           text-decoration: none; }
