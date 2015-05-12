@@ -68,19 +68,6 @@ and open the template in the editor.
         @include border-bottom-radius($radius);
         @include pie-clearfix;
         text-align: center;
-        height: 220px;
-
-        input[type="text"] {
-            width: 85%;
-            height: 2.5em;
-            @include rhythm-margins(1);
-            @include border-right-radius(0);
-        }
-        input[type="submit"] {
-            width: 15%;
-            height: 2.5em;
-            @include rhythm-margins(1);
-            @include border-left-radius(0);
-        }
+        height: 230px;
     }
 }

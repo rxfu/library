@@ -76,6 +76,19 @@ legend {
   color: #333333; }
 
 /* line 15, ../sass/base/_forms.scss */
+select {
+  padding: 0.5em 1em;
+  border: 1px solid #a3a3a3;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  outline: none; }
+
+/* line 23, ../sass/base/_forms.scss */
 input[type="text"], input[type="password"], textarea {
   padding: 0.5em 1em;
   border: 1px solid #a3a3a3;
@@ -99,13 +112,13 @@ input[type="text"], input[type="password"], textarea {
   /* line 56, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
   input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     font-style: italic; }
-  /* line 26, ../sass/base/_forms.scss */
+  /* line 34, ../sass/base/_forms.scss */
   input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     -moz-box-shadow: 0 0 6px rgba(163, 163, 163, 0.7);
     -webkit-box-shadow: 0 0 6px rgba(163, 163, 163, 0.7);
     box-shadow: 0 0 6px rgba(163, 163, 163, 0.7); }
 
-/* line 31, ../sass/base/_forms.scss */
+/* line 39, ../sass/base/_forms.scss */
 input[type="submit"], input[type="button"] {
   background: #922525;
   padding: 0.5em 1em;
@@ -114,13 +127,13 @@ input[type="submit"], input[type="button"] {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
-  /* line 38, ../sass/base/_forms.scss */
+  /* line 46, ../sass/base/_forms.scss */
   input[type="submit"]:hover, input[type="button"]:hover {
     background: #7e2020; }
 
-/* line 43, ../sass/base/_forms.scss */
+/* line 51, ../sass/base/_forms.scss */
 input[type="checkbox"], input[type="radio"] {
-  padding: 1.5em 0.5em; }
+  padding: 0.5em 1em; }
 
 /* line 2, ../sass/base/_lists.scss */
 ul li {
@@ -484,27 +497,46 @@ and open the template in the editor.
     Created on : Apr 16, 2015, 5:06:46 PM
     Author     : Stephen
 */
-/**
- * $FORM
- */
-/* line 14, ../sass/components/forms/_forms.scss */
-.form-inline {
-  margin: 0;
-  padding: 0; }
-  /* line 18, ../sass/components/forms/_forms.scss */
-  .form-inline .form-item {
+/* line 10, ../sass/components/forms/_forms.scss */
+.search-form-box {
+  padding: 1.5em 0.5em; }
+  /* line 13, ../sass/components/forms/_forms.scss */
+  .search-form-box select {
+    margin: 0.5em 1em; }
+  /* line 17, ../sass/components/forms/_forms.scss */
+  .search-form-box .checkbox, .search-form-box .radio {
     display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline; }
-
-/**
- * $FORM-ITEM
- */
-/* line 26, ../sass/components/forms/_forms.scss */
-.form-item {
-  display: inline; }
+    margin: 0.5em 1em; }
+  /* line 22, ../sass/components/forms/_forms.scss */
+  .search-form-box input[type="text"] {
+    width: 85%;
+    height: 2.5em;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  /* line 28, ../sass/components/forms/_forms.scss */
+  .search-form-box input[type="submit"] {
+    width: 15%;
+    height: 2.5em;
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  /* line 34, ../sass/components/forms/_forms.scss */
+  .search-form-box .intro {
+    padding: 0.5em; }
+    /* line 37, ../sass/components/forms/_forms.scss */
+    .search-form-box .intro ul {
+      padding: 0;
+      margin: 0; }
+      /* line 41, ../sass/components/forms/_forms.scss */
+      .search-form-box .intro ul li {
+        display: inline-block; }
 
 /* line 1, ../sass/components/forms/_search.scss */
 .search-form {
@@ -667,7 +699,7 @@ and open the template in the editor.
       /* line 33, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.expanded:before {
         font-family: "FontAwesome";
-        content: "\f0db";
+        content: "\f0d7";
         padding-right: 0.5em; }
       /* line 39, ../sass/components/menus/_navigation.scss */
       .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a {
@@ -1072,36 +1104,12 @@ and open the template in the editor.
   border-bottom-right-radius: 4px;
   *zoom: 1;
   text-align: center;
-  height: 220px; }
+  height: 230px; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .block--quicktabs-search-tabs .quicktabs_main:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 73, ../sass/components/tabs/_search-tab.scss */
-  .block--quicktabs-search-tabs .quicktabs_main input[type="text"] {
-    width: 85%;
-    height: 2.5em;
-    margin-top: 1.71429em;
-    margin-bottom: 1.71429em;
-    -moz-border-radius-topright: 0;
-    -webkit-border-top-right-radius: 0;
-    border-top-right-radius: 0;
-    -moz-border-radius-bottomright: 0;
-    -webkit-border-bottom-right-radius: 0;
-    border-bottom-right-radius: 0; }
-  /* line 79, ../sass/components/tabs/_search-tab.scss */
-  .block--quicktabs-search-tabs .quicktabs_main input[type="submit"] {
-    width: 15%;
-    height: 2.5em;
-    margin-top: 1.71429em;
-    margin-bottom: 1.71429em;
-    -moz-border-radius-topleft: 0;
-    -webkit-border-top-left-radius: 0;
-    border-top-left-radius: 0;
-    -moz-border-radius-bottomleft: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
