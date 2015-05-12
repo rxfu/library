@@ -32,7 +32,6 @@ and open the template in the editor.
             
             a {
                 display: block;
-                border-right: 1px solid lighten($tab-menu-link-bgcolor, 5%);
                 
                 &:hover {
                     text-decoration: none;

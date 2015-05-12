@@ -393,7 +393,7 @@ and open the template in the editor.
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
-  padding: 0.5em 0.5em 1.5em 0.5em;
+  padding: 1.5em 0.5em;
   width: 7em;
   text-align: center; }
   /* line 19, ../sass/components/blocks/_block-list.scss */
@@ -918,7 +918,7 @@ and open the template in the editor.
 /* line 11, ../sass/components/tabs/_news-tab.scss */
 .block--quicktabs-news-tabs .quicktabs_main {
   padding: 0 0.5em;
-  background: #efede8;
+  background: #f5f4f1;
   *zoom: 1;
   margin-top: -0.5em; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -1033,35 +1033,34 @@ and open the template in the editor.
       clear: both; }
     /* line 33, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li a {
-      display: block;
-      border-right: 1px solid #555c65; }
-      /* line 37, ../sass/components/tabs/_search-tab.scss */
+      display: block; }
+      /* line 36, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li a:hover {
         text-decoration: none; }
-    /* line 42, ../sass/components/tabs/_search-tab.scss */
+    /* line 41, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:hover {
       background: #606873;
       border-bottom: none; }
-    /* line 46, ../sass/components/tabs/_search-tab.scss */
+    /* line 45, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:first-child {
       -moz-border-radius-topleft: 4px;
       -webkit-border-top-left-radius: 4px;
       border-top-left-radius: 4px; }
-    /* line 49, ../sass/components/tabs/_search-tab.scss */
+    /* line 48, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child {
       -moz-border-radius-topright: 4px;
       -webkit-border-top-right-radius: 4px;
       border-top-right-radius: 4px; }
-      /* line 51, ../sass/components/tabs/_search-tab.scss */
+      /* line 50, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li:last-child a {
         border-right: none; }
-    /* line 56, ../sass/components/tabs/_search-tab.scss */
+    /* line 55, ../sass/components/tabs/_search-tab.scss */
     .block--quicktabs-search-tabs ul.quicktabs-tabs li.active {
       background: #efede8; }
-      /* line 59, ../sass/components/tabs/_search-tab.scss */
+      /* line 58, ../sass/components/tabs/_search-tab.scss */
       .block--quicktabs-search-tabs ul.quicktabs-tabs li.active a {
         color: #000000; }
-/* line 66, ../sass/components/tabs/_search-tab.scss */
+/* line 65, ../sass/components/tabs/_search-tab.scss */
 .block--quicktabs-search-tabs .quicktabs_main {
   padding: 0 1.5em;
   background: #efede8;
@@ -1079,7 +1078,7 @@ and open the template in the editor.
     content: "";
     display: table;
     clear: both; }
-  /* line 74, ../sass/components/tabs/_search-tab.scss */
+  /* line 73, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs .quicktabs_main input[type="text"] {
     width: 85%;
     height: 2.5em;
@@ -1091,7 +1090,7 @@ and open the template in the editor.
     -moz-border-radius-bottomright: 0;
     -webkit-border-bottom-right-radius: 0;
     border-bottom-right-radius: 0; }
-  /* line 80, ../sass/components/tabs/_search-tab.scss */
+  /* line 79, ../sass/components/tabs/_search-tab.scss */
   .block--quicktabs-search-tabs .quicktabs_main input[type="submit"] {
     width: 15%;
     height: 2.5em;
@@ -1116,7 +1115,7 @@ and open the template in the editor.
 /* line 11, ../sass/components/tabs/_service-tab.scss */
 .block--quicktabs-resource-service-tabs .quicktabs_main {
   padding: 0 0.5em;
-  background: #efede8;
+  background: #f5f4f1;
   *zoom: 1;
   margin-top: -0.5em; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -1138,16 +1137,17 @@ and open the template in the editor.
       list-style-image: none;
       list-style-type: none;
       margin-left: 0;
-      padding: 0; }
-      /* line 30, ../sass/components/tabs/_service-tab.scss */
+      padding: 0 0 0.5em 0; }
+      /* line 31, ../sass/components/tabs/_service-tab.scss */
       .block--quicktabs-resource-service-tabs .quicktabs_main ul.menu li.expanded > a {
         color: #922525;
         font-weight: bold; }
-      /* line 35, ../sass/components/tabs/_service-tab.scss */
+      /* line 36, ../sass/components/tabs/_service-tab.scss */
       .block--quicktabs-resource-service-tabs .quicktabs_main ul.menu li.expanded > ul.menu {
         overflow: hidden;
-        max-height: 4.42857em; }
-    /* line 41, ../sass/components/tabs/_service-tab.scss */
+        max-height: 4.42857em;
+        padding: 0; }
+    /* line 43, ../sass/components/tabs/_service-tab.scss */
     .block--quicktabs-resource-service-tabs .quicktabs_main ul.menu li.leaf {
       padding: 0 0 0.5em 0;
       list-style-image: none;
@@ -1158,15 +1158,18 @@ and open the template in the editor.
       *vertical-align: auto;
       *zoom: 1;
       *display: inline;
-      width: 6em;
-      white-space: nowrap; }
-      /* line 48, ../sass/components/tabs/_service-tab.scss */
-      .block--quicktabs-resource-service-tabs .quicktabs_main ul.menu li.leaf:before {
-        font-family: "FontAwesome";
-        content: "\f0da";
-        padding-right: 0.5em;
-        color: #922525; }
-/* line 58, ../sass/components/tabs/_service-tab.scss */
+      width: 6.5em;
+      white-space: nowrap;
+      text-align: left;
+      /*
+      &:before {
+          font-family: "FontAwesome";
+          content: "\f0da";
+          padding-right: $spacing;
+          color: $link-color;
+      }
+      */ }
+/* line 62, ../sass/components/tabs/_service-tab.scss */
 .block--quicktabs-resource-service-tabs ul.quicktabs-tabs {
   padding: 0;
   margin: 0;
@@ -1179,10 +1182,10 @@ and open the template in the editor.
     content: "";
     display: table;
     clear: both; }
-  /* line 65, ../sass/components/tabs/_service-tab.scss */
+  /* line 69, ../sass/components/tabs/_service-tab.scss */
   .block--quicktabs-resource-service-tabs ul.quicktabs-tabs a {
     color: #333333; }
-  /* line 69, ../sass/components/tabs/_service-tab.scss */
+  /* line 73, ../sass/components/tabs/_service-tab.scss */
   .block--quicktabs-resource-service-tabs ul.quicktabs-tabs li {
     padding: 0.5em;
     width: 50%;
@@ -1199,13 +1202,13 @@ and open the template in the editor.
       content: "";
       display: table;
       clear: both; }
-    /* line 77, ../sass/components/tabs/_service-tab.scss */
+    /* line 81, ../sass/components/tabs/_service-tab.scss */
     .block--quicktabs-resource-service-tabs ul.quicktabs-tabs li:hover {
       color: #922525; }
-      /* line 80, ../sass/components/tabs/_service-tab.scss */
+      /* line 84, ../sass/components/tabs/_service-tab.scss */
       .block--quicktabs-resource-service-tabs ul.quicktabs-tabs li:hover a {
         text-decoration: none; }
-    /* line 86, ../sass/components/tabs/_service-tab.scss */
+    /* line 90, ../sass/components/tabs/_service-tab.scss */
     .block--quicktabs-resource-service-tabs ul.quicktabs-tabs li.active a {
       color: #922525; }
 

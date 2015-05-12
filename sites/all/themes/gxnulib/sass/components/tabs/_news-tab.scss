@@ -10,7 +10,7 @@ and open the template in the editor.
 .block--quicktabs-news-tabs {    
     .quicktabs_main {
         padding: 0 $spacing;
-        background: $tab-bgcolor;
+        background: $bgcolor;
         @include pie-clearfix;
         margin-top: (-1)*$spacing;
 

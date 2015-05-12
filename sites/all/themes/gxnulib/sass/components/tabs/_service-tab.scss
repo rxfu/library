@@ -10,7 +10,7 @@ and open the template in the editor.
 .block--quicktabs-resource-service-tabs {    
     .quicktabs_main {
         padding: 0 $spacing;
-        background: $tab-bgcolor;
+        background: $bgcolor;
         @include pie-clearfix;
         margin-top: (-1)*$spacing;
 
@@ -26,7 +26,8 @@ and open the template in the editor.
             
             li.expanded {
                 @include no-bullet;
-                padding: 0;
+                padding: 0 0 $spacing 0;
+                
                 > a{
                     color: $link-color;
                     font-weight: bold;
@@ -35,6 +36,7 @@ and open the template in the editor.
                 > ul.menu {
                     overflow: hidden;
                     max-height: (em($base-line-height) + $spacing) * 2;
+                    padding: 0;
                 }
             }
             
@@ -42,15 +44,17 @@ and open the template in the editor.
                 padding: 0 0 $spacing 0;
                 @include no-bullet;
                 @include inline-block;
-                width: 6em;
+                width: 6.5em;
                 white-space: nowrap;
-                
+                text-align: left;
+                /*
                 &:before {
                     font-family: "FontAwesome";
                     content: "\f0da";
                     padding-right: $spacing;
                     color: $link-color;
                 }
+                */
             }
         }
     }

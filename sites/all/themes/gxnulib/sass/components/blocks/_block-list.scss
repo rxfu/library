@@ -12,7 +12,7 @@ and open the template in the editor.
         .block__content {
             .field__item {
                 @include inline-block;
-                padding: $spacing $spacing $vert-spacing-unit $spacing;
+                padding: $vert-spacing-unit $spacing;
                 width: 7em;
                 text-align: center;
                 
