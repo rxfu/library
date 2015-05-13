@@ -506,7 +506,7 @@ and open the template in the editor.
   /* line 17, ../sass/components/forms/_forms.scss */
   .search-form-box .checkbox, .search-form-box .radio {
     display: inline-block;
-    margin: 0.5em 1em; }
+    margin: 0.5em; }
   /* line 22, ../sass/components/forms/_forms.scss */
   .search-form-box input[type="text"] {
     width: 85%;
@@ -1102,7 +1102,7 @@ and open the template in the editor.
   border-bottom-right-radius: 4px;
   *zoom: 1;
   text-align: center;
-  height: 230px; }
+  height: 220px; }
   /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .block--quicktabs-search-tabs .quicktabs_main:after {
     content: "";

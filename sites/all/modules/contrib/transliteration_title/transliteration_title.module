@@ -1,0 +1,276 @@
+<?php
+
+
+/**
+ * Implements hook_field_info().
+ */
+function transliteration_title_field_info() {
+  return array(
+    'transliteration_title_field' => array(
+      'label' => 'Transliteration title',
+      'description' => t('This field stores and renderes transliteration title.'),
+      'instance_settings' => array(
+        'size' => 255,
+        'upper_lower_case' => 'strtolower',
+        'source_field_id' => 'title',
+      ),	
+      'default_widget' => 'transliteration_title_field',
+      'default_formatter' => 'transliteration_title_default',
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_widget_info().
+ */
+function transliteration_title_field_widget_info() {
+  return array(
+    'transliteration_title_field' => array(
+      'label' => t('Transliteration title'),
+      'field types' => array('transliteration_title_field'),
+			'multiple values' => FIELD_BEHAVIOR_DEFAULT,
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_field_widget_settings_form().
+ */
+function transliteration_title_field_widget_settings_form($field, $instance) {
+  $widget = $instance['widget'];
+  $settings = $widget['settings'];
+	
+	$form['size'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Size of textfield'),
+    '#default_value' => isset($settings['size'])?$settings['size']:'255',
+    '#required' => TRUE,
+    '#element_validate' => array('_element_validate_integer_positive'),
+  );	
+	
+	$form['source_field_id'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Source field ID'),
+    '#default_value' => isset($settings['source_field_id'])?$settings['source_field_id']:'title',
+    '#required' => TRUE,
+  );
+	
+	$form['upper_lower_case'] = array(
+    '#type' => 'select',
+    '#title' => t('Case'),
+    '#default_value' => isset($settings['upper_lower_case'])?$settings['upper_lower_case']:'',
+    '#required' => TRUE,
+		'#options' => array(
+		  'strtolower' => 'Lower case',
+			'strtoupper' => 'Upper case',
+			'ucfirst' => 'Capitalize first letter',
+			'ucwords' => 'Capitalize each word',
+		),
+  );
+  return $form;
+}
+
+/**
+ * Implements hook_field_widget_form().
+ */
+function transliteration_title_field_widget_form(&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element) {
+  $element += array(
+    '#type' => $instance['widget']['type'],
+    '#default_value' => isset($items[$delta]) ? $items[$delta] : '',
+  );
+  return $element;
+}
+
+/**
+ * Implements hook_element_info().
+ */
+function transliteration_title_element_info() {
+  $elements = array();
+  $elements['transliteration_title_field'] =  array(
+    '#input' => TRUE,
+    '#process' => array('transliteration_title_field_process'),
+    '#theme' => 'transliteration_title_field',
+    '#theme_wrappers' => array('form_element'),
+  );
+  return $elements;
+}
+
+/**
+ * Process the transliteration_title type element before displaying the field.
+ *
+ * Build the form element. When creating a form using FAPI #process,
+ * note that $element['#value'] is already set.
+ *
+ * The $fields array is in $complete_form['#field_info'][$element['#field_name']].
+ */
+function transliteration_title_field_process($element, $form_state, $complete_form) {
+  $settings = &$form_state['field'][$element['#field_name']][$element['#language']]['instance']['settings'];
+  $element['value'] = array(
+    '#type' => 'textfield',
+    '#maxlength' => 255,
+    '#title' => t('transliteration title'),
+    '#required' => isset($element['#required']) ? $element['#required'] : FALSE,
+    '#default_value' => isset($element['#value']['value']) ? $element['#value']['value'] : NULL,
+  );
+	$element['manual'] = array(
+		'#type' => 'checkbox',
+		'#title' => t('manual'),
+		'#default_value' => isset($element['#value']['manual']) ? $element['#value']['manual'] : NULL,
+	);
+  return $element;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function transliteration_title_theme() {
+  return array(
+    'transliteration_title_field' => array(
+      'render element' => 'element',
+    ),
+  );
+}
+
+/**
+ * FAPI theme for an individual text elements.
+ */
+function theme_transliteration_title_field($vars) {
+  drupal_add_css(drupal_get_path('module', 'transliteration_title') .'/transliteration_title.css');
+
+  $element = $vars['element'];
+
+  $output = '';
+  $output .= '<div class="transliteration-title-field clearfix">';
+  $output .= '<div class="transliteration-title-field-value">'. drupal_render($element['value']) .'</div>';
+  $output .= '<div class="transliteration-title-field-manual">'. drupal_render($element['manual']) .'</div>';
+  $output .= '</div>';
+  return $output;
+}
+
+/**
+ * Implements hook_content_is_empty().
+ */
+function transliteration_title_field_is_empty($item, $field) {
+  if (empty($item['value'])) {
+    return TRUE;
+  }
+  return FALSE;
+}
+
+/**
+ * Implements hook_field_validate().
+ *
+ * Possible error codes:
+ * - 'transliteration_title_invalid': The transliteration title is not valid
+ */
+function transliteration_title_field_validate($obj_type, $object, $field, $instance, $langcode, $items, &$errors) {
+	
+	foreach ($items as $delta => $item) {
+	  //drupal_set_message($item['value']);
+		//[\x20-\x7e]   [A-Za-z0-9]
+    if (!empty($item['manual']) && !preg_match('/^[\x20-\x7e]+$/', $item['value'])) {
+      $message = t('"%value" is not a valid transliteration titles', array('%value' => $item['value']));
+			/*
+			//这段代码不能正常工作
+      $errors[$field['field_name']][$langcode][$delta][] = array(
+        'error' => "transliteration_title_invalid_".$field['field_name'],
+        'message' => t('It is not a valid transliteration titles'),
+      );
+			*/
+			
+			form_set_error($field['field_name'] .']['.$langcode.']['. $delta .'][value', $message);
+    }
+  }
+	
+}
+
+/**
+ * Implements hook_field_presave().
+ */
+function transliteration_title_field_presave($entity_type, $entity, $field, $instance, $langcode, &$items) {
+	//drupal_set_message($field['settings']['size']);
+	if($field['type'] == 'transliteration_title_field'){
+	  if(isset($entity->{$instance['widget']['settings']['source_field_id']})){
+		  $source_field = $entity->{$instance['widget']['settings']['source_field_id']};
+			if(is_array($source_field)){
+			  $source_field_items = $source_field[$langcode];
+				foreach ($source_field_items as $delta => $item) {
+				  if(empty($items[$delta]['manual'])){
+						$upper_lower_case = $instance['widget']['settings']['upper_lower_case'];
+						if (function_exists($upper_lower_case)) {
+							$items[$delta]['value'] = $upper_lower_case(transliteration_get($item['value']));
+							$items[$delta]['manual'] = 0;
+						}else{
+						  $items[$delta]['value'] = transliteration_get($item['value']);
+							$items[$delta]['manual'] = 0;
+						}
+				    
+					}
+				}
+			}else{
+			  if(empty($items[0]['manual'])){
+				  $upper_lower_case = $instance['widget']['settings']['upper_lower_case'];
+					if (function_exists($upper_lower_case)) {
+					//drupal_set_message('123');
+					//drupal_set_message( $upper_lower_case);
+				    $items[0]['value'] = $upper_lower_case(transliteration_get($entity->{$instance['widget']['settings']['source_field_id']}));
+					  $items[0]['manual'] = 0;
+					}else{
+					  //drupal_set_message('123456');
+						$items[0]['value'] = transliteration_get($entity->{$instance['widget']['settings']['source_field_id']});
+					  $items[0]['manual'] = 0;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ *
+ */
+function transliteration_title_field_formatter_info() {
+  $formats = array(
+    'transliteration_title_default' => array(
+      'label' => t('Default'),
+      'description' => t('Default display for the transliteration title.'),
+      'field types' => array('transliteration_title_field'),
+    ),
+    'transliteration_title_plain' => array(
+      'label' => t('Plain text'),
+      'description' => t('Display the transliteration title as plain text.'),
+      'field types' => array('transliteration_title_field'),
+    ),
+  );
+  return $formats;
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function transliteration_title_field_formatter_view($object_type, $object, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  switch ($display['type']) {
+    case 'transliteration_title_default':
+      foreach ($items as $delta => $item) {
+			  //drupal_set_message(print_r($item));
+        $element[$delta] = array('#markup' => $item['value']);
+      }
+      break;
+
+    case 'transliteration_title_plain':
+      foreach ($items as $delta => $item) {
+        $element[$delta] = array('#markup' => check_plain($item['value']));
+      }
+      break;
+  }
+  return $element;
+}
+
+
+
+
+
