@@ -10,7 +10,9 @@
  */
 function gxnulib_preprocess_views_view(&$vars) {
   $view = $vars['view'];
-  $vars['title'] = !empty($view->views_ui_context) ? filter_xss_admin($view->get_title()) : filter_xss($view->get_title());
+  $vars['title'] = !empty($view->views_ui_context) ? filter_xss_admin($view->get_title()) : '';
+  
+  if ($view->is_attachment) {
+    $vars['title'] = filter_xss($view->get_title());
+  }
 }
-
-

@@ -1,0 +1,37 @@
+table {
+    background: $table-bgcolor;
+    
+    tr {
+        &.odd {
+            background: $table-odd-bgcolor;
+        }
+        &.even {
+            background: $table-even-bgcolor;
+        }
+        
+        th {
+            background: $table-header-bgcolor;
+            padding: $spacing;
+            
+            a {
+                color: $table-header-font-color;
+                
+                &.active {
+                    color: $table-header-font-color;
+                }
+                
+                img {
+                    margin-left: $spacing;
+                }
+            }
+        }
+        
+        td {
+            padding: $spacing;
+            
+            &.active {
+                background: transparent;
+            }
+        }
+    }
+}

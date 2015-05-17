@@ -35,3 +35,10 @@ $input-border-color: darken($border-color, 30%);
 $input-color: $white;
 $input-bgcolor: $header-color;
 $input-hover-bgcolor: darken($input-bgcolor, 5%);
+
+$table-bgcolor: #efede8;
+$table-header-bgcolor: #494f57;
+$table-header-font-color: $white;
+$table-odd-bgcolor: $table-bgcolor;
+$table-even-bgcolor: $white;
+$table-active-bgcolor: darken($table-bgcolor, 30%);

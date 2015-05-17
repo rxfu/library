@@ -11,6 +11,7 @@ and open the template in the editor.
     .block--menu-block {
         border: 1px solid $border-color;
         @include border-radius($radius);
+        @include box-shadow(0 0 6px rgba($input-border-color, 0.7));
         
         .block__title {
             border-top: 3px solid $link-color;

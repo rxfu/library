@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Primarily Drupal hooks to manipulate Views Contextual Filters OR.
+ *
+ * This is the main module file for Views Contextual Filters OR.
+ */
+
+/**
+ * Implements hook_views_api().
+ */
+function views_contextual_filters_or_views_api() {
+  return array(
+    'api' => 3,
+  );
+}
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function views_contextual_filters_or_views_query_alter(&$view, &$query) {
+  if (!empty($query->options['contextual_filters_or'])) {
+    $query->where[0]['type'] = 'OR';
+  }
+}

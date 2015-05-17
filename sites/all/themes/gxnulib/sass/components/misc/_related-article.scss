@@ -10,12 +10,11 @@ and open the template in the editor.
 .block--views-view-related-article-block {    
     border: 1px solid $border-color;
     @include border-radius($radius);
+    @include box-shadow(0 0 6px rgba($input-border-color, 0.7));
     
     .block__title {
         border-top: 3px solid $link-color;
         color: $link-color;
-        height: 3em;
-        line-height: 3em;
         padding-left: $vert-spacing-unit;
     }
     
