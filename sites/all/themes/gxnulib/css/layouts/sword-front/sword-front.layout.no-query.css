@@ -35,6 +35,10 @@ and open the template in the editor.
   border-radius: 4px; }
 
 /* line 36, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+.l-branding {
+  position: relative; }
+
+/* line 40, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .wrapper--heading {
   background: rgba(142, 150, 160, 0.75);
   padding-top: 1.5em; }

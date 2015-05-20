@@ -24,7 +24,7 @@
         .nav {
             > li {
                 > a {
-                    @include font-size(14px);
+                    @include font-size(16px);
                     @extend %menu;
                     padding: $spacing;
                     

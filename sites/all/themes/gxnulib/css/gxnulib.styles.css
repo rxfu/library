@@ -377,7 +377,7 @@ footer,
 .l-footer {
   padding: 1.5em 0;
   margin: 0 auto;
-  background: #1a1a1a;
+  background: #eae8e2;
   text-align: center;
   color: #595959;
   font-size: 12px;
@@ -414,10 +414,10 @@ footer,
   text-align: center;
   font-size: 12px;
   font-size: 0.85714rem;
-  color: #595959; }
+  color: #333333; }
   /* line 176, ../sass/base/_typography.scss */
   .l-copyright a, .l-copyright a:visited, .l-copyright a:hover {
-    color: #595959; }
+    color: #333333; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -643,8 +643,8 @@ and open the template in the editor.
   border-bottom: 1px solid #e8e6df; }
   /* line 26, ../sass/components/menus/_menu.scss */
   .tb-megamenu .nav-collapse .nav > li > a {
-    font-size: 14px;
-    font-size: 1rem;
+    font-size: 16px;
+    font-size: 1.14286rem;
     padding: 0.5em; }
     /* line 31, ../sass/components/menus/_menu.scss */
     .tb-megamenu .nav-collapse .nav > li > a:hover, .tb-megamenu .nav-collapse .nav > li > a:focus {

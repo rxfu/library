@@ -33,6 +33,10 @@
     @include border-radius($radius);
 }
 
+.l-branding {
+    position: relative;
+}
+
 .wrapper--heading {
     background: $heading-bgcolor;
     padding-top: $vert-spacing-unit;
@@ -41,12 +45,15 @@
 @include breakpoint($desktop) {
     .site-branding {
         @include grid-span(6, 1);
+        padding-top: $spacing;
+        padding-bottom: $spacing;
     }
     
     .l-region--navigation {
         @include grid-span(6, 7);
-        position: relative;
-        bottom: -15px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
     
     .l-region--search-tab {
