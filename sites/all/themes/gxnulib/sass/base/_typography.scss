@@ -132,16 +132,13 @@ mark,
 footer,
 .l-footer {
     padding: $vert-spacing-unit 0;
-    margin: 0 auto;
-    
-    background: $footer-bgcolor;
-    
-    text-align: center;
-    color: lighten($font-color, 15%);
+    margin: 0 auto;    
+    background: $footer-bgcolor;    
+    color: $font-color;
     @include font-size(12px);
     
     a {
-        color: lighten($font-color, 15%);
+        color: $font-color;
     }
 }
 
@@ -151,16 +148,14 @@ footer,
 .l-useful-link {    
     text-align: center;
     @include font-size(12px);
-    color: lighten($font-color, 30%);
-    
+    color: $font-color;
+
     a {
-        color: lighten($font-color, 30%);
-        &:visited {
-            color: lighten($font-color, 30%);
-        }
+        &,
+        &:visited,
         &:hover {
-            color: lighten($font-color, 60%);
-        }     
+            color: $font-color;
+        }
     }
 }
 

@@ -34,16 +34,13 @@
             </section>
         </div>
     </header>
-    <section class="l-main" id="main-content">
-        <div class="l-content" role="main">
+    <main class="l-main" id="main-content">
+        <section class="l-content" role="main">
             <?php print render($page['sidebar_first']); ?>
             <?php print render($page['sidebar_second']); ?>
-        </div>
-    </section>
-    <footer class="l-footer" role="contentinfo">
-        <section class="l-useful-link">
-            <?php print render($page['link']); ?>
         </section>
+    </main>
+    <footer class="l-footer" role="contentinfo">
         <section class="l-copyright">
             <?php print render($page['footer']); ?>
         </section>

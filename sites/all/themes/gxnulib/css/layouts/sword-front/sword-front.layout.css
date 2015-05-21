@@ -109,6 +109,28 @@ and open the template in the editor.
       float: right;
       margin-left: 0;
       margin-right: 0;
-      clear: none; } }
+      clear: none; }
+
+  /* line 84, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  .l-region--footer .block {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 33.33333%;
+    float: left; }
+    /* line 85, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    .l-region--footer .block .block__title {
+      padding-left: 0; }
+    /* line 89, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    .l-region--footer .block .field__item {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      float: left;
+      width: 50%; } }
 
 /*# sourceMappingURL=sword-front.layout.css.map */

@@ -378,44 +378,36 @@ footer,
   padding: 1.5em 0;
   margin: 0 auto;
   background: #eae8e2;
-  text-align: center;
-  color: #595959;
+  color: #333333;
   font-size: 12px;
   font-size: 0.85714rem; }
-  /* line 143, ../sass/base/_typography.scss */
+  /* line 140, ../sass/base/_typography.scss */
   footer a,
   .l-footer a {
-    color: #595959; }
+    color: #333333; }
 
 /**
  * $USERFUL LINKS
  */
-/* line 151, ../sass/base/_typography.scss */
+/* line 148, ../sass/base/_typography.scss */
 .l-useful-link {
   text-align: center;
   font-size: 12px;
   font-size: 0.85714rem;
-  color: gray; }
-  /* line 156, ../sass/base/_typography.scss */
-  .l-useful-link a {
-    color: gray; }
-    /* line 158, ../sass/base/_typography.scss */
-    .l-useful-link a:visited {
-      color: gray; }
-    /* line 161, ../sass/base/_typography.scss */
-    .l-useful-link a:hover {
-      color: #cccccc; }
+  color: #333333; }
+  /* line 154, ../sass/base/_typography.scss */
+  .l-useful-link a, .l-useful-link a:visited, .l-useful-link a:hover {
+    color: #333333; }
 
 /**
  * $COPYRIGHT
  */
-/* line 170, ../sass/base/_typography.scss */
+/* line 165, ../sass/base/_typography.scss */
 .l-copyright {
-  text-align: center;
   font-size: 12px;
   font-size: 0.85714rem;
   color: #333333; }
-  /* line 176, ../sass/base/_typography.scss */
+  /* line 170, ../sass/base/_typography.scss */
   .l-copyright a, .l-copyright a:visited, .l-copyright a:hover {
     color: #333333; }
 
@@ -566,6 +558,10 @@ and open the template in the editor.
       /* line 41, ../sass/components/forms/_forms.scss */
       .search-form-box .intro ul li {
         display: inline-block; }
+    /* line 46, ../sass/components/forms/_forms.scss */
+    .search-form-box .intro ol {
+      padding: 0;
+      margin: 0; }
 
 /* line 1, ../sass/components/forms/_search.scss */
 .search-form {
@@ -1078,7 +1074,7 @@ and open the template in the editor.
     background: #494f57;
     margin: 0 auto;
     padding: 0.5em 0;
-    width: 25%;
+    width: 20%;
     text-align: center;
     float: left;
     display: inline-block;

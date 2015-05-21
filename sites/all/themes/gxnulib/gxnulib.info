@@ -37,10 +37,6 @@ regions[postscript_first] = Postscript First
 regions[postscript_second] = Postscript Second
 regions[postscript_third] = Postscript Third
 regions[postscript_fourth] = Postscript Fourth
-regions[stacked_first] = Stacked First
-regions[stacked_second] = Stacked Second
-regions[stacked_third] = Stacked Third
-regions[express] = Express
 regions[link] = Link
 regions[footer] = Footer
 
