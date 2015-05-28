@@ -79,23 +79,22 @@
             @include grid-span(6, 7);
         }
     }
-    
+
     .l-region--footer {
         .block {
             .block__title {
                 padding-left: 0;
             }
-            
+
             .field__item {
                 @include inline-block;
                 float: left;
                 width: 50%;
             }
-            
+
             @include inline-block;
             width: (100% / 3);
             float: left;
         }
     }
-    
 }

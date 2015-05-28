@@ -1,5 +1,6 @@
 table {
     background: $table-bgcolor;
+    width: 100%;
     
     tr {
         &.odd {
@@ -12,6 +13,7 @@ table {
         th {
             background: $table-header-bgcolor;
             padding: $spacing;
+            color: $white;
             
             a {
                 color: $table-header-font-color;

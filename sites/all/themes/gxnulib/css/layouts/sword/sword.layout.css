@@ -27,8 +27,16 @@ and open the template in the editor.
 .l-main, .l-footer {
   margin: 1.5em 0; }
 
+/* line 31, ../../../sass/layouts/sword/sword.layout.scss */
+.l-branding {
+  position: relative; }
+
+/* line 35, ../../../sass/layouts/sword/sword.layout.scss */
+.wrapper--heading {
+  padding-top: 1.5em; }
+
 @media (min-width: 70em) {
-  /* line 32, ../../../sass/layouts/sword/sword.layout.scss */
+  /* line 40, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--sidebar-first {
     width: 31.91489%;
     float: left;
@@ -36,7 +44,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 36, ../../../sass/layouts/sword/sword.layout.scss */
+  /* line 44, ../../../sass/layouts/sword/sword.layout.scss */
   .l-content {
     width: 65.95745%;
     float: right;
@@ -44,12 +52,34 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; }
 
-  /* line 40, ../../../sass/layouts/sword/sword.layout.scss */
+  /* line 48, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--sidebar-second {
     width: 31.91489%;
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none; } }
+    clear: none; }
+
+  /* line 53, ../../../sass/layouts/sword/sword.layout.scss */
+  .l-region--footer .block {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    width: 33.33333%;
+    float: left; }
+    /* line 54, ../../../sass/layouts/sword/sword.layout.scss */
+    .l-region--footer .block .block__title {
+      padding-left: 0; }
+    /* line 58, ../../../sass/layouts/sword/sword.layout.scss */
+    .l-region--footer .block .field__item {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      float: left;
+      width: 50%; } }
 
 /*# sourceMappingURL=sword.layout.css.map */

@@ -28,6 +28,14 @@
     margin: $vert-spacing-unit 0;
 }
 
+.l-branding {
+    position: relative;
+}
+
+.wrapper--heading {
+    padding-top: $vert-spacing-unit;
+}
+
 @include breakpoint($desktop) {
     .l-region--sidebar-first {
         @include grid-span(4, 1);
@@ -39,5 +47,23 @@
     
     .l-region--sidebar-second {
         @include grid-span(4, 9);
+    }
+
+    .l-region--footer {
+        .block {
+            .block__title {
+                padding-left: 0;
+            }
+
+            .field__item {
+                @include inline-block;
+                float: left;
+                width: 50%;
+            }
+
+            @include inline-block;
+            width: (100% / 3);
+            float: left;
+        }
     }
 }

@@ -53,9 +53,6 @@
         </div>
     </section>
     <footer class="l-footer" role="contentinfo">
-        <section class="l-useful-link">
-            <?php print render($page['link']); ?>
-        </section>
         <section class="l-copyright">
             <?php print render($page['footer']); ?>
         </section>

@@ -149,30 +149,32 @@ img, media {
 
 /* line 1, ../sass/base/_tables.scss */
 table {
-  background: #efede8; }
-  /* line 5, ../sass/base/_tables.scss */
+  background: #efede8;
+  width: 100%; }
+  /* line 6, ../sass/base/_tables.scss */
   table tr.odd {
     background: #efede8; }
-  /* line 8, ../sass/base/_tables.scss */
+  /* line 9, ../sass/base/_tables.scss */
   table tr.even {
     background: #ffffff; }
-  /* line 12, ../sass/base/_tables.scss */
+  /* line 13, ../sass/base/_tables.scss */
   table tr th {
     background: #494f57;
-    padding: 0.5em; }
-    /* line 16, ../sass/base/_tables.scss */
+    padding: 0.5em;
+    color: #ffffff; }
+    /* line 18, ../sass/base/_tables.scss */
     table tr th a {
       color: #ffffff; }
-      /* line 19, ../sass/base/_tables.scss */
+      /* line 21, ../sass/base/_tables.scss */
       table tr th a.active {
         color: #ffffff; }
-      /* line 23, ../sass/base/_tables.scss */
+      /* line 25, ../sass/base/_tables.scss */
       table tr th a img {
         margin-left: 0.5em; }
-  /* line 29, ../sass/base/_tables.scss */
+  /* line 31, ../sass/base/_tables.scss */
   table tr td {
     padding: 0.5em; }
-    /* line 32, ../sass/base/_tables.scss */
+    /* line 34, ../sass/base/_tables.scss */
     table tr td.active {
       background: transparent; }
 

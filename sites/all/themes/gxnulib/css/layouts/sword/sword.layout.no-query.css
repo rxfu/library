@@ -27,4 +27,12 @@ and open the template in the editor.
 .l-main, .l-footer {
   margin: 1.5em 0; }
 
+/* line 31, ../../../sass/layouts/sword/sword.layout.scss */
+.l-branding {
+  position: relative; }
+
+/* line 35, ../../../sass/layouts/sword/sword.layout.scss */
+.wrapper--heading {
+  padding-top: 1.5em; }
+
 /*# sourceMappingURL=sword.layout.no-query.css.map */
