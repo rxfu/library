@@ -44,17 +44,9 @@ and open the template in the editor.
                 padding: 0 0 $spacing 0;
                 @include no-bullet;
                 @include inline-block;
-                width: 6.5em;
+                width: 6.4em;
                 white-space: nowrap;
                 text-align: left;
-                /*
-                &:before {
-                    font-family: "FontAwesome";
-                    content: "\f0da";
-                    padding-right: $spacing;
-                    color: $link-color;
-                }
-                */
             }
         }
     }

@@ -64,20 +64,16 @@
         @include grid-span(6, 7);
     }
     
-    .l-region--sidebar-first {
+    .l-region--stacked-left {
         @include grid-span(4, 1);
     }
     
-    .l-region--sidebar-second {
-        @include grid-span(8, 5);
-        
-        .block--quicktabs-resource-service-tabs {
-            @include grid-span(6, 1);
-        }
-        
-        .block--quicktabs-news-tabs {
-            @include grid-span(6, 7);
-        }
+    .l-region--stacked-middle {
+        @include grid-span(4, 5);
+    }
+    
+    .l-region--stacked-right {
+        @include grid-span(4, 9);
     }
 
     .l-region--footer {

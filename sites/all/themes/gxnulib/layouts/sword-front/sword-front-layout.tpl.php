@@ -31,13 +31,15 @@
         <div class="wrapper wrapper--highlighted">
             <section class="l-highlighted">
               <?php print render($page['highlighted']); ?>
+              <?php print render($page['help']); ?>
             </section>
         </div>
     </header>
     <main class="l-main" id="main-content">
         <section class="l-content" role="main">
-            <?php print render($page['sidebar_first']); ?>
-            <?php print render($page['sidebar_second']); ?>
+            <?php print render($page['stacked_left']); ?>
+            <?php print render($page['stacked_middle']); ?>
+            <?php print render($page['stacked_right']); ?>
         </section>
     </main>
     <footer class="l-footer" role="contentinfo">
