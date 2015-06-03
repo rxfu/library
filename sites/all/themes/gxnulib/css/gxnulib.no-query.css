@@ -881,19 +881,20 @@ and open the template in the editor.
 .node__submitted {
   background: transparent;
   padding: 0;
-  margin: 0 auto; }
-  /* line 15, ../sass/components/nodes/_node.scss */
+  margin: 0 auto;
+  text-align: center; }
+  /* line 16, ../sass/components/nodes/_node.scss */
   .node__submitted a {
     color: #922525; }
 
-/* line 20, ../sass/components/nodes/_node.scss */
+/* line 21, ../sass/components/nodes/_node.scss */
 .category {
   text-align: center; }
 
-/* line 24, ../sass/components/nodes/_node.scss */
+/* line 25, ../sass/components/nodes/_node.scss */
 .node__content {
   padding: 1.5em 0.5em; }
-  /* line 27, ../sass/components/nodes/_node.scss */
+  /* line 28, ../sass/components/nodes/_node.scss */
   .node__content p {
     text-indent: 2em; }
 
