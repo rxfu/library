@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 4, 2015, 5:05:50 PM
+    Author     : Stephen
+*/
+.l-region--sidebar-first {
+    .block {
+        padding: $vert-spacing-unit $horz-spacing-unit;
+        background: $white;
+        border: 1px solid $border-color;
+        @include border-radius($radius);
+        @include box-shadow(0 0 6px rgba($input-border-color, 0.7));        
+    }
+}

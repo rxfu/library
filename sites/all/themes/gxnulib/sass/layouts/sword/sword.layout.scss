@@ -38,15 +38,15 @@
 
 @include breakpoint($desktop) {
     .l-region--sidebar-first {
-        @include grid-span(4, 1);
+        @include grid-span(3, 1);
     }
     
     .l-content {
-        @include grid-span(8, 5);
+        @include grid-span(9, 4);
     }
     
     .l-region--sidebar-second {
-        @include grid-span(4, 9);
+        @include grid-span(3, 10);
     }
 
     .l-region--footer {

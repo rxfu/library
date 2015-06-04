@@ -476,6 +476,27 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : Jun 4, 2015, 5:05:50 PM
+    Author     : Stephen
+*/
+/* line 11, ../sass/components/blocks/_block_sidebar.scss */
+.l-region--sidebar-first .block {
+  padding: 1.5em 1em;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 0 6px rgba(163, 163, 163, 0.7);
+  -webkit-box-shadow: 0 0 6px rgba(163, 163, 163, 0.7);
+  box-shadow: 0 0 6px rgba(163, 163, 163, 0.7); }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : Apr 20, 2015, 9:03:33 PM
     Author     : Stephen
 */

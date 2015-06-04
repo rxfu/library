@@ -38,7 +38,7 @@ and open the template in the editor.
 @media (min-width: 70em) {
   /* line 40, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--sidebar-first {
-    width: 31.91489%;
+    width: 23.40426%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
@@ -46,7 +46,7 @@ and open the template in the editor.
 
   /* line 44, ../../../sass/layouts/sword/sword.layout.scss */
   .l-content {
-    width: 65.95745%;
+    width: 74.46809%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -54,7 +54,7 @@ and open the template in the editor.
 
   /* line 48, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--sidebar-second {
-    width: 31.91489%;
+    width: 23.40426%;
     float: right;
     margin-left: 0;
     margin-right: 0;
