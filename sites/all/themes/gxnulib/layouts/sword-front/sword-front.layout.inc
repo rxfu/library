@@ -4,6 +4,7 @@ preview = preview.png
 template = sword-front-layout
 
 ; Regions
+regions[bar] = Bar
 regions[branding] = Branding
 regions[header] = Header
 regions[navigation] = Navigation

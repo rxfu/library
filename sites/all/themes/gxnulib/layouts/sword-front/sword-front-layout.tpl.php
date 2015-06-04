@@ -1,4 +1,7 @@
 <div class="l-page front-page"<?php print $attributes?>>
+    <section class="l-bar">
+      <?php print render($page['bar']); ?>
+    </section>
     <header class="l-header" role="banner">
         <div class="wrapper wrapper--branding">
             <section class="l-branding">
