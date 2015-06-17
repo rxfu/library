@@ -8,32 +8,16 @@ and open the template in the editor.
     Author     : Stephen
 */
 .l-region--sidebar-first {
-    .block--menu-block {
-        border: 1px solid $border-color;
-        @include border-radius($radius);
-        @include box-shadow(0 0 6px rgba($input-border-color, 0.7));
-        
-        .block__title {
-            border-top: 3px solid $link-color;
-            color: $link-color;
-            padding-left: $vert-spacing-unit;
-        }
-        
+    .block--menu-block {        
         ul.menu {
             padding: 0;
             margin: 0;
             
-            li.expanded {
+            li.expanded, li.collapsed {
                 @include no-bullet;
                 border-bottom: 1px dotted $border-color;
                 background: lighten($border-color, 5%);
                 cursor: pointer;
-                
-                &:before {
-                    font-family: "FontAwesome";
-                    content: "\f0d7";
-                    padding-right: $spacing;
-                }
                 
                 > a {
                     font-weight: bold;
@@ -42,6 +26,22 @@ and open the template in the editor.
                     &:hover {
                         text-decoration: none;
                     }
+                }
+            }
+            
+            li.collapsed {
+                &:before {
+                    font-family: "FontAwesome";
+                    content: "\f0da";
+                    padding-right: $spacing;
+                }                
+            }
+            
+            li.expanded {
+                &:before {
+                    font-family: "FontAwesome";
+                    content: "\f0d7";
+                    padding-right: $spacing;
                 }
             }
             
@@ -62,11 +62,6 @@ and open the template in the editor.
                     }
                 }
                 
-                &:before {
-                    font-family: "FontAwesome";
-                    content: "\f0da";
-                    padding-right: $spacing;
-                }
                 &:hover {
                     background: $border-color;
                 }

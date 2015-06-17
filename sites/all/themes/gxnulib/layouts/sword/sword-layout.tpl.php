@@ -35,6 +35,7 @@
     <section class="l-main" id="main-content">
         <div class="wrapper wrapper--main">
             <?php print $messages; ?>
+            <?php print render($page['sidebar_first']); ?>
             <div class="l-content" role="main">
                 <?php print $breadcrumb; ?>
                 <?php print render($title_prefix); ?>
@@ -48,8 +49,6 @@
                 <?php print render($page['content']); ?>
                 <?php print $feed_icons; ?>
             </div>
-
-            <?php print render($page['sidebar_first']); ?>
         </div>
     </section>
     <footer class="l-footer" role="contentinfo">

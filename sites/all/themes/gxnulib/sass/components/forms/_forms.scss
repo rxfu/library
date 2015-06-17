@@ -34,18 +34,16 @@ and open the template in the editor.
     .intro {
         padding: $spacing;
         
-        ul {
+        ul, ol {
             padding: 0;
             margin: 0;
-            
-            li {
-                display: inline-block;
-            }
+            text-align: left;
         }
         
-        ol {
-            padding: 0;
-            margin: 0;
+        ul {
+            li {
+                @include inline-block;
+            }
         }
     }
 }

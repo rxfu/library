@@ -244,7 +244,7 @@ h2, .beta,
 h3, .gamma,
 h4, .delta, legend, .block__title,
 h5, .epsilon,
-h6, .zeta, .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a {
+h6, .zeta, .field--name-field-related-links .field-label, .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a, .l-region--sidebar-first .block--menu-block ul.menu li.collapsed > a {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
@@ -270,9 +270,11 @@ h6, .zeta, .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a {
   h5 a:visited, .epsilon a,
   .epsilon a:visited,
   h6 a,
-  h6 a:visited, .zeta a, .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a a,
+  h6 a:visited, .zeta a, .field--name-field-related-links .field-label a, .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a a, .l-region--sidebar-first .block--menu-block ul.menu li.collapsed > a a,
   .zeta a:visited,
-  .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a a:visited {
+  .field--name-field-related-links .field-label a:visited,
+  .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a a:visited,
+  .l-region--sidebar-first .block--menu-block ul.menu li.collapsed > a a:visited {
     color: inherit;
     text-decoration: none; }
 
@@ -309,7 +311,7 @@ h5, .epsilon {
   line-height: 26px; }
 
 /* line 76, ../sass/base/_typography.scss */
-h6, .zeta, .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a {
+h6, .zeta, .field--name-field-related-links .field-label, .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a, .l-region--sidebar-first .block--menu-block ul.menu li.collapsed > a {
   font-size: 16px;
   font-size: 1.14286rem;
   line-height: 24px; }
@@ -482,6 +484,7 @@ and open the template in the editor.
 /* line 11, ../sass/components/blocks/_block_sidebar.scss */
 .l-region--sidebar-first .block {
   padding: 1.5em 1em;
+  margin-bottom: 1.5em;
   background: #ffffff;
   border: 1px solid #f0f0f0;
   -moz-border-radius: 4px;
@@ -490,6 +493,11 @@ and open the template in the editor.
   -moz-box-shadow: 0 0 6px rgba(163, 163, 163, 0.7);
   -webkit-box-shadow: 0 0 6px rgba(163, 163, 163, 0.7);
   box-shadow: 0 0 6px rgba(163, 163, 163, 0.7); }
+  /* line 19, ../sass/components/blocks/_block_sidebar.scss */
+  .l-region--sidebar-first .block .block__title {
+    border-top: 3px solid #922525;
+    color: #922525;
+    padding-left: 1.5em; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -551,6 +559,35 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : Jun 15, 2015, 9:17:10 AM
+    Author     : Stephen
+*/
+/* line 10, ../sass/components/forms/_field-related-links.scss */
+.field--name-field-related-links {
+  border: 1px solid #922525;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 1.5em 1em;
+  width: 20% !important;
+  float: right !important; }
+  /* line 18, ../sass/components/forms/_field-related-links.scss */
+  .field--name-field-related-links .field-label {
+    font-weight: bold;
+    color: #333333; }
+  /* line 26, ../sass/components/forms/_field-related-links.scss */
+  .field--name-field-related-links .field-items .field-item:before {
+    font-family: "FontAwesome";
+    content: "\f105";
+    padding-right: 0.5em; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : Apr 16, 2015, 5:06:46 PM
     Author     : Stephen
 */
@@ -588,16 +625,17 @@ and open the template in the editor.
   .search-form-box .intro {
     padding: 0.5em; }
     /* line 37, ../sass/components/forms/_forms.scss */
-    .search-form-box .intro ul {
+    .search-form-box .intro ul, .search-form-box .intro ol {
       padding: 0;
-      margin: 0; }
-      /* line 41, ../sass/components/forms/_forms.scss */
-      .search-form-box .intro ul li {
-        display: inline-block; }
-    /* line 46, ../sass/components/forms/_forms.scss */
-    .search-form-box .intro ol {
-      padding: 0;
-      margin: 0; }
+      margin: 0;
+      text-align: left; }
+    /* line 44, ../sass/components/forms/_forms.scss */
+    .search-form-box .intro ul li {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline; }
 
 /* line 1, ../sass/components/forms/_search.scss */
 .search-form {
@@ -732,81 +770,67 @@ and open the template in the editor.
     Created on : May 3, 2015, 4:04:14 PM
     Author     : Stephen
 */
-/* line 11, ../sass/components/menus/_navigation.scss */
-.l-region--sidebar-first .block--menu-block {
-  border: 1px solid #f0f0f0;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  -moz-box-shadow: 0 0 6px rgba(163, 163, 163, 0.7);
-  -webkit-box-shadow: 0 0 6px rgba(163, 163, 163, 0.7);
-  box-shadow: 0 0 6px rgba(163, 163, 163, 0.7); }
+/* line 12, ../sass/components/menus/_navigation.scss */
+.l-region--sidebar-first .block--menu-block ul.menu {
+  padding: 0;
+  margin: 0; }
   /* line 16, ../sass/components/menus/_navigation.scss */
-  .l-region--sidebar-first .block--menu-block .block__title {
-    border-top: 3px solid #922525;
-    color: #922525;
-    padding-left: 1.5em; }
-  /* line 22, ../sass/components/menus/_navigation.scss */
-  .l-region--sidebar-first .block--menu-block ul.menu {
-    padding: 0;
-    margin: 0; }
-    /* line 26, ../sass/components/menus/_navigation.scss */
-    .l-region--sidebar-first .block--menu-block ul.menu li.expanded {
-      list-style-image: none;
-      list-style-type: none;
-      margin-left: 0;
-      border-bottom: 1px dotted #f0f0f0;
-      background: #fdfdfd;
-      cursor: pointer; }
-      /* line 32, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li.expanded:before {
-        font-family: "FontAwesome";
-        content: "\f0d7";
-        padding-right: 0.5em; }
-      /* line 38, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a {
-        font-weight: bold; }
-        /* line 42, ../sass/components/menus/_navigation.scss */
-        .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a:hover {
-          text-decoration: none; }
-    /* line 48, ../sass/components/menus/_navigation.scss */
-    .l-region--sidebar-first .block--menu-block ul.menu li.leaf {
-      list-style-image: none;
-      list-style-type: none;
-      margin-left: 0;
-      padding-left: 1.5em;
-      border-bottom: 1px dotted #f0f0f0;
-      background: #fdfdfd;
-      cursor: pointer; }
-      /* line 56, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active, .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active:hover {
-        background: #922525; }
-      /* line 60, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active:before {
-        color: #ffffff; }
-      /* line 65, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li.leaf:before {
-        font-family: "FontAwesome";
-        content: "\f0da";
-        padding-right: 0.5em; }
-      /* line 70, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li.leaf:hover {
-        background: #f0f0f0; }
+  .l-region--sidebar-first .block--menu-block ul.menu li.expanded, .l-region--sidebar-first .block--menu-block ul.menu li.collapsed {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    border-bottom: 1px dotted #f0f0f0;
+    background: #fdfdfd;
+    cursor: pointer; }
+    /* line 22, ../sass/components/menus/_navigation.scss */
+    .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a, .l-region--sidebar-first .block--menu-block ul.menu li.collapsed > a {
+      font-weight: bold; }
+      /* line 26, ../sass/components/menus/_navigation.scss */
+      .l-region--sidebar-first .block--menu-block ul.menu li.expanded > a:hover, .l-region--sidebar-first .block--menu-block ul.menu li.collapsed > a:hover {
+        text-decoration: none; }
+  /* line 33, ../sass/components/menus/_navigation.scss */
+  .l-region--sidebar-first .block--menu-block ul.menu li.collapsed:before {
+    font-family: "FontAwesome";
+    content: "\f0da";
+    padding-right: 0.5em; }
+  /* line 41, ../sass/components/menus/_navigation.scss */
+  .l-region--sidebar-first .block--menu-block ul.menu li.expanded:before {
+    font-family: "FontAwesome";
+    content: "\f0d7";
+    padding-right: 0.5em; }
+  /* line 48, ../sass/components/menus/_navigation.scss */
+  .l-region--sidebar-first .block--menu-block ul.menu li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 1.5em;
+    border-bottom: 1px dotted #f0f0f0;
+    background: #fdfdfd;
+    cursor: pointer; }
+    /* line 56, ../sass/components/menus/_navigation.scss */
+    .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active, .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active:hover {
+      background: #922525; }
+    /* line 60, ../sass/components/menus/_navigation.scss */
+    .l-region--sidebar-first .block--menu-block ul.menu li.leaf.active:before {
+      color: #ffffff; }
+    /* line 65, ../sass/components/menus/_navigation.scss */
+    .l-region--sidebar-first .block--menu-block ul.menu li.leaf:hover {
+      background: #f0f0f0; }
+    /* line 69, ../sass/components/menus/_navigation.scss */
+    .l-region--sidebar-first .block--menu-block ul.menu li.leaf a {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      color: #333333; }
       /* line 74, ../sass/components/menus/_navigation.scss */
-      .l-region--sidebar-first .block--menu-block ul.menu li.leaf a {
-        display: inline-block;
-        vertical-align: middle;
-        *vertical-align: auto;
-        *zoom: 1;
-        *display: inline;
-        color: #333333; }
-        /* line 79, ../sass/components/menus/_navigation.scss */
-        .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active, .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active:before, .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active:hover {
-          color: #ffffff; }
-        /* line 86, ../sass/components/menus/_navigation.scss */
-        .l-region--sidebar-first .block--menu-block ul.menu li.leaf a:hover {
-          color: #922525;
-          text-decoration: none; }
+      .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active, .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active:before, .l-region--sidebar-first .block--menu-block ul.menu li.leaf a.active:hover {
+        color: #ffffff; }
+      /* line 81, ../sass/components/menus/_navigation.scss */
+      .l-region--sidebar-first .block--menu-block ul.menu li.leaf a:hover {
+        color: #922525;
+        text-decoration: none; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -901,6 +925,40 @@ and open the template in the editor.
       /* line 33, ../sass/components/misc/_taxonomy-term.scss */
       .view-taxonomy-term .item-list ul li a:hover {
         color: #922525; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 14, 2015, 11:06:04 AM
+    Author     : Stephen
+*/
+/* line 11, ../sass/components/nodes/_node-resource.scss */
+.dl-horizontal dt {
+  float: left;
+  width: 10%;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold; }
+/* line 21, ../sass/components/nodes/_node-resource.scss */
+.dl-horizontal dd {
+  margin-left: 12%; }
+  /* line 24, ../sass/components/nodes/_node-resource.scss */
+  .dl-horizontal dd:before, .dl-horizontal dd:after {
+    display: table;
+    content: " "; }
+  /* line 29, ../sass/components/nodes/_node-resource.scss */
+  .dl-horizontal dd:after {
+    clear: both; }
+/* line 33, ../sass/components/nodes/_node-resource.scss */
+.dl-horizontal .field {
+  width: 80%;
+  float: left; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

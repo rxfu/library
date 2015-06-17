@@ -10,9 +10,16 @@ and open the template in the editor.
 .l-region--sidebar-first {
     .block {
         padding: $vert-spacing-unit $horz-spacing-unit;
+        margin-bottom: $vert-spacing-unit;
         background: $white;
         border: 1px solid $border-color;
         @include border-radius($radius);
-        @include box-shadow(0 0 6px rgba($input-border-color, 0.7));        
+        @include box-shadow(0 0 6px rgba($input-border-color, 0.7));
+        
+        .block__title {
+            border-top: 3px solid $link-color;
+            color: $link-color;
+            padding-left: $vert-spacing-unit;
+        }
     }
 }
