@@ -33,7 +33,7 @@ and open the template in the editor.
 
 /* line 35, ../../../sass/layouts/sword/sword.layout.scss */
 .wrapper--heading {
-  padding-top: 1.5em; }
+  /*    padding-top: $vert-spacing-unit;*/ }
 
 @media (min-width: 70em) {
   /* line 40, ../../../sass/layouts/sword/sword.layout.scss */

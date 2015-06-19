@@ -21,5 +21,11 @@ and open the template in the editor.
             color: $link-color;
             padding-left: $vert-spacing-unit;
         }
+        
+        .view-view-resource-category {
+            ul.views-summary {
+                padding-left: $vert-spacing-unit;
+            }
+        }
     }
 }

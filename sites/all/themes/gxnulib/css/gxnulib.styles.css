@@ -498,6 +498,9 @@ and open the template in the editor.
     border-top: 3px solid #922525;
     color: #922525;
     padding-left: 1.5em; }
+  /* line 26, ../sass/components/blocks/_block_sidebar.scss */
+  .l-region--sidebar-first .block .view-view-resource-category ul.views-summary {
+    padding-left: 1.5em; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -639,7 +642,19 @@ and open the template in the editor.
 
 /* line 1, ../sass/components/forms/_search.scss */
 .search-form {
-  float: left; }
+  margin: 0 auto; }
+  /* line 4, ../sass/components/forms/_search.scss */
+  .search-form .fieldset-title {
+    font-size: 14px;
+    font-size: 1rem; }
+
+/* line 11, ../sass/components/forms/_search.scss */
+.search-block-form .container-inline div {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

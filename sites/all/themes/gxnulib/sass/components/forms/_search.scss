@@ -1,3 +1,15 @@
 .search-form {
-    float: left;
+    margin: 0 auto;
+    
+    .fieldset-title {
+        @include font-size(14px);
+    }
+}
+
+.search-block-form {
+    .container-inline {
+        div {
+            @include inline-block;
+        }
+    }
 }
