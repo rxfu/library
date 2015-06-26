@@ -573,13 +573,14 @@ and open the template in the editor.
   border-radius: 4px;
   background: #ffffff;
   padding: 1.5em 1em;
+  margin: 0.5em;
   width: 20% !important;
   float: right !important; }
-  /* line 18, ../sass/components/forms/_field-related-links.scss */
+  /* line 19, ../sass/components/forms/_field-related-links.scss */
   .field--name-field-related-links .field-label {
     font-weight: bold;
     color: #333333; }
-  /* line 26, ../sass/components/forms/_field-related-links.scss */
+  /* line 27, ../sass/components/forms/_field-related-links.scss */
   .field--name-field-related-links .field-items .field-item:before {
     font-family: "FontAwesome";
     content: "\f105";
