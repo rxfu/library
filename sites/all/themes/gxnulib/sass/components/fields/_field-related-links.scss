@@ -23,6 +23,8 @@ and open the template in the editor.
 
     .field-items {
         .field-item {
+            display: block;
+            
             &:before {
                 font-family: "FontAwesome";
                 content: "\f105";

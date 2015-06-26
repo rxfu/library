@@ -535,6 +535,51 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : Jun 26, 2015, 2:40:25 PM
+    Author     : Stephen
+*/
+/* line 13, ../sass/components/fields/_field-link.scss */
+.node__content .field--name-field-link .field-items .field-item {
+  display: block; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 15, 2015, 9:17:10 AM
+    Author     : Stephen
+*/
+/* line 10, ../sass/components/fields/_field-related-links.scss */
+.field--name-field-related-links {
+  border: 1px solid #922525;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 1.5em 1em;
+  width: 20% !important;
+  float: right !important; }
+  /* line 18, ../sass/components/fields/_field-related-links.scss */
+  .field--name-field-related-links .field-label {
+    font-weight: bold;
+    color: #333333; }
+  /* line 25, ../sass/components/fields/_field-related-links.scss */
+  .field--name-field-related-links .field-items .field-item {
+    display: block; }
+    /* line 28, ../sass/components/fields/_field-related-links.scss */
+    .field--name-field-related-links .field-items .field-item:before {
+      font-family: "FontAwesome";
+      content: "\f105";
+      padding-right: 0.5em; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : Apr 20, 2015, 9:07:07 PM
     Author     : Stephen
 */
@@ -555,36 +600,6 @@ and open the template in the editor.
 /* line 11, ../sass/components/forms/_bar-form.scss */
 .l-bar input, .l-bar select {
   margin: 0 0.5em; }
-
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Jun 15, 2015, 9:17:10 AM
-    Author     : Stephen
-*/
-/* line 10, ../sass/components/forms/_field-related-links.scss */
-.field--name-field-related-links {
-  border: 1px solid #922525;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  background: #ffffff;
-  padding: 1.5em 1em;
-  margin: 0.5em;
-  width: 20% !important;
-  float: right !important; }
-  /* line 19, ../sass/components/forms/_field-related-links.scss */
-  .field--name-field-related-links .field-label {
-    font-weight: bold;
-    color: #333333; }
-  /* line 27, ../sass/components/forms/_field-related-links.scss */
-  .field--name-field-related-links .field-items .field-item:before {
-    font-family: "FontAwesome";
-    content: "\f105";
-    padding-right: 0.5em; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
