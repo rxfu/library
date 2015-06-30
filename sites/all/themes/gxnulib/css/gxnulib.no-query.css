@@ -1455,6 +1455,9 @@ and open the template in the editor.
 .view-content .views-table {
   width: 100%;
   margin: 0.5em auto; }
+  /* line 15, ../sass/components/views/_glossary.scss */
+  .view-content .views-table .views-field-field-language, .view-content .views-table .views-field-field-type, .view-content .views-table .views-field-field-subject, .view-content .views-table .views-field-field-category {
+    white-space: nowrap; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

@@ -11,5 +11,9 @@ and open the template in the editor.
     .views-table {
         width: 100%;
         margin: $spacing auto;
+        
+        .views-field-field-language, .views-field-field-type, .views-field-field-subject, .views-field-field-category {
+            white-space: nowrap;
+        }
     }
 }
