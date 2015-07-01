@@ -29,6 +29,10 @@ and open the template in the editor.
         &:after {
             clear:both;
         }
+        
+        p {
+            text-indent: 0;
+        }
     }
     .field {
         width: 80%;

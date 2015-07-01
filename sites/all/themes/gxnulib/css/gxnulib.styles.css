@@ -986,7 +986,10 @@ and open the template in the editor.
   /* line 29, ../sass/components/nodes/_node-resource.scss */
   .dl-horizontal dd:after {
     clear: both; }
-/* line 33, ../sass/components/nodes/_node-resource.scss */
+  /* line 33, ../sass/components/nodes/_node-resource.scss */
+  .dl-horizontal dd p {
+    text-indent: 0; }
+/* line 37, ../sass/components/nodes/_node-resource.scss */
 .dl-horizontal .field {
   width: 80%;
   float: left; }

@@ -93,7 +93,8 @@
     <footer class="node__submitted">
       <?php print $user_picture; ?>
       <div class="submitted">
-        <?php print $submitted; ?>
+        <?php print $submitted; ?>&nbsp;&nbsp;
+        <?php print $content['links']['statistics']['#links']['statistics_counter']['title']; ?>
       </div>
       <?php print render($content['field_tags']); ?>
     </footer>
@@ -105,9 +106,10 @@
       hide($content['comments']);
       hide($content['links']);
       print render($content);
+      hide($content['links']['statistics']['#links']['statistics_counter']['title']);
     ?>
   </div>
-
+    
   <?php print render($content['links']); ?>
   <?php print render($content['comments']); ?>
 </article>
