@@ -963,6 +963,19 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
+    Created on : Jul 1, 2015, 4:42:31 PM
+    Author     : Stephen
+*/
+/* line 12, ../sass/components/nodes/_node-book.scss */
+.node--page-book .node__content p {
+  text-indent: 0; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
     Created on : Jun 14, 2015, 11:06:04 AM
     Author     : Stephen
 */

@@ -107,7 +107,7 @@
         hide($content['comments']);
         hide($content['links']);
         print render($content);
-        hide($content['links']['statistics']['#links']['statistics_counter']['title']);
+        hide($content['links']['statistics']);
       ?>
     </dl>
   </div>
