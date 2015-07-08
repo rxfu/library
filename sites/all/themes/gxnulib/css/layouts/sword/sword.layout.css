@@ -35,7 +35,7 @@ and open the template in the editor.
 .wrapper--heading {
   /*    padding-top: $vert-spacing-unit;*/ }
 
-@media (min-width: 70em) {
+@media (min-width: 60em) {
   /* line 40, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--sidebar-first {
     width: 23.40426%;

@@ -14,7 +14,7 @@ $horz-spacing-unit: 1em;
 
 $portrait: 30em;
 $landscape: 45em;
-$desktop: 70em;
+$desktop: 60em;
 
 @include add-grid(3);
 @include add-grid(6 at $portrait);

@@ -50,7 +50,7 @@ and open the template in the editor.
   background: rgba(142, 150, 160, 0.75);
   padding-top: 1.5em; }
 
-@media (min-width: 70em) {
+@media (min-width: 60em) {
   /* line 53, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .site-branding {
     width: 48.93617%;
