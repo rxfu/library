@@ -9,6 +9,9 @@ and open the template in the editor.
 */
 .l-region--stacked-left {
     .block {
+        .block__title {
+            margin-top: $vert-spacing-unit;
+        }
         .block__content {
             .field__item {
                 @include inline-block;

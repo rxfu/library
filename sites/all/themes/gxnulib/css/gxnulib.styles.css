@@ -424,7 +424,10 @@ and open the template in the editor.
     Created on : Apr 24, 2015, 10:16:51 AM
     Author     : Stephen
 */
-/* line 13, ../sass/components/blocks/_block-list.scss */
+/* line 12, ../sass/components/blocks/_block-list.scss */
+.l-region--stacked-left .block .block__title {
+  margin-top: 1.5em; }
+/* line 16, ../sass/components/blocks/_block-list.scss */
 .l-region--stacked-left .block .block__content .field__item {
   display: inline-block;
   vertical-align: middle;
@@ -434,21 +437,21 @@ and open the template in the editor.
   padding: 1.5em 0.5em;
   width: 7em;
   text-align: center; }
-  /* line 19, ../sass/components/blocks/_block-list.scss */
+  /* line 22, ../sass/components/blocks/_block-list.scss */
   .l-region--stacked-left .block .block__content .field__item a {
     margin: 0 auto;
     color: #333333; }
-    /* line 23, ../sass/components/blocks/_block-list.scss */
+    /* line 26, ../sass/components/blocks/_block-list.scss */
     .l-region--stacked-left .block .block__content .field__item a:hover {
       color: #922525;
       text-decoration: none; }
-    /* line 28, ../sass/components/blocks/_block-list.scss */
+    /* line 31, ../sass/components/blocks/_block-list.scss */
     .l-region--stacked-left .block .block__content .field__item a i {
       display: block;
       color: #922525;
       margin: 0 auto; }
 
-/* line 42, ../sass/components/blocks/_block-list.scss */
+/* line 45, ../sass/components/blocks/_block-list.scss */
 .l-region--stacked-middle .block .block__content .field__item, .l-region--stacked-right .block .block__content .field__item {
   display: inline-block;
   vertical-align: middle;
