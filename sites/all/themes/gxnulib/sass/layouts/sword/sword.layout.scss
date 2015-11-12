@@ -30,6 +30,11 @@
 
 .l-branding {
     position: relative;
+    background: {
+        image: image-url("background.png");
+        repeat: no-repeat;
+        position: bottom right;
+    }
 }
 
 .wrapper--heading {
@@ -37,6 +42,11 @@
 }
 
 @include breakpoint($desktop) {
+    .site-branding {
+        padding-top: $spacing;
+        padding-bottom: $spacing;
+    }
+    
     .l-region--sidebar-first {
         @include grid-span(3, 1);
     }

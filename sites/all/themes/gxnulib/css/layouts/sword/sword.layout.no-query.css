@@ -29,9 +29,12 @@ and open the template in the editor.
 
 /* line 31, ../../../sass/layouts/sword/sword.layout.scss */
 .l-branding {
-  position: relative; }
+  position: relative;
+  background-image: url('../../../images/background.png?1447316671');
+  background-repeat: no-repeat;
+  background-position: bottom right; }
 
-/* line 35, ../../../sass/layouts/sword/sword.layout.scss */
+/* line 40, ../../../sass/layouts/sword/sword.layout.scss */
 .wrapper--heading {
   /*    padding-top: $vert-spacing-unit;*/ }
 

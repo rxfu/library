@@ -28,27 +28,20 @@ and open the template in the editor.
   margin: 1.5em 0; }
 
 /* line 31, ../../../sass/layouts/sword-front/sword-front.layout.scss */
-.l-bar {
-  padding: 0.5em 1em;
-  margin: 0 auto;
-  background: #494f57;
-  text-align: right; }
-
-/* line 38, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-heading {
   width: 100%;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
 
-/* line 43, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 36, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-branding {
   position: relative;
-  background-image: url('../../../images/background.png?1447136293');
+  background-image: url('../../../images/background.png?1447316671');
   background-repeat: no-repeat;
   background-position: bottom right; }
 
-/* line 52, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 45, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .wrapper--heading {
   background: rgba(142, 150, 160, 0.75);
   padding-top: 1.5em; }

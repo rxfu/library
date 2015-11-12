@@ -29,14 +29,22 @@ and open the template in the editor.
 
 /* line 31, ../../../sass/layouts/sword/sword.layout.scss */
 .l-branding {
-  position: relative; }
+  position: relative;
+  background-image: url('../../../images/background.png?1447316671');
+  background-repeat: no-repeat;
+  background-position: bottom right; }
 
-/* line 35, ../../../sass/layouts/sword/sword.layout.scss */
+/* line 40, ../../../sass/layouts/sword/sword.layout.scss */
 .wrapper--heading {
   /*    padding-top: $vert-spacing-unit;*/ }
 
 @media (min-width: 60em) {
-  /* line 40, ../../../sass/layouts/sword/sword.layout.scss */
+  /* line 45, ../../../sass/layouts/sword/sword.layout.scss */
+  .site-branding {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+
+  /* line 50, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--sidebar-first {
     width: 23.40426%;
     float: left;
@@ -44,7 +52,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 44, ../../../sass/layouts/sword/sword.layout.scss */
+  /* line 54, ../../../sass/layouts/sword/sword.layout.scss */
   .l-content {
     width: 74.46809%;
     float: right;
@@ -52,7 +60,7 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; }
 
-  /* line 48, ../../../sass/layouts/sword/sword.layout.scss */
+  /* line 58, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--sidebar-second {
     width: 23.40426%;
     float: right;
@@ -60,7 +68,7 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; }
 
-  /* line 53, ../../../sass/layouts/sword/sword.layout.scss */
+  /* line 63, ../../../sass/layouts/sword/sword.layout.scss */
   .l-region--footer .block {
     display: inline-block;
     vertical-align: middle;
@@ -69,10 +77,10 @@ and open the template in the editor.
     *display: inline;
     width: 33.33333%;
     float: left; }
-    /* line 54, ../../../sass/layouts/sword/sword.layout.scss */
+    /* line 64, ../../../sass/layouts/sword/sword.layout.scss */
     .l-region--footer .block .block__title {
       padding-left: 0; }
-    /* line 58, ../../../sass/layouts/sword/sword.layout.scss */
+    /* line 68, ../../../sass/layouts/sword/sword.layout.scss */
     .l-region--footer .block .field__item {
       display: inline-block;
       vertical-align: middle;

@@ -28,13 +28,6 @@
     margin: $vert-spacing-unit 0;
 }
 
-.l-bar {
-    padding: $spacing $horz-spacing-unit;
-    margin: 0 auto;
-    background: $bar-bgcolor;
-    text-align: right;
-}
-
 .l-heading {
     width: 100%;
     @include border-radius($radius);
