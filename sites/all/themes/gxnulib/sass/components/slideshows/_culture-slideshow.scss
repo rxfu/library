@@ -39,6 +39,7 @@ and open the template in the editor.
             .views-field-counter {
                 background: $font-color;
                 border: 1px solid $font-color;
+                @include border-radius(.5em);
                 width: .5em;
                 height: .5em;
                 
