@@ -1098,18 +1098,19 @@ and open the template in the editor.
       -webkit-border-radius: 0.5em;
       border-radius: 0.5em;
       width: .5em;
-      height: .5em; }
-      /* line 46, ../sass/components/slideshows/_culture-slideshow.scss */
+      height: .5em;
+      cursor: pointer; }
+      /* line 47, ../sass/components/slideshows/_culture-slideshow.scss */
       .view-view-culture-slideshow .views-slideshow-controls-bottom .views_slideshow_pager_field_item .views-field-counter .views-content-counter {
         color: #333333;
         font-size: 8px;
         font-size: 0.57143rem;
         line-height: .5em; }
-  /* line 55, ../sass/components/slideshows/_culture-slideshow.scss */
+  /* line 56, ../sass/components/slideshows/_culture-slideshow.scss */
   .view-view-culture-slideshow .views-slideshow-controls-bottom .active .views-field-counter {
     background: #922525;
     border: 1px solid #922525; }
-    /* line 59, ../sass/components/slideshows/_culture-slideshow.scss */
+    /* line 60, ../sass/components/slideshows/_culture-slideshow.scss */
     .view-view-culture-slideshow .views-slideshow-controls-bottom .active .views-field-counter .views-content-counter {
       color: #922525; }
 

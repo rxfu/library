@@ -42,6 +42,7 @@ and open the template in the editor.
                 @include border-radius(.5em);
                 width: .5em;
                 height: .5em;
+                cursor: pointer;
                 
                 .views-content-counter {
                     color: $font-color;
