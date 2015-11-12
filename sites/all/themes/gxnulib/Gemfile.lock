@@ -1,5 +1,5 @@
 GEM
-  remote: http://ruby.taobao.org/
+  remote: https://ruby.taobao.org/
   specs:
     addressable (2.3.8)
     breakpoint (2.5.0)
@@ -119,8 +119,11 @@ DEPENDENCIES
   rb-fsevent
   rb-inotify (~> 0.9)
   sass
-  sass-globbing (= 1.1.0)
+  sass-globbing
   singularitygs
   susy
   toolkit
   yajl-ruby
+
+BUNDLED WITH
+   1.10.6

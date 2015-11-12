@@ -17,7 +17,7 @@ and open the template in the editor.
   max-width: 960px;
   margin: 0 auto;
   *zoom: 1; }
-  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .l-constrained:after, .l-branding:after, .l-heading:after, .l-highlighted:after, .l-content:after, .l-useful-link:after, .l-copyright:after {
     content: "";
     display: table;
@@ -43,20 +43,23 @@ and open the template in the editor.
 
 /* line 43, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-branding {
-  position: relative; }
+  position: relative;
+  background-image: url('../../../images/background.png?1447136293');
+  background-repeat: no-repeat;
+  background-position: bottom right; }
 
-/* line 47, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 52, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .wrapper--heading {
   background: rgba(142, 150, 160, 0.75);
   padding-top: 1.5em; }
 
 @media (min-width: 60em) {
-  /* line 53, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 58, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .site-branding {
     padding-top: 0.5em;
     padding-bottom: 0.5em; }
 
-  /* line 58, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 63, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--search-tab {
     width: 48.93617%;
     float: left;
@@ -64,7 +67,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 62, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 67, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--showcase {
     width: 48.93617%;
     float: right;
@@ -72,7 +75,7 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; }
 
-  /* line 66, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 71, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--stacked-left {
     width: 31.91489%;
     float: left;
@@ -80,7 +83,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 70, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 75, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--stacked-middle {
     width: 31.91489%;
     float: left;
@@ -88,7 +91,7 @@ and open the template in the editor.
     margin-left: 34.04255%;
     clear: none; }
 
-  /* line 74, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 79, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--stacked-right {
     width: 31.91489%;
     float: right;
@@ -96,7 +99,7 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; }
 
-  /* line 79, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 84, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--footer .block {
     display: inline-block;
     vertical-align: middle;
@@ -105,10 +108,10 @@ and open the template in the editor.
     *display: inline;
     width: 33.33333%;
     float: left; }
-    /* line 80, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    /* line 85, ../../../sass/layouts/sword-front/sword-front.layout.scss */
     .l-region--footer .block .block__title {
       padding-left: 0; }
-    /* line 84, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    /* line 89, ../../../sass/layouts/sword-front/sword-front.layout.scss */
     .l-region--footer .block .field__item {
       display: inline-block;
       vertical-align: middle;

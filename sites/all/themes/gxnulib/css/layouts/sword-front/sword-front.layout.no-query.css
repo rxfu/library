@@ -17,7 +17,7 @@ and open the template in the editor.
   max-width: 960px;
   margin: 0 auto;
   *zoom: 1; }
-  /* line 38, D:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .l-constrained:after, .l-branding:after, .l-heading:after, .l-highlighted:after, .l-content:after, .l-useful-link:after, .l-copyright:after {
     content: "";
     display: table;
@@ -43,9 +43,12 @@ and open the template in the editor.
 
 /* line 43, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .l-branding {
-  position: relative; }
+  position: relative;
+  background-image: url('../../../images/background.png?1447136293');
+  background-repeat: no-repeat;
+  background-position: bottom right; }
 
-/* line 47, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+/* line 52, ../../../sass/layouts/sword-front/sword-front.layout.scss */
 .wrapper--heading {
   background: rgba(142, 150, 160, 0.75);
   padding-top: 1.5em; }

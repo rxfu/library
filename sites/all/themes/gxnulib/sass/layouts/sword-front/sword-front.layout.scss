@@ -42,6 +42,11 @@
 
 .l-branding {
     position: relative;
+    background: {
+        image: image-url("background.png");
+        repeat: no-repeat;
+        position: bottom right;
+    }
 }
 
 .wrapper--heading {
