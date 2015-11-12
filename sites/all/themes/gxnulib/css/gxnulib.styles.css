@@ -1126,7 +1126,7 @@ and open the template in the editor.
 /* line 11, ../sass/components/tabs/_news-tab.scss */
 .block--quicktabs-news-tabs .quicktabs_main {
   padding: 0 0.5em;
-  background: #f5f4f1;
+  background: rgba(142, 150, 160, 0.75);
   *zoom: 1;
   margin-top: -0.5em; }
   /* line 38, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -1191,9 +1191,12 @@ and open the template in the editor.
       /* line 60, ../sass/components/tabs/_news-tab.scss */
       .block--quicktabs-news-tabs ul.quicktabs-tabs li:hover a {
         text-decoration: none; }
-    /* line 66, ../sass/components/tabs/_news-tab.scss */
-    .block--quicktabs-news-tabs ul.quicktabs-tabs li.active a {
-      color: #922525; }
+    /* line 65, ../sass/components/tabs/_news-tab.scss */
+    .block--quicktabs-news-tabs ul.quicktabs-tabs li.active {
+      background-color: rgba(142, 150, 160, 0.75); }
+      /* line 68, ../sass/components/tabs/_news-tab.scss */
+      .block--quicktabs-news-tabs ul.quicktabs-tabs li.active a {
+        color: #922525; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
