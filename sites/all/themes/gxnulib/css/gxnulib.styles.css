@@ -1126,33 +1126,39 @@ and open the template in the editor.
 /* line 11, ../sass/components/tabs/_news-tab.scss */
 .block--quicktabs-news-tabs .quicktabs_main {
   padding: 0 0.5em;
-  background: rgba(142, 150, 160, 0.75);
+  background: rgba(211, 214, 218, 0.75);
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   *zoom: 1;
-  margin-top: -0.5em; }
+  margin-top: -1em; }
   /* line 38, d:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .block--quicktabs-news-tabs .quicktabs_main:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 17, ../sass/components/tabs/_news-tab.scss */
+  /* line 18, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs .quicktabs_main a {
     color: #333333; }
-    /* line 19, ../sass/components/tabs/_news-tab.scss */
+    /* line 20, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs .quicktabs_main a:hover {
       color: #922525; }
-  /* line 24, ../sass/components/tabs/_news-tab.scss */
+  /* line 25, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs .quicktabs_main ul {
     padding: 0.5em; }
-    /* line 26, ../sass/components/tabs/_news-tab.scss */
+    /* line 27, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs .quicktabs_main ul li {
       padding: 0 0 0.5em 0; }
-      /* line 28, ../sass/components/tabs/_news-tab.scss */
+      /* line 29, ../sass/components/tabs/_news-tab.scss */
       .block--quicktabs-news-tabs .quicktabs_main ul li:before {
         font-family: "FontAwesome";
         content: "\f0da";
         padding-right: 0.5em;
         color: #922525; }
-/* line 38, ../sass/components/tabs/_news-tab.scss */
+/* line 39, ../sass/components/tabs/_news-tab.scss */
 .block--quicktabs-news-tabs ul.quicktabs-tabs {
   padding: 0;
   margin: 0;
@@ -1165,10 +1171,10 @@ and open the template in the editor.
     content: "";
     display: table;
     clear: both; }
-  /* line 45, ../sass/components/tabs/_news-tab.scss */
+  /* line 46, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs ul.quicktabs-tabs a {
     color: #333333; }
-  /* line 49, ../sass/components/tabs/_news-tab.scss */
+  /* line 50, ../sass/components/tabs/_news-tab.scss */
   .block--quicktabs-news-tabs ul.quicktabs-tabs li {
     padding: 0.5em;
     width: 50%;
@@ -1185,16 +1191,22 @@ and open the template in the editor.
       content: "";
       display: table;
       clear: both; }
-    /* line 57, ../sass/components/tabs/_news-tab.scss */
+    /* line 58, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li:hover {
       color: #922525; }
-      /* line 60, ../sass/components/tabs/_news-tab.scss */
+      /* line 61, ../sass/components/tabs/_news-tab.scss */
       .block--quicktabs-news-tabs ul.quicktabs-tabs li:hover a {
         text-decoration: none; }
-    /* line 65, ../sass/components/tabs/_news-tab.scss */
+    /* line 66, ../sass/components/tabs/_news-tab.scss */
     .block--quicktabs-news-tabs ul.quicktabs-tabs li.active {
-      background-color: rgba(142, 150, 160, 0.75); }
-      /* line 68, ../sass/components/tabs/_news-tab.scss */
+      background-color: rgba(211, 214, 218, 0.75);
+      -moz-border-radius-topleft: 4px;
+      -webkit-border-top-left-radius: 4px;
+      border-top-left-radius: 4px;
+      -moz-border-radius-topright: 4px;
+      -webkit-border-top-right-radius: 4px;
+      border-top-right-radius: 4px; }
+      /* line 70, ../sass/components/tabs/_news-tab.scss */
       .block--quicktabs-news-tabs ul.quicktabs-tabs li.active a {
         color: #922525; }
 
