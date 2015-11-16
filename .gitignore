@@ -6,3 +6,5 @@ sites/*/files
 sites/*/private
 /nbproject/private/
 /nbproject/
+
+sftp-config.json
