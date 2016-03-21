@@ -10,7 +10,7 @@ and open the template in the editor.
 .block--quicktabs-news-tabs {    
     .quicktabs_main {
         padding: 0 $spacing;
-        background: lighten($heading-bgcolor, 25%);
+        // background: lighten($heading-bgcolor, 25%);
         @include border-bottom-radius($radius);
         @include pie-clearfix;
         margin-top: (-1) * $horz-spacing-unit;
@@ -64,7 +64,7 @@ and open the template in the editor.
             }
 
             &.active {
-                background-color: lighten($heading-bgcolor, 25%);
+                // background-color: lighten($heading-bgcolor, 25%);
                 @include border-top-radius($radius);
 
                 a {

@@ -1,0 +1,6 @@
+name = Search Box
+descirption = This module provides custom search box with dynamic code.
+package = Custom Modules
+files[] = searchbox.module
+core = "7.x"
+version = "7.x-1.0"
