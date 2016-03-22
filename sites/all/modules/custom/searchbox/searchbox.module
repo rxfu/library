@@ -74,23 +74,9 @@ function _searchbox_block_chaoxing_discovery() {
 	$html = <<<'HTML'
 	<form role="form" action="http://ss.zhizhen.com/s">
 		<div class="search-form-box">
-			<!--
-				<div class="radio"><input type="radio" name="strchannel" value="0"  checked="checked" >全部</div>
-				<div class="radio"><input type="radio" name="strchannel" value="11" >图书</div>
-				<div class="radio"><input type="radio" name="strchannel" value=1 >期刊</div>
-				<div class="radio"><input type="radio" name="strchannel" value=13 >报纸</div>
-				<div class="radio"><input type="radio" name="strchannel" value=3 >学位论文</div>
-				<div class="radio"><input type="radio" name="strchannel" value=4 >会议论文</div>
-				<div class="radio"><input type="radio" name="strchannel" value=6 >标准</div>
-				<div class="radio"><input type="radio" name="strchannel" value=10 >专利</div>
-				<div class="radio"><input type="radio" name="strchannel" value=8 >视频</div>
-			-->
-			<input type="text" name="sw" id="swtext" placeholder="请输入关键词&hellip;">
-			<input type="submit" value="检索"/>
+			<input type="text" name="sw" id="swtext" placeholder="请输入关键词&hellip;"><input type="submit" value="检索"/>
 			<input type="hidden" name="enc" value="utf-8" />
-			<div class="intro">
-			搜索1348家图书馆的资料文献，为教育科研提供专业服务
-			</div>
+			<div class="intro">搜索1348家图书馆的资料文献，为教育科研提供专业服务</div>
 		</div>
 	</form>
 HTML;
@@ -98,21 +84,20 @@ HTML;
 	return $html;
 }
 
-function _search_block_duxiu_search() {
+function _searchbox_block_duxiu_search() {
 	$html = <<< 'HTML'
 	<form action="http://www.duxiu.com/gosearch.jsp" method="post">
 		<div class="search-form-box">
-			<div class="radio"><input type="radio" name="channel" value=goqw.jsp  checked="checked" >知识</div>
-			<div class="radio"><input type="radio" name="channel" value=search >图书</div>
-			<div class="radio"><input type="radio" name="channel" value=searchJour >期刊</div>
-			<div class="radio"><input type="radio" name="channel" value=searchThesis >学位论文</div>
-			<div class="radio"><input type="radio" name="channel" value=searchCP >会议论文</div>
-			<div class="radio"><input type="radio" name="channel" value=searchStd >标准</div>
-			<div class="radio"><input type="radio" name="channel" value=searchPatent >专利</div>
-			<div class="radio"><input type="radio" name="channel" value=searchVideo >视频</div>
-			<div class="radio"><input type="radio" name="channel" value=searchInfo >信息资讯</div>
-			<input id=sw name=sw id=sw type="text" placeholder="请输入关键词进行检索&hellip;"> 
-			<INPUT type=submit value=检索 name=Submit> 
+			<div class="radio"><input type="radio" name="channel" value="goqw.jsp " checked="checked" > 知识</div>
+			<div class="radio"><input type="radio" name="channel" value="search" > 图书</div>
+			<div class="radio"><input type="radio" name="channel" value="searchJour" > 期刊</div>
+			<div class="radio"><input type="radio" name="channel" value="searchThesis" >学位论文</div>
+			<div class="radio"><input type="radio" name="channel" value="searchCP" > 会议论文</div>
+			<div class="radio"><input type="radio" name="channel" value="searchStd" > 标准</div>
+			<div class="radio"><input type="radio" name="channel" value="searchPatent" > 专利</div>
+			<div class="radio"><input type="radio" name="channel" value="searchVideo" > 视频</div>
+			<div class="radio"><input type="radio" name="channel" value="searchInfo" > 信息资讯</div>
+			<input id="sw" name="sw" id="sw" type="text" placeholder="请输入关键词进行检索&hellip;"><input type="submit" value="检索" name="submit"> 
 			<input type="hidden" value="utf-8" name="enc" />
 			<div class="intro">
 				<ul>
@@ -127,58 +112,57 @@ HTML;
 	return $html;
 }
 
-function _search_block_book_search() {
+function _searchbox_block_book_search() {
 	$html = <<< 'HTML'
-	<form action="http://202.193.168.100:8080/opac/openlink.php" method="get" name="f" id="f">
+	<form action="http://opac.gxnu.edu.cn/opac/openlink.php" method="get" name="f" id="f">
 		<div class="search-form-box">
-		<select class="option" name="strSearchType">
-            <option value="title">题名</option>
-            <option value="author">责任者</option>
-            <option value="keyword">主题词</option>
-            <option value="isbn">ISBN/ISSN</option>
-            <option value="asordno">订购号</option>
-            <option value="coden">分类号</option>
-            <option value="callno">索书号</option>
-            <option value="publisher">出版社</option>
-            <option value="series">丛书名</option>
-            <option value="tpinyin">题名拼音</option>
-            <option value="apinyin">责任者拼音</option>
-          </select>
-		<select class="option" name="match_flag">
-		                <option value="forward">前方一致</option>
-		                <option value="full">完全匹配</option>
-		                <option value="any">任意匹配</option>
-		              </select>
-		<br/>
-		<div class="radio">
-		<input type="radio" name="doctype" value="ALL" checked="checked" />所有书刊
-		</div>
-		<div class="radio">
-		            <input type="radio" name="doctype" value="01" />中文书
-		</div>
-		<div class="radio">
-		            <input type="radio" name="doctype" value="02" />西文书
-		</div>
-		<div class="radio">
-		            <input type="radio" name="doctype" value="11" />中文刊
-		</div>
-		<div class="radio">
-		            <input type="radio" name="doctype" value="12" />西文刊
-		</div>
-		<br/>
-		<input type="hidden" id="historyCount" name="historyCount" value="1" />
-		<input type="text" name="strText" id="strText" placeholder="请输入关键词检索馆藏书刊&hellip;" />
-		<input type="submit" value="检索"/>
-		<div class="intro">
-		<ul>
-		<li><a href="http://202.193.168.100:8080/reader/login.php">借阅信息</a></li>
-		<li><a href="http://202.193.168.100:8080/reader/login.php">预约</a></li>
-		<li><a href="http://202.193.168.100:8080/reader/login.php">续借</a></li>
-		<li><a href="http://202.193.168.100:8080/top/top_lend.php">热门推荐</a></li>
-		<li><a href="http://202.193.168.100:8080/newbook/newbook_cls_browse.php">新书通报</a></li>
-		<li><a href="http://202.193.168.100:8080/asord/asord_hist.php">读者荐购</a></li>
-		</ul>
-		</div>
+			<select class="option" name="strSearchType">
+	            <option value="title">题名</option>
+	            <option value="author">责任者</option>
+	            <option value="keyword">主题词</option>
+	            <option value="isbn">ISBN/ISSN</option>
+	            <option value="asordno">订购号</option>
+	            <option value="coden">分类号</option>
+	            <option value="callno">索书号</option>
+	            <option value="publisher">出版社</option>
+	            <option value="series">丛书名</option>
+	            <option value="tpinyin">题名拼音</option>
+	            <option value="apinyin">责任者拼音</option>
+	        </select>
+			<select class="option" name="match_flag">
+	            <option value="forward">前方一致</option>
+	            <option value="full">完全匹配</option>
+	            <option value="any">任意匹配</option>
+	        </select>
+			<br>
+			<div class="radio">
+				<input type="radio" name="doctype" value="all" checked="checked" /> 所有书刊
+			</div>
+			<div class="radio">
+			    <input type="radio" name="doctype" value="01" /> 中文书
+			</div>
+			<div class="radio">
+			    <input type="radio" name="doctype" value="02" /> 西文书
+			</div>
+			<div class="radio">
+			    <input type="radio" name="doctype" value="11" /> 中文刊
+			</div>
+			<div class="radio">
+			    <input type="radio" name="doctype" value="12" /> 西文刊
+			</div>
+			<br/>
+			<input type="hidden" id="historyCount" name="historyCount" value="1" />
+			<input type="text" name="strText" id="strText" placeholder="请输入关键词检索馆藏书刊&hellip;" /><input type="submit" value="检索"/>
+			<div class="intro">
+			<ul>
+				<li><a href="http://opac.gxnu.edu.cn/reader/login.php">借阅信息</a></li>
+				<li><a href="http://opac.gxnu.edu.cn/reader/login.php">预约</a></li>
+				<li><a href="http://opac.gxnu.edu.cn/reader/login.php">续借</a></li>
+				<li><a href="http://opac.gxnu.edu.cn/top/top_lend.php">热门推荐</a></li>
+				<li><a href="http://opac.gxnu.edu.cn/newbook/newbook_cls_browse.php">新书通报</a></li>
+				<li><a href="http://opac.gxnu.edu.cn/asord/asord_hist.php">读者荐购</a></li>
+			</ul>
+			</div>
 		</div>
 	</form>
 HTML;
@@ -186,12 +170,11 @@ HTML;
 	return $html;
 }
 
-function _search_block_database_search() {
+function _searchbox_block_database_search() {
 	$html = <<< 'HTML'
 	<form id="dbsearch" accept-charset="utf-8" method="get" action="/dbnav">
 		<div class="search-form-box">
-			<input id="edit-keys" name="keys" type="text" placeholder="请输入数据库名称进行检索&hellip;">
-			<input id="edit-submit-clone-of-dbnav" type="submit" value="检索">
+			<input id="edit-keys" name="keys" type="text" placeholder="请输入数据库名称进行检索&hellip;"><input id="edit-submit-clone-of-dbnav" type="submit" value="检索">
 			<div class="intro">
 				<ul>
 					<li><a href="/dbnav">数据库导航</a></li>
@@ -199,11 +182,17 @@ function _search_block_database_search() {
 					<li><a href="/res_ebook">电子图书</a></li>
 					<li><a href="/res_demo">试用资源</a></li>
 					<li><a href="/res_multimedia">多媒体资源</a></li>
-					<li><a href="/res_open">开放资源</a></li>
 				</ul>
 				<ul>
+					<li><strong><span style="color: #922525">常用数据库：</span></strong></li>
 					<li><a href="http://www.cnki.net">CNKI</a></li>
-					<li><a href="http://www.springerlink.org/">Springer</a></li>
+					<li><a href="http://qikan.cqvip.com/">维普</a></li>
+					<li><a href="http://www.duxiu.com/">读秀学术搜索</a></li>
+					<li><a href="http://www.sciencedirect.com/">Elsevier SD</a></li>
+					<li><a href="http://onlinelibrary.wiley.com/">Wiley Blackwell</a></li>
+					<li><a href="http://link.springer.com/">Springer LINK</a></li>
+					<li><a href="http://search.ebscohost.com/">EBSCO</a></li>
+					<li><a href="http://www.tandfonline.com/">Taylor & Francis</a></li>
 				</ul>
 			</div>
 		</div>
@@ -213,7 +202,7 @@ HTML;
 	return $html;
 }
 
-function _search_block_ancient_search() {
+function _searchbox_block_ancient_search() {
 	$html = <<< 'HTML'
 	<form id="searchForm" accept-charset="utf-8" method="post" action="http://202.193.168.18:1128/search/">
 		<div class="search-form-box">
@@ -224,8 +213,7 @@ function _search_block_ancient_search() {
 				<option value="關鍵字">關鍵字</option>
 			</select>
 			-->
-			<input id="keyword" name="keyword" type="text" placeholder="请输入古籍書目进行檢索&hellip;">
-			<input id="search" name="search" type="submit" value="檢索">
+			<input id="keyword" name="keyword" type="text" placeholder="请输入古籍書目进行檢索&hellip;"><input id="search" name="search" type="submit" value="檢索">
 			<div class="intro">
                 <ol>
                     <li>系統提供本館所藏古籍書名、著者、著作方式、版本項、函數、卷/冊數、存卷/冊數、部/套數、四部分類號、附注以及索書號、財產號等基本資訊。</li>
@@ -239,16 +227,27 @@ HTML;
 	return $html;
 }
 
-function _search_block_open_search() {
+function _searchbox_block_open_search() {
 	$html = <<< 'HTML'
 	<form role="form" action="#" onsubmit="return false;">
 		<div class="search-form-box">
-			<div class="radio"><input type="radio" name="openbook" value="0"  title="Open Library，百万册免费电子书" checked="checked"><a  href="http://openlibrary.org/" target="_blank" title="Open Library，百万册免费电子书">开放图书馆</a></div>
-			<div class="radio"><input type="radio" name="openbook" value="1" title="6000种期刊+5000个开放获取数据库"><a target="_blank" href="http://www.souoa.com" title="6000种期刊+5000个开放获取数据库">OA图书馆</a></div>
-			<div class="radio"><input type="radio" name="openbook" value="2"  title="近8千种开放获取期刊"><a target="_blank" href="http://www.doaj.org/" title="近8千种开放获取期刊">DOAJ</a></div>
-			<div class="radio"><input type="radio" name="openbook" value="3" title="1700余种OA期刊论文"><a target="_blank" href="http://gooa.las.ac.cn/external/index.jsp" title="1700余种OA期刊论文">GoOA</a></div>
-			<input type="text" name="q" placeholder="请输入关键词&hellip;">
-			<input type="submit" value="检索" class="open_submit"/>
+			<div class="radio">
+				<input type="radio" name="openbook" value="0"  title="Open Library，百万册免费电子书" checked="checked">
+				<a  href="http://openlibrary.org/" target="_blank" title="Open Library，百万册免费电子书"> 开放图书馆</a>
+			</div>
+			<div class="radio">
+				<input type="radio" name="openbook" value="1" title="6000种期刊+5000个开放获取数据库">
+				<a target="_blank" href="http://www.souoa.com" title="6000种期刊+5000个开放获取数据库"> OA图书馆</a>
+			</div>
+			<div class="radio">
+				<input type="radio" name="openbook" value="2"  title="近8千种开放获取期刊">
+				<a target="_blank" href="http://www.doaj.org/" title="近8千种开放获取期刊"> DOAJ</a>
+			</div>
+			<div class="radio">
+				<input type="radio" name="openbook" value="3" title="1700余种OA期刊论文">
+				<a target="_blank" href="http://gooa.las.ac.cn/external/index.jsp" title="1700余种OA期刊论文"> GoOA</a>
+			</div>
+			<input type="text" name="q" placeholder="请输入关键词&hellip;"><input type="submit" value="检索" class="open_submit"/>
 			<div class="intro">
 				<ul>
 					<li><a href="http://www.nlc.gov.cn/dsb_zyyfw/gj/gjzyk/" target="_blank">国图特色资源</a></li>
