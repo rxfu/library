@@ -7,6 +7,7 @@ template = sword-front-layout
 regions[bar] = Bar
 regions[branding] = Branding
 regions[header] = Header
+regions[search] = Search
 regions[navigation] = Navigation
 regions[highlighted] = Highlighted
 regions[help] = Help

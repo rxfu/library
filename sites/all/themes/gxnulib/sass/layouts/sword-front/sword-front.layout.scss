@@ -52,6 +52,10 @@
         padding-top: $spacing;
         padding-bottom: $spacing;
     }
+
+    .l-region--search {
+        @include grid-span(4, 9);
+    }
     
     .l-region--search-tab {
         @include grid-span(6, 1);

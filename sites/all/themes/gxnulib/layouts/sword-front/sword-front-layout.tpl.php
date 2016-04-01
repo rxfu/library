@@ -17,6 +17,7 @@
                         <div class="site-slogan"><?php print $site_slogan;?></div>
                         <?php endif;?>
                     <?php endif;?>
+                    <?php print render($page['search']);?>
                 </div>
                 <?php print render($page['navigation']);?>
             </section>

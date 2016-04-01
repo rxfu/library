@@ -53,6 +53,14 @@ and open the template in the editor.
     padding-bottom: 0.5em; }
 
   /* line 56, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  .l-region--search {
+    width: 31.91489%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; }
+
+  /* line 60, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--search-tab {
     width: 48.93617%;
     float: left;
@@ -60,7 +68,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 60, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 64, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--showcase {
     width: 48.93617%;
     float: right;
@@ -68,7 +76,7 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; }
 
-  /* line 64, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 68, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--stacked-left {
     width: 31.91489%;
     float: left;
@@ -76,7 +84,7 @@ and open the template in the editor.
     margin-left: 0;
     clear: none; }
 
-  /* line 68, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 72, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--stacked-middle {
     width: 31.91489%;
     float: left;
@@ -84,7 +92,7 @@ and open the template in the editor.
     margin-left: 34.04255%;
     clear: none; }
 
-  /* line 72, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 76, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--stacked-right {
     width: 31.91489%;
     float: right;
@@ -92,7 +100,7 @@ and open the template in the editor.
     margin-right: 0;
     clear: none; }
 
-  /* line 77, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+  /* line 81, ../../../sass/layouts/sword-front/sword-front.layout.scss */
   .l-region--footer .block {
     display: inline-block;
     vertical-align: middle;
@@ -101,10 +109,10 @@ and open the template in the editor.
     *display: inline;
     width: 33.33333%;
     float: left; }
-    /* line 78, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    /* line 82, ../../../sass/layouts/sword-front/sword-front.layout.scss */
     .l-region--footer .block .block__title {
       padding-left: 0; }
-    /* line 82, ../../../sass/layouts/sword-front/sword-front.layout.scss */
+    /* line 86, ../../../sass/layouts/sword-front/sword-front.layout.scss */
     .l-region--footer .block .field__item {
       display: inline-block;
       vertical-align: middle;

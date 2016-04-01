@@ -28,6 +28,7 @@ regions[header] = Header
 regions[navigation] = Navigation
 regions[highlighted] = Highlighted
 regions[help] = Help
+regions[search] = Search
 regions[search_tab] = Search Tab
 regions[showcase] = Showcase
 regions[content] = Content
