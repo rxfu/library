@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -1513,5 +1514,32 @@ and open the template in the editor.
   /* line 14, ../sass/components/views/_view-block.scss */
   .view .more-link a {
     color: #922525; }
+/* line 18, ../sass/components/views/_view-block.scss */
+.view .view-header {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’"; }
+/* line 25, ../sass/components/views/_view-block.scss */
+.view div.view-header:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+/* line 33, ../sass/components/views/_view-block.scss */
+.view div.view-header:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+/* line 41, ../sass/components/views/_view-block.scss */
+.view .view-header p {
+  display: inline;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=gxnulib.styles.css.map */
