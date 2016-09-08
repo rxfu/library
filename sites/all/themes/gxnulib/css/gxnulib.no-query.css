@@ -658,6 +658,9 @@ and open the template in the editor.
       *vertical-align: auto;
       *zoom: 1;
       *display: inline; }
+  /* line 50, ../sass/components/forms/_forms.scss */
+  .search-form-box .input-text {
+    padding: 0.5em; }
 
 /* line 1, ../sass/components/forms/_search.scss */
 .search-form {

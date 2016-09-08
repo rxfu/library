@@ -24,6 +24,9 @@ function searchbox_block_info() {
 		'block_open_search' => array(
 			'info' => t('检索：开放资源检索'),
 		),
+		'block_user_login' => array(
+			'info' => t('登录：我的图书馆'),
+		),
 	);
 
 	return $blocks;
@@ -64,6 +67,11 @@ function searchbox_block_view($delta = '') {
 		case 'block_open_search':
 			$block['subject'] = t('开放资源检索');
 			$block['content'] = _searchbox_block_open_search();
+			break;
+
+		case 'block_user_login':
+			$block['subject'] = t('登录我的图书馆');
+			$block['content'] = _searchbox_block_user_login();
 			break;
 	}
 
@@ -116,6 +124,7 @@ function _searchbox_block_book_search() {
 	$html = <<< 'HTML'
 	<form action="http://opac.gxnu.edu.cn/opac/openlink.php" method="get" name="f" id="f">
 		<div class="search-form-box">
+			<!--
 			<select class="option" name="strSearchType">
 	            <option value="title">题名</option>
 	            <option value="author">责任者</option>
@@ -151,14 +160,17 @@ function _searchbox_block_book_search() {
 			    <input type="radio" name="doctype" value="12" /> 西文刊
 			</div>
 			<br/>
+			-->
+			<input type="hidden" id="strSearchType" name="strSearchType" value="title">
+			<input type="hidden" id="match_flag" name="match_flag" value="forward">
+			<input type="hidden" id="doctype" name="doctype" value="all">
 			<input type="hidden" id="historyCount" name="historyCount" value="1" />
 			<input type="text" name="strText" id="strText" placeholder="请输入关键词检索馆藏书刊&hellip;" /><input type="submit" value="检索"/>
 			<div class="intro">
 			<ul>
 				<li><a href="http://opac.gxnu.edu.cn/reader/login.php">借阅信息</a></li>
-				<li><a href="http://opac.gxnu.edu.cn/reader/login.php">预约</a></li>
-				<li><a href="http://opac.gxnu.edu.cn/reader/login.php">续借</a></li>
-				<li><a href="http://opac.gxnu.edu.cn/top/top_lend.php">热门推荐</a></li>
+				<li><a href="node/35">预约续借</a></li>
+				<li><a href="http://opac.gxnu.edu.cn/top/top_lend.php">热门借阅</a></li>
 				<li><a href="http://opac.gxnu.edu.cn/newbook/newbook_cls_browse.php">新书通报</a></li>
 				<li><a href="http://opac.gxnu.edu.cn/asord/asord_hist.php">读者荐购</a></li>
 			</ul>
@@ -190,7 +202,7 @@ function _searchbox_block_database_search() {
 					<li><a href="http://www.duxiu.com/">读秀学术搜索</a></li>
 					<li><a href="http://www.sciencedirect.com/">Elsevier SD</a></li>
 					<li><a href="http://onlinelibrary.wiley.com/">Wiley Blackwell</a></li>
-					<li><a href="http://link.springer.com/">Springer LINK</a></li>
+					<li><a href="http://link.springer.com/">Springer</a></li>
 					<li><a href="http://search.ebscohost.com/">EBSCO</a></li>
 					<li><a href="http://www.tandfonline.com/">Taylor & Francis</a></li>
 				</ul>
@@ -258,6 +270,37 @@ function _searchbox_block_open_search() {
 			</div>
 		</div>
 	</form>
+HTML;
+
+	return $html;
+}
+
+function _searchbox_block_user_login() {
+	$html = <<< 'HTML'
+	<form action="http://opac.gxnu.edu.cn/reader/redr_verify.php" name="frm_login" method="POST">
+		<div class="search-form-box">
+			<div class="input-text">
+				<label for="number">证件号</label>
+				<input id="number" name="number" type="text" size="20" style="width:150px" placeholder="证件号" >
+			</div>
+			<div class="input-text">
+				<label for="passwd">密&nbsp;&nbsp;码</label>
+				<input class="input" name="passwd" type="password" size="20" style="width:150px" placeholder="密码" >
+			</div>
+			<div class="input-text">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label for="captcha">验证码</label>
+				<input id="captcha" name="captcha" type="text" size="20" style="width:150px" placeholder="输入4位数字验证码">
+				<span id="captcha_tips" >
+		            <a href="#">
+		            	<img title="点击刷新" src="http://opac.gxnu.edu.cn/reader/captcha.php" align="absbottom" onclick="this.src='http://opac.gxnu.edu.cn/reader/captcha.php?'+Math.random();"></img>
+		            </a>
+		        </span>
+	        </div>
+	        <input type="hidden" name="select" value="cert_no">
+	        <input type="submit" value="登录"/>
+        </div>
+    </form>
 HTML;
 
 	return $html;
