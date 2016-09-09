@@ -264,8 +264,8 @@ function _searchbox_block_open_search() {
 				<ul>
 					<li><a href="http://www.nlc.gov.cn/dsb_zyyfw/gj/gjzyk/" target="_blank">国图特色资源</a></li>
 					<li><a href="http://www.gutenberg.org/" target="_blank">古腾堡计划</a></li>
-					<li><a target="_blank" href="http://books.google.com/">Google图书</a></li>
-					<li><a target="_blank" href="http://scholar.google.com/">Google学术</a></li>
+					<li><a target="_blank" href="http://or.nsfc.gov.cn/">NSFC基础研究知识库</a></li>
+					<li><a target="_blank" href="http://www.nssd.org/">国家期刊库</a></li>
 				</ul>
 			</div>
 		</div>

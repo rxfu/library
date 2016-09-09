@@ -45,3 +45,8 @@ $table-header-font-color: $white;
 $table-odd-bgcolor: $table-bgcolor;
 $table-even-bgcolor: $white;
 $table-active-bgcolor: darken($table-bgcolor, 30%);
+
+$blockquote-color: lighten($font-color, 30%);
+$blockquote-quote-color: #922525;
+$blockquote-border-color: $blockquote-quote-color;
+$blockquote-bgcolor: #fcfcfc;
