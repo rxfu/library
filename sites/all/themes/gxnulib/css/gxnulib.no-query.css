@@ -324,10 +324,10 @@ h6, .zeta, .field--name-field-related-links .field-label, .l-region--sidebar-fir
 p,
 blockquote {
   margin: 0;
-  margin-top: 0em;
+  margin-top: 0.85714em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 1.71429em; }
+  margin-bottom: 0.85714em; }
 
 /* line 89, ../sass/base/_typography.scss */
 p + img {
@@ -1051,7 +1051,7 @@ and open the template in the editor.
   padding: 1.5em 0.5em; }
   /* line 28, ../sass/components/nodes/_node.scss */
   .node__content p {
-    text-indent: 2em; }
+    /* text-indent: 2em; */ }
 
 /*
 To change this license header, choose License Headers in Project Properties.

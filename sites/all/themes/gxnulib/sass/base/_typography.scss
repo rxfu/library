@@ -84,7 +84,7 @@ h6, .zeta {
 p,
 %p {
     margin: 0;
-    @include rhythm(0, 0, 0, 1);
+    @include rhythm(0.5, 0, 0, 0.5);
 }
 p + img {
     float: left;
