@@ -8,8 +8,16 @@
 
 .search-block-form {
     .container-inline {
+    	margin-top: 1em;
+    	
         div {
             @include inline-block;
         }
+    }
+    .form-item {
+    	margin-bottom: 0;
+    }
+    .form-submit {
+    	vertical-align: middle;
     }
 }

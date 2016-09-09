@@ -671,13 +671,22 @@ and open the template in the editor.
     font-size: 14px;
     font-size: 1rem; }
 
-/* line 11, ../sass/components/forms/_search.scss */
-.search-block-form .container-inline div {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline; }
+/* line 10, ../sass/components/forms/_search.scss */
+.search-block-form .container-inline {
+  margin-top: 1em; }
+  /* line 13, ../sass/components/forms/_search.scss */
+  .search-block-form .container-inline div {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline; }
+/* line 17, ../sass/components/forms/_search.scss */
+.search-block-form .form-item {
+  margin-bottom: 0; }
+/* line 20, ../sass/components/forms/_search.scss */
+.search-block-form .form-submit {
+  vertical-align: middle; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

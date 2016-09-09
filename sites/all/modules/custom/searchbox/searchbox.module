@@ -163,9 +163,15 @@ function _searchbox_block_book_search() {
 			-->
 			<input type="hidden" id="strSearchType" name="strSearchType" value="title">
 			<input type="hidden" id="match_flag" name="match_flag" value="forward">
-			<input type="hidden" id="doctype" name="doctype" value="all">
+			<input type="hidden" id="doctype" name="doctype" value="ALL">
+			<input type="hidden" id="with_ebook" name="with_ebook" value="on">
+			<input type="hidden" id="displaypg" name="displaypg" value="20">
+			<input type="hidden" id="showmode" name="showmode" value="list">
+			<input type="hidden" id="sort" name="sort" value="CATA_DATE">
+			<input type="hidden" id="orderby" name="orderby" value="desc">
+			<input type="hidden" id="dept" name="dept" value="ALL">
 			<input type="hidden" id="historyCount" name="historyCount" value="1" />
-			<input type="text" name="strText" id="strText" placeholder="请输入关键词检索馆藏书刊&hellip;" /><input type="submit" value="检索"/>
+			<input type="text" name="strText" id="strText" placeholder="请输入书名检索馆藏书刊&hellip;" /><input type="submit" value="检索"/>
 			<div class="intro">
 			<ul>
 				<li><a href="http://opac.gxnu.edu.cn/reader/login.php">借阅信息</a></li>
